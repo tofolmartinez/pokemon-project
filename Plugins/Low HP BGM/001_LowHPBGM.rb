@@ -1,5 +1,5 @@
 module Settings
-  LOW_HP_BGM = "Bicycle"
+  LOW_HP_BGM = "BW 160 A Tight Spot During Battle!"
 end
 
 class Game_Temp
