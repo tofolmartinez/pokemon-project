@@ -3555,7 +3555,7 @@ EffectChance = 10
 Description = Aúna fuerzas de la naturaleza y libera su ataque. Puede disminuir la Def. Esp. del objetivo.
 #-------------------------------
 [LEAFBLADE]
-Name = Leaf Blade
+Name = Hoja aguda
 Type = GRASS
 Category = Physical
 Power = 90
@@ -3564,10 +3564,10 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = None
 Flags = Contact,CanProtect,CanMirrorMove,HighCriticalHitRate,Slicing
-Description = The user handles a sharp leaf like a sword and attacks by slashing. It has a high critical-hit ratio.
+Description = El usuario maneja una hoja afilada como una espada y ataca dando tajos. Tiene un alto índice de golpes críticos.
 #-------------------------------
 [PETALBLIZZARD]
-Name = Hoja Aguda
+Name = Tormenta floral
 Type = GRASS
 Category = Physical
 Power = 90

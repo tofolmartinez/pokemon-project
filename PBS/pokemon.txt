@@ -23606,8 +23606,8 @@ Weight = 95.1
 Color = Gray
 Shape = Quadruped
 Habitat = Forest
-Category = Big Horn
-Pokedex = The black orbs shine with an uncanny light when the Pokémon is erecting invisible barriers. The fur shed from its beard retains heat well and is a highly useful material for winter clothing
+Category = Gran cuerno
+Pokedex = Sus orbes negros brillan con un fulgor misterioso cuando erige muros invisibles. El pelaje que se desprende de sus barbas es muy codiciado para crear cálidos ropajes para el invierno.
 Generation = 8
 #-------------------------------
 [KLEAVOR]
@@ -23631,8 +23631,8 @@ Weight = 89.0
 Color = Brown
 Shape = MultiWinged
 Habitat = Grassland
-Category = Axe
-Pokedex = A violent creature that fells towering trees with its crude axes and shields itself with hard stone. If one should chance upon this Pokémon in the wilds, one's only recourse is to flee.
+Category = Hacha
+Pokedex = Las dos toscas hachas le permiten talar árboles mientras su piel pétrea lo protege. Dada su naturaleza agresiva, es aconsejable escapar en caso de toparse con uno en estado salvaje.
 Generation = 8
 #-------------------------------
 [URSALUNA]
@@ -23656,8 +23656,8 @@ Weight = 290.0
 Color = Brown
 Shape = Quadruped
 Habitat = Mountain
-Category = Peat
-Pokedex = It is believed that the swampy terrain of its ancient home region that gave Ursaluna its burly physique and newfound capacity to manipulate peat at will.
+Category = Turba
+Pokedex = Tengo la teoría de que el terreno pantanoso de Hisui favoreció el desarrollo de su constitución robusta, así como su capacidad de manipular la turba a voluntad.
 Generation = 8
 #-------------------------------
 [BASCULEGION]
@@ -23682,8 +23682,8 @@ Weight = 110.0
 Color = Green
 Shape = Finned
 Habitat = Sea
-Category = Big Fish
-Pokedex = Clads itself in the souls of comrades that perished before fulfilling their goals of journeying upstream. No other species throughout other aquatic environments is Basculegion’s equal.
+Category = Gran Pez
+Pokedex = Durante las remontadas de los ríos, se envuelve de las almas de sus congéneres caídos en la ardua travesía. No tiene rival en ninguna de las corrientes que fluyen por la región de Hisui.
 Generation = 8
 WildItemUncommon = DEEPSEATOOTH
 #-------------------------------
@@ -23708,8 +23708,8 @@ Weight = 43.0
 Color = Gray
 Shape = BipedalTail
 Habitat = Grassland
-Category = Free Climb
-Pokedex = Because of Sneasler’s virulent poison and daunting physical prowess, no other species could hope to best it on frozen highlands. Preferring solitude, this species does not form packs.
+Category = Escalada
+Pokedex = Gracias a su fortaleza física y potente veneno, ninguna especie de las alturas heladas le planta cara. Es de personalidad solitaria y no forma manadas.
 Generation = 8
 #-------------------------------
 [OVERQWIL]
@@ -23733,13 +23733,13 @@ Weight = 60.5
 Color = Black
 Shape = Finned
 Habitat = Sea
-Category = Pin Cluster
-Pokedex = Its lancelike spikes and savage temperament have earned it the nickname "sea fiend." It slurps up poison to nourish itself.
+Category = Espinoso
+Pokedex = Sus púas, afiladas como lanzas, y su violento carácter le han granjeado el mote de Demonio del Mar. Puede sorber veneno como sustento alimenticio.
 Generation = 8
 #-------------------------------
 [ENAMORUS]
 Name = Enamorus
-FormName = Incarnate Forme
+FormName = Forma avatar
 Types = FAIRY,FLYING
 BaseStats = 74,115,70,106,135,80
 GenderRatio = AlwaysFemale
@@ -23759,8 +23759,8 @@ Weight = 118.0
 Color = Pink
 Shape = HeadArms
 Habitat = RoughTerrain
-Category = Abundance
-Pokedex = When it flies to this land from across the sea, the bitter winter comes to an end. According to legend, this Pokémon's love gives rise to the budding of fresh life across Hisui.
+Category = Amorodio
+Pokedex = Su llegada de allende el mar significa el fin del duro invierno. De acuerdo con el folclore, su amor siempre trae consigo un soplo de vida nueva a Hisui.
 Generation = 8
 Flags = Legendary
 #-------------------------------
@@ -23786,8 +23786,8 @@ Weight = 4.1
 Color = Green
 Shape = Quadruped
 Habitat = Grassland
-Category = Grass Cat
-Pokedex = The sweet scent its body gives off mesmerizes those around it. The scent grows stronger when this Pokémon is in the sun.
+Category = Gato planta
+Pokedex = Su cuerpo desprende una dulce fragancia que embriaga a quien tiene a su alrededor. Esta se intensifica al exponerse a los rayos del sol.
 Generation = 9
 Evolutions = FLORAGATO,Level,16
 #-------------------------------
@@ -23813,8 +23813,8 @@ Weight = 12.2
 Color = Green
 Shape = Bipedal
 Habitat = Grassland
-Category = Grass Cat
-Pokedex = Floragato deftly wields the vine hidden beneath its long fur, slamming the hard flower bud against its opponents.
+Category = Gato Planta
+Pokedex = Maneja diestramente la vid oculta bajo su largo pelaje y propina latigazos al enemigo con el capullo endurecido de la punta.
 Generation = 9
 Evolutions = MEOWSCARADA,Level,36
 #-------------------------------
@@ -23840,8 +23840,8 @@ Weight = 31.2
 Color = Green
 Shape = Bipedal
 Habitat = Grassland
-Category = Magician
-Pokedex = This Pokémon uses the reflective fur lining its cape to camouflage the stem of its flower, creating the illusion that the flower is floating.
+Category = Mago
+Pokedex = Se sirve de la luz que reflejan los tricomas de su manto de hojas para camuflar la vid y crear la ilusión óptica de que la flor flota en el aire.
 Generation = 9
 #-------------------------------
 [FUECOCO]
@@ -23866,8 +23866,8 @@ Weight = 9.8
 Color = Red
 Shape = BipedalTail
 Habitat = RoughTerrain
-Category = Fire Croc
-Pokedex = It lies on warm rocks and uses the heat absorbed by its square-shaped scales to create fire energy.
+Category = Fuegodrilo
+Pokedex = Yace sobre rocas calientes, cuyo calor transforma en energía ígnea tras absorberlo por sus escamas rectangulares.
 Generation = 9
 Evolutions = CROCALOR,Level,16
 #-------------------------------
@@ -23893,8 +23893,8 @@ Weight = 30.7
 Color = Red
 Shape = BipedalTail
 Habitat = RoughTerrain
-Category = Fire Croc
-Pokedex = The combination of Crocalor’s fire energy and overflowing vitality has caused an egg-shaped fireball to appear on the Pokémon’s head.
+Category = Fuegodrilo
+Pokedex = La mezcla de energía ígnea con el exceso de su propia fuerza vital ha tomado la forma de una bola de fuego de aspecto oval sobre su cabeza.
 Generation = 9
 Evolutions = SKELEDIRGE,Level,36
 #-------------------------------
@@ -23920,8 +23920,8 @@ Weight = 326.5
 Color = Red
 Shape = Quadruped
 Habitat = RoughTerrain
-Category = Singer
-Pokedex = The fiery bird changes shape when Skeledirge sings. Rumor has it that the bird was born when the fireball on Skeledirge’s head gained a soul.
+Category = Cantante
+Pokedex = Se dice que el pájaro flamígero al que da forma su canto es un espíritu que moraba en la bola de fuego que le coronaba la cabeza.
 Generation = 9
 #-------------------------------
 [QUAXLY]
@@ -23946,8 +23946,8 @@ Weight = 6.1
 Color = White
 Shape = Bipedal
 Habitat = WatersEdge
-Category = Duckling
-Pokedex = This Pokémon migrated to Paldea from distant lands long ago. The gel secreted by its feathers repels water and grime.
+Category = Patito
+Pokedex = Un Pokémon llegado hace tiempo desde tierras lejanas y ya establecido en la región. El gel que secreta por las plumas repele el agua y la mugre.
 Generation = 9
 Evolutions = QUAXWELL,Level,16
 #-------------------------------
@@ -23973,8 +23973,8 @@ Weight = 21.5
 Color = Blue
 Shape = Bipedal
 Habitat = WatersEdge
-Category = Practicing
-Pokedex = These Pokémon constantly run through shallow waters to train their legs, then compete with each other to see which of them kicks most gracefully.
+Category = Disciplinado
+Pokedex = Fortalece las extremidades corriendo con tesón por los bajíos. Compite con los suyos para ver cuál posee una técnica más grácil con las patas.
 Generation = 9
 Evolutions = QUAQUAVAL,Level,36
 #-------------------------------
@@ -24000,8 +24000,8 @@ Weight = 61.9
 Color = Blue
 Shape = Bipedal
 Habitat = WatersEdge
-Category = Dancer
-Pokedex = A single kick from a Quaquaval can send a truck rolling. This Pokémon uses its powerful legs to perform striking dances from far-off lands.
+Category = Bailarín
+Pokedex = Realiza una exótica danza mientras controla la tremenda fuerza de sus extremidades, capaces de hacer volcar un camión de una patada.
 Generation = 9
 #-------------------------------
 [LECHONK]
@@ -24026,14 +24026,14 @@ Weight = 10.2
 Color = Gray
 Shape = Quadruped
 Habitat = Grassland
-Category = Hog
-Pokedex = It searches for food all day. It possesses a keen sense of smell but doesn’t use it for anything other than foraging.
+Category = Gorrino
+Pokedex = Posee un olfato muy desarrollado que emplea únicamente para buscar comida, actividad a la que dedica el día entero.
 Generation = 9
 Evolutions = OINKOLOGNE,Level,18
 #-------------------------------
 [OINKOLOGNE]
 Name = Oinkologne
-FormName = Male
+FormName = Macho
 Types = NORMAL
 BaseStats = 110,100,75,65,59,80
 GenderRatio = Female50Percent
@@ -24054,8 +24054,8 @@ Weight = 120.0
 Color = Gray
 Shape = Quadruped
 Habitat = Grassland
-Category = Hog
-Pokedex = It entrances female Pokémon with the sweet, alluring scent that wafts from all over its body.
+Category = Gorrino
+Pokedex = Emana una fragancia dulce y almizclada por todo el cuerpo que desarma por completo a los Pokémon hembra.
 Generation = 9
 #-------------------------------
 [TAROUNTULA]
@@ -24080,8 +24080,8 @@ Weight = 4.0
 Color = White
 Shape = Insectoid
 Habitat = Grassland
-Category = String Ball
-Pokedex = The ball of threads wrapped around its body is elastic enough to deflect the scythes of Scyther, this Pokémon’s natural enemy.
+Category = Ovillo
+Pokedex = La bola de hilo que le rodea el cuerpo es lo bastante elástica como para repeler las guadañas de los Scyther, su enemigo natural.
 Generation = 9
 Evolutions = SPIDOPS,Level,15
 #-------------------------------
@@ -24107,8 +24107,8 @@ Weight = 16.5
 Color = Green
 Shape = Insectoid
 Habitat = Grassland
-Category = Trap
-Pokedex = It clings to branches and ceilings using its threads and moves without a sound. It takes out its prey before the prey even notices it.
+Category = Trampa
+Pokedex = Se adhiere con su hilo a ramas y techos, por los que se desplaza en silencio. Acaba con su presa antes de que esta se percate de su presencia.
 Generation = 9
 #-------------------------------
 [NYMBLE]
@@ -24133,8 +24133,8 @@ Weight = 1.0
 Color = Gray
 Shape = Quadruped
 Habitat = RoughTerrain
-Category = Grasshopper
-Pokedex = It has its third set of legs folded up. When it’s in a tough spot, this Pokémon jumps over 30 feet using the strength of its legs.
+Category = Saltamontes
+Pokedex = Mantiene plegado su tercer par de patas, cuya fuerza le permite saltar a más de 10 m de altura para huir en caso de apuro.
 Generation = 9
 Evolutions = LOKIX,Level,24
 #-------------------------------
@@ -24160,8 +24160,8 @@ Weight = 17.5
 Color = Gray
 Shape = Bipedal
 Habitat = RoughTerrain
-Category = Grasshopper
-Pokedex = When it decides to fight all out, it stands on its previously folded legs to enter Showdown Mode. It neutralizes its enemies in short order.
+Category = Saltamontes
+Pokedex = Cuando decide luchar sin cuartel, se alza con su tercer par de patas y entra en modo asalto. Acaba con el rival en un abrir y cerrar de ojos.
 Generation = 9
 #-------------------------------
 [PAWMI]
@@ -24186,8 +24186,8 @@ Weight = 2.5
 Color = Yellow
 Shape = Quadruped
 Habitat = Grassland
-Category = Mouse
-Pokedex = It has underdeveloped electric sacs on its cheeks. These sacs can produce electricity only if Pawmi rubs them furiously with the pads on its forepaws.
+Category = Ratón
+Pokedex = Como las bolsas de sus mejillas están poco desarrolladas, genera electricidad frotándolas con las almohadillas de sus patas delanteras.
 Generation = 9
 Evolutions = PAWMO,Level,18
 #-------------------------------
@@ -24213,8 +24213,8 @@ Weight = 6.5
 Color = Yellow
 Shape = Bipedal
 Habitat = Grassland
-Category = Mouse
-Pokedex = When its group is attacked, Pawmo is the first to leap into battle, defeating enemies with a fighting technique that utilizes electric shocks.
+Category = Ratón
+Pokedex = Cuando su manada se ve amenazada, atacan a la vanguardia usando un arte marcial caracterizado por el empleo de descargas eléctricas.
 Generation = 9
 Evolutions = PAWMOT,LevelWalk,1000
 #-------------------------------
@@ -24240,8 +24240,8 @@ Weight = 41.0
 Color = Yellow
 Shape = Bipedal
 Habitat = Grassland
-Category = Hands-On
-Pokedex = This Pokémon normally is slow to react, but once it enters battle, it will strike down its enemies with lightning-fast movements.
+Category = Palmada
+Pokedex = Este Pokémon es normalmente bastante calmado, pero, una vez en combate, derriba a sus rivales con movimientos de una velocidad vertiginosa.
 Generation = 9
 #-------------------------------
 [TANDEMAUS]
@@ -24266,14 +24266,14 @@ Weight = 1.8
 Color = White
 Shape = Bipedal
 Habitat = Urban
-Category = Couple
-Pokedex = Exhibiting great teamwork, they use their incisors to cut pieces out of any material that might be useful for a nest, then make off with them.
+Category = Pareja
+Pokedex = Cuando encuentran un material que les parece útil para su nido, lo recortan con sus incisivos y lo acarrean, todo en perfecta compenetración.
 Generation = 9
 Evolutions = MAUSHOLD,Level,25
 #-------------------------------
 [MAUSHOLD]
 Name = Maushold
-FormName = Family of Four
+FormName = Familia de cuatro
 Types = NORMAL
 BaseStats = 74,75,70,111,65,75
 GenderRatio = Genderless
@@ -24294,8 +24294,8 @@ Weight = 2.8
 Color = White
 Shape = Bipedal
 Habitat = Urban
-Category = Family
-Pokedex = They build huge nests with many rooms that are used for different purposes, such as eating and sleeping.
+Category = Familia
+Pokedex = Construyen grandes nidos que dividen en varias cámaras destinadas a distintas funciones, como dormir o comer.
 Generation = 9
 #-------------------------------
 [FIDOUGH]
@@ -24320,8 +24320,8 @@ Weight = 10.9
 Color = Yellow
 Shape = Quadruped
 Habitat = Urban
-Category = Puppy
-Pokedex = This Pokémon is smooth and moist to the touch. Yeast in Fidough’s breath induces fermentation in the Pokémon’s vicinity.
+Category = Perrito
+Pokedex = Resulta húmedo y suave al tacto. Hace fermentar las cosas a su alrededor con la levadura de su aliento.
 Generation = 9
 Evolutions = DACHSBUN,Level,26
 #-------------------------------
@@ -24347,8 +24347,8 @@ Weight = 14.9
 Color = Brown
 Shape = Quadruped
 Habitat = Urban
-Category = Dog
-Pokedex = The pleasant aroma that emanates from this Pokémon’s body helps wheat grow, so Dachsbun has been treasured by farming villages.
+Category = Perro
+Pokedex = El fragante aroma que despide su cuerpo favorece el crecimiento del trigo, por lo que lo aprecian mucho en las comunidades agrícolas.
 Generation = 9
 #-------------------------------
 [SMOLIV]
@@ -24373,8 +24373,8 @@ Weight = 6.5
 Color = Green
 Shape = HeadLegs
 Habitat = Grassland
-Category = Olive
-Pokedex = It protects itself from enemies by emitting oil from the fruit on its head. This oil is bitter and astringent enough to make someone flinch.
+Category = Aceituna
+Pokedex = Se defiende de sus rivales segregando por el fruto de su cabeza un aceite tan amargo y agrio que cualquiera daría un respingo al probarlo.
 Generation = 9
 Evolutions = DOLLIV,Level,25
 #-------------------------------
@@ -24400,8 +24400,8 @@ Weight = 11.9
 Color = Green
 Shape = Bipedal
 Habitat = Grassland
-Category = Olive
-Pokedex = Dolliv shares its tasty, fresh-scented oil with others. This species has coexisted with humans since times long gone.
+Category = Aceituna
+Pokedex = No duda en compartir su delicioso aceite de fresco aroma. Convive con los seres humanos desde hace mucho tiempo.
 Generation = 9
 Evolutions = ARBOLIVA,Level,35
 #-------------------------------
@@ -24427,13 +24427,13 @@ Weight = 48.2
 Color = Green
 Shape = Bipedal
 Habitat = Grassland
-Category = Olive
-Pokedex = This calm Pokémon is very compassionate. It will share its delicious, nutrient-rich oil with weakened Pokémon.
+Category = Aceituna
+Pokedex = Es pacífico y compasivo. Comparte su delicioso y nutritivo aceite con los Pokémon que han perdido las fuerzas.
 Generation = 9
 #-------------------------------
 [SQUAWKABILLY]
 Name = Squawkabilly
-FormName = Green Plumage
+FormName = Plumaje verde
 Types = NORMAL,FLYING
 BaseStats = 82,96,51,92,45,51
 GenderRatio = Female50Percent
@@ -24454,8 +24454,8 @@ Weight = 2.4
 Color = Green
 Shape = Winged
 Habitat = Urban
-Category = Parrot
-Pokedex = These Pokémon prefer to live in cities. They form flocks based on the color of their feathers, and they fight over territory.
+Category = Loro
+Pokedex = Prefieren vivir en las ciudades. Forman bandadas según el color de su plumaje y libran disputas por el control de los territorios.
 Generation = 9
 #-------------------------------
 [NACLI]
@@ -24480,8 +24480,8 @@ Weight = 16.0
 Color = Brown
 Shape = Head
 Habitat = Cave
-Category = Rock Salt
-Pokedex = It was born in a layer of rock salt deep under the earth. This species was particularly treasured in the old days, as they would share precious salt.
+Category = Halita
+Pokedex = Surgen de estratos salinos subterráneos. Antaño se los tenía en alta estima, pues compartían su sal, un mineral por entonces muy preciado.
 Generation = 9
 Evolutions = NACLSTACK,Level,24
 #-------------------------------
@@ -24507,8 +24507,8 @@ Weight = 105.0
 Color = Brown
 Shape = Quadruped
 Habitat = Cave
-Category = Rock Salt
-Pokedex = This Pokémon dry cures its prey by spraying salt over them. The curing process steals away the water in the prey’s body.
+Category = Halita
+Pokedex = Escupe sal para recubrir con ella a sus presas y someterlas a un proceso de salazón que extrae la humedad de sus cuerpos.
 Generation = 9
 Evolutions = GARGANACL,Level,38
 #-------------------------------
@@ -24534,8 +24534,8 @@ Weight = 240.0
 Color = Brown
 Shape = Bipedal
 Habitat = Cave
-Category = Rock Salt
-Pokedex = Garganacl will rub its fingertips together and sprinkle injured Pokémon with salt. Even severe wounds will promptly heal afterward.
+Category = Halita
+Pokedex = Cuando encuentra a un Pokémon herido, frota las puntas de los dedos para rociarlo con sal y curar rápidamente incluso las heridas más graves.
 Generation = 9
 #-------------------------------
 [CHARCADET]
@@ -24560,8 +24560,8 @@ Weight = 10.5
 Color = Red
 Shape = Bipedal
 Habitat = RoughTerrain
-Category = Fire Child
-Pokedex = Burnt charcoal came to life and became a Pokémon. Possessing a fiery fighting spirit, Charcadet will battle even tough opponents.
+Category = Piroescudero
+Pokedex = Nació de unos restos de carbón consumidos por las llamas. Reta a rivales poderosos para saciar su ardiente espíritu combativo.
 Generation = 9
 Evolutions = ARMAROUGE,Item,AUSPICIOUSARMOR,CERULEDGE,Item,MALICIOUSARMOR
 #-------------------------------
@@ -24587,8 +24587,8 @@ Weight = 85.0
 Color = Red
 Shape = Bipedal
 Habitat = RoughTerrain
-Category = Fire Warrior
-Pokedex = Armarouge evolved through the use of a set of armor that belonged to a distinguished warrior. This Pokémon is incredibly loyal.
+Category = Piroguerrero
+Pokedex = Evolucionó al portar la armadura de un guerrero de renombre. Este Pokémon destaca por su gran lealtad.
 Generation = 9
 #-------------------------------
 [CERULEDGE]
@@ -24613,8 +24613,8 @@ Weight = 62.0
 Color = Blue
 Shape = Bipedal
 Habitat = RoughTerrain
-Category = Fire Blades
-Pokedex = The fiery blades on its arms burn fiercely with the lingering resentment of a sword wielder who fell before accomplishing their goal.
+Category = Piroespada
+Pokedex = Las afiladas llamas que cubren sus brazos están avivadas por la frustración de un espadachín que cayó antes de poder cumplir su cometido.
 Generation = 9
 #-------------------------------
 [TADBULB]
@@ -24639,8 +24639,8 @@ Weight = 0.4
 Color = Yellow
 Shape = HeadLegs
 Habitat = WatersEdge
-Category = EleTadpole
-Pokedex = Tadbulb shakes its tail to generate electricity. If it senses danger, it will make its head blink on and off to alert its allies.
+Category = Electrocuajo
+Pokedex = Produce electricidad agitando la cola. Si siente peligro, hace parpadear su cabeza para alertar a sus compañeros.
 Generation = 9
 Evolutions = BELLIBOLT,Item,THUNDERSTONE
 #-------------------------------
@@ -24666,8 +24666,8 @@ Weight = 113.0
 Color = Green
 Shape = Bipedal
 Habitat = WatersEdge
-Category = EleFrog
-Pokedex = When this Pokémon expands and contracts its wobbly body, the belly-button dynamo in its stomach produces a huge amount of electricity.
+Category = Electrorrana
+Pokedex = Puede generar grandes cantidades de energía expandiendo y contrayendo su elástico cuerpo gracias a la dinamo de su ombligo.
 Generation = 9
 #-------------------------------
 [WATTREL]
@@ -24692,8 +24692,8 @@ Weight = 3.6
 Color = Black
 Shape = Winged
 Habitat = Grassland
-Category = Storm Petrel
-Pokedex = When its wings catch the wind, the bones within produce electricity. This Pokémon dives into the ocean, catching prey by electrocuting them.
+Category = Paíño
+Pokedex = Los huesos de sus alas producen electricidad con las corrientes de aire. Para cazar, se zambulle en el mar y electrocuta a su presa.
 Generation = 9
 Evolutions = KILOWATTREL,Level,25
 #-------------------------------
@@ -24719,8 +24719,8 @@ Weight = 38.6
 Color = Yellow
 Shape = Winged
 Habitat = Grassland
-Category = Frigatebird
-Pokedex = Kilowattrel inflates its throat sac to amplify its electricity. By riding the wind, this Pokémon can fly over 430 miles in a day.
+Category = Fregata
+Pokedex = Aumenta la intensidad de su electricidad al inflar su saco gular. Es capaz de recorrer 700 km en un día impulsado por las corrientes de aire.
 Generation = 9
 #-------------------------------
 [MASCHIFF]
@@ -24745,8 +24745,8 @@ Weight = 16.0
 Color = Brown
 Shape = Quadruped
 Habitat = Urban
-Category = Rascal
-Pokedex = It always scowls in an attempt to make opponents take it seriously, but even crying children will burst into laughter when they see Maschiff’s face.
+Category = Bisoño
+Pokedex = Mantiene el ceño fruncido para que sus rivales lo tomen en serio, pero hasta el niño más llorón estallaría en carcajadas al ver su mueca.
 Generation = 9
 Evolutions = MABOSSTIFF,Level,30
 #-------------------------------
@@ -24772,8 +24772,8 @@ Weight = 61.0
 Color = Gray
 Shape = Quadruped
 Habitat = Urban
-Category = Boss
-Pokedex = This Pokémon can store energy in its large dewlap. Mabosstiff unleashes this energy all at once to blow away enemies.
+Category = Jefazo
+Pokedex = Almacena energía en la papada y la libera toda de golpe para arrasar con sus rivales.
 Generation = 9
 #-------------------------------
 [SHROODLE]
@@ -24798,8 +24798,8 @@ Weight = 0.7
 Color = Gray
 Shape = Quadruped
 Habitat = Forest
-Category = Toxic Mouse
-Pokedex = Though usually a mellow Pokémon, it will sink its sharp, poison-soaked front teeth into any that anger it, causing paralysis in the object of its ire.
+Category = Ratón Veneno
+Pokedex = Es manso, pero muerde y paraliza a quien lo enfada con sus afilados incisivos impregnados de toxinas.
 Generation = 9
 Evolutions = GRAFAIAI,Level,28
 #-------------------------------
@@ -24825,8 +24825,8 @@ Weight = 27.2
 Color = Gray
 Shape = Bipedal
 Habitat = Forest
-Category = Toxic Monkey
-Pokedex = The color of the poisonous saliva depends on what the Pokémon eats. Grafaiai covers its fingers in its saliva and draws patterns on trees in forests.
+Category = Mono Veneno
+Pokedex = El color de su saliva venenosa varía según su alimentación. Se embadurna los dedos con ella para pintar motivos en los árboles del bosque.
 Generation = 9
 #-------------------------------
 [BRAMBLIN]
@@ -24851,8 +24851,8 @@ Weight = 0.6
 Color = Brown
 Shape = Head
 Habitat = RoughTerrain
-Category = Tumbleweed
-Pokedex = A soul unable to move on to the afterlife was blown around by the wind until it got tangled up with dried grass and became a Pokémon.
+Category = Estepicursor
+Pokedex = Se dice que este Pokémon nace cuando las almas en pena terminan enredadas en la hierba seca tras ser arrastradas por el viento.
 Generation = 9
 Evolutions = BRAMBLEGHAST,LevelWalk,1000
 #-------------------------------
@@ -24878,8 +24878,8 @@ Weight = 6.0
 Color = Brown
 Shape = Head
 Habitat = RoughTerrain
-Category = Tumbleweed
-Pokedex = It will open the branches of its head to envelop its prey. Once it absorbs all the life energy it needs, it expels the prey and discards it.
+Category = Estepicursor
+Pokedex = Despliega las ramas para engullir a sus presas. Cuando ha terminado de absorber su energía vital, las escupe.
 Generation = 9
 #-------------------------------
 [TOEDSCOOL]
@@ -24903,8 +24903,8 @@ Weight = 33.0
 Color = Yellow
 Shape = Multiped
 Habitat = Forest
-Category = Woodear
-Pokedex = Toedscool lives in muggy forests. The flaps that fall from its body are chewy and very delicious.
+Category = Auricularia
+Pokedex = Los pliegues ondulados que se desprenden de su cuerpo cuentan con una textura curiosa y un sabor delicioso. Habita en bosques húmedos.
 Generation = 9
 WildItemUncommon = TINYMUSHROOM
 Evolutions = TOEDSCRUEL,Level,30
@@ -24930,8 +24930,8 @@ Weight = 58.0
 Color = Black
 Shape = Multiped
 Habitat = Forest
-Category = Woodear
-Pokedex = These Pokémon gather into groups and form colonies deep within forests. They absolutely hate it when strangers approach.
+Category = Auricularia
+Pokedex = Forma colonias de varios ejemplares en lo más profundo de los bosques. No soporta las visitas indeseadas de extraños.
 Generation = 9
 WildItemCommon = TINYMUSHROOM
 #-------------------------------
@@ -24957,8 +24957,8 @@ Weight = 79.0
 Color = Red
 Shape = Insectoid
 Habitat = RoughTerrain
-Category = Ambush
-Pokedex = Klawf hangs upside-down from cliffs, waiting for prey. But Klawf can’t remain in this position for long because its blood rushes to its head.
+Category = Emboscada
+Pokedex = Acecha a sus presas colgado cabeza abajo de los acantilados, pero no puede aguantar así mucho tiempo porque se le sube la sangre a la cabeza.
 Generation = 9
 #-------------------------------
 [CAPSAKID]
@@ -24983,8 +24983,8 @@ Weight = 3.0
 Color = Green
 Shape = BipedalTail
 Habitat = Grassland
-Category = Spicy Pepper
-Pokedex = The more sunlight this Pokémon bathes in, the more spicy chemicals are produced by its body, and thus the spicier its moves become.
+Category = Habanero
+Pokedex = Cuanto más se expone al sol, más aumenta la cantidad de capsaicinoides de su cuerpo y, por lo tanto, la pungencia de sus movimientos.
 Generation = 9
 Evolutions = SCOVILLAIN,Item,FIRESTONE
 #-------------------------------
@@ -25010,8 +25010,8 @@ Weight = 15.0
 Color = Green
 Shape = BipedalTail
 Habitat = Grassland
-Category = Spicy Pepper
-Pokedex = The red head converts spicy chemicals into fire energy and blasts the surrounding area with a super spicy stream of flame.
+Category = Habanero
+Pokedex = La cabeza roja transforma los capsaicinoides de su cuerpo en energía flamígera, lo que le permite arrojar llamaradas extremadamente abrasadoras.
 Generation = 9
 #-------------------------------
 [RELLOR]
@@ -25036,8 +25036,8 @@ Weight = 1.0
 Color = Brown
 Shape = Insectoid
 Habitat = RoughTerrain
-Category = Rolling
-Pokedex = This Pokémon creates a mud ball by mixing sand and dirt with psychic energy. It treasures its mud ball more than its own life.
+Category = Pelotero
+Pokedex = Mezcla tierra, arena y energía psíquica para crear una bola de barro que atesora por encima de su propia vida.
 Generation = 9
 Evolutions = RABSCA,LevelWalk,1000
 #-------------------------------
@@ -25063,8 +25063,8 @@ Weight = 3.5
 Color = Green
 Shape = Insectoid
 Habitat = RoughTerrain
-Category = Rolling
-Pokedex = The body that supports the ball barely moves. Therefore, it is thought that the true body of this Pokémon is actually inside the ball.
+Category = Pelotero
+Pokedex = El cuerpo que sostiene la bola apenas se mueve, por lo que se cree que el cuerpo en el interior de esta es quien controla sus acciones.
 Generation = 9
 #-------------------------------
 [FLITTLE]
@@ -25089,8 +25089,8 @@ Weight = 1.5
 Color = Yellow
 Shape = Winged
 Habitat = Grassland
-Category = Frill
-Pokedex = Flittle’s toes levitate about half an inch above the ground because of the psychic power emitted from the frills on the Pokémon’s belly.
+Category = Volantes
+Pokedex = La punta de sus extremidades levita a 1 cm del suelo a causa del poder psíquico que emiten los volantes de su abdomen.
 Generation = 9
 Evolutions = ESPATHRA,Level,35
 #-------------------------------
@@ -25116,8 +25116,8 @@ Weight = 90.0
 Color = Yellow
 Shape = Winged
 Habitat = Grassland
-Category = Ostrich
-Pokedex = It immobilizes opponents by bathing them in psychic power from its large eyes. Despite its appearance, it has a vicious temperament.
+Category = Avestruz
+Pokedex = Baña al rival con el poder psíquico que emana de sus grandes ojos y lo inmoviliza. A pesar de su aspecto, posee un temperamento feroz.
 Generation = 9
 #-------------------------------
 [TINKATINK]
@@ -25142,8 +25142,8 @@ Weight = 8.9
 Color = Pink
 Shape = Bipedal
 Habitat = RoughTerrain
-Category = Metalsmith
-Pokedex = It swings its handmade hammer around to protect itself, but the hammer is often stolen by Pokémon that eat metal.
+Category = Forja
+Pokedex = Agita su martillo forjado a mano para ahuyentar a posibles amenazas, pero los Pokémon que se alimentan a base de metal suelen robárselo.
 Generation = 9
 Evolutions = TINKATUFF,Level,24
 #-------------------------------
@@ -25169,8 +25169,8 @@ Weight = 59.1
 Color = Pink
 Shape = Bipedal
 Habitat = RoughTerrain
-Category = Hammer
-Pokedex = This Pokémon will attack groups of Pawniard and Bisharp, gathering metal from them in order to create a large and sturdy hammer.
+Category = Martillo
+Pokedex = Asalta el séquito entero de un Bisharp para reunir metal con el que forjar su enorme y robusto martillo.
 Generation = 9
 Evolutions = TINKATON,Level,38
 #-------------------------------
@@ -25196,8 +25196,8 @@ Weight = 112.8
 Color = Pink
 Shape = Bipedal
 Habitat = RoughTerrain
-Category = Hammer
-Pokedex = This intelligent Pokémon has a very daring disposition. It knocks rocks into the sky with its hammer, aiming for flying Corviknight.
+Category = Martillo
+Pokedex = Posee una notable inteligencia y una exacerbada personalidad. Si ve Corviknight volando, golpea y lanza rocas con su martillo para derribarlos.
 Generation = 9
 #-------------------------------
 [WIGLETT]
@@ -25222,8 +25222,8 @@ Weight = 1.8
 Color = White
 Shape = HeadBase
 Habitat = WatersEdge
-Category = Garden Eel
-Pokedex = This Pokémon can pick up the scent of a Veluza just over 65 feet away and will hide itself in the sand.
+Category = Cóngrido
+Pokedex = Puede percibir el olor de los Veluza a 20 m de distancia, lo que le permite ocultarse bajo la arena a tiempo.
 Generation = 9
 Evolutions = WUGTRIO,Level,26
 #-------------------------------
@@ -25249,8 +25249,8 @@ Weight = 5.4
 Color = Red
 Shape = MultiBody
 Habitat = WatersEdge
-Category = Garden Eel
-Pokedex = It has a vicious temperament, contrary to what its appearance may suggest. It wraps its long bodies around prey, then drags the prey into its den.
+Category = Cóngrido
+Pokedex = Es de temperamento agresivo, aunque no lo parezca. Envuelve a sus presas con sus largos cuerpos y las arrastra a su nido.
 Generation = 9
 #-------------------------------
 [BOMBIRDIER]
@@ -25275,8 +25275,8 @@ Weight = 42.9
 Color = White
 Shape = Winged
 Habitat = Grassland
-Category = Item Drop
-Pokedex = It gathers things up in an apron made from shed feathers added to the Pokémon’s chest feathers, then drops those things from high places for fun.
+Category = Arrojador
+Pokedex = Mete cosas en su bolsa, fabricada con el plumón de su pecho y con plumas mudadas, para luego dejarlas caer desde las alturas por diversión.
 Generation = 9
 #-------------------------------
 [FINIZEN]
@@ -25300,14 +25300,14 @@ Weight = 60.2
 Color = Blue
 Shape = Finned
 Habitat = Sea
-Category = Dolphin
-Pokedex = It likes playing with others of its kind using the water ring on its tail. It uses ultrasonic waves to sense the emotions of other living creatures.
+Category = Delfín
+Pokedex = Le gusta jugar con sus congéneres con el anillo de agua de su aleta caudal. Utiliza ultrasonidos para percibir las emociones de otros seres.
 Generation = 9
 Evolutions = PALAFIN,LevelWithPartner,38
 #-------------------------------
 [PALAFIN]
 Name = Palafin
-FormName = Zero Form
+FormName = Forma ingenua
 Types = WATER
 BaseStats = 100,70,72,100,53,62
 GenderRatio = Female50Percent
@@ -25327,8 +25327,8 @@ Weight = 60.2
 Color = Blue
 Shape = Finned
 Habitat = Sea
-Category = Dolphin
-Pokedex = This Pokémon changes its appearance if it hears its allies calling for help. Palafin will never show anybody its moment of transformation.
+Category = Delfín
+Pokedex = Cambia de forma en cuanto recibe una señal de socorro de sus compañeros. Nunca se transforma delante de nadie.
 Generation = 9
 #-------------------------------
 [VAROOM]
@@ -25353,8 +25353,8 @@ Weight = 35.0
 Color = Gray
 Shape = Head
 Habitat = Urban
-Category = Single-Cyl
-Pokedex = It is said that this Pokémon was born when an unknown poison Pokémon entered and inspirited an engine left at a scrap-processing factory.
+Category = Monocilindro
+Pokedex = Se dice que surgió cuando un misterioso Pokémon venenoso tomó posesión de un motor abandonado en un desguace.
 Generation = 9
 Evolutions = REVAVROOM,Level,40
 #-------------------------------
@@ -25380,8 +25380,8 @@ Weight = 120.0
 Color = Gray
 Shape = Quadruped
 Habitat = Urban
-Category = Multi-Cyl
-Pokedex = It creates a gas out of poison and minerals from rocks. It then detonates the gas in its cylinders— now numbering eight—to generate energy.
+Category = Policilindro
+Pokedex = Posee ocho cilindros, con los que genera energía haciendo estallar el gas que produce al mezclar los minerales de las rocas con su veneno.
 Generation = 9
 #-------------------------------
 [CYCLIZAR]
@@ -25406,8 +25406,8 @@ Weight = 63.0
 Color = Green
 Shape = BipedalTail
 Habitat = Urban
-Category = Mount
-Pokedex = Apparently Cyclizar has been allowing people to ride on its back since ancient times. Depictions of this have been found in 10,000-year-old murals.
+Category = Montura
+Pokedex = Según parece, ha permitido que los humanos monten en él desde tiempos remotos. Aparece en pinturas rupestres de hace diez mil años.
 Generation = 9
 #-------------------------------
 [ORTHWORM]
@@ -25432,8 +25432,8 @@ Weight = 310.0
 Color = Pink
 Shape = Serpentine
 Habitat = RoughTerrain
-Category = Earthworm
-Pokedex = When attacked, this Pokémon will wield the tendrils on its body like fists and pelt the opponent with a storm of punches.
+Category = Lombriz
+Pokedex = Cuando lo atacan, usa los pelos de su cuerpo a modo de puños y hace llover un aluvión de puñetazos sobre sus enemigos.
 Generation = 9
 #-------------------------------
 [GLIMMET]
@@ -25458,8 +25458,8 @@ Weight = 8.0
 Color = Blue
 Shape = HeadBase
 Habitat = Cave
-Category = Ore
-Pokedex = It absorbs nutrients from cave walls. The petals it wears are made of crystallized poison.
+Category = Mineral
+Pokedex = Absorbe nutrientes de las paredes de las cuevas. Cubre su cuerpo con pétalos hechos de energía venenosa cristalizada.
 Generation = 9
 Evolutions = GLIMMORA,Level,35
 #-------------------------------
@@ -25485,8 +25485,8 @@ Weight = 45.0
 Color = Blue
 Shape = Head
 Habitat = Cave
-Category = Ore
-Pokedex = When this Pokémon detects danger, it will open up its crystalline petals and fire beams from its conical body.
+Category = Mineral
+Pokedex = En cuanto percibe peligro, abre sus pétalos de cristal y despide rayos por su cuerpo en forma de cono.
 Generation = 9
 #-------------------------------
 [GREAVARD]
@@ -25511,8 +25511,8 @@ Weight = 35.0
 Color = White
 Shape = Quadruped
 Habitat = Forest
-Category = Ghost Dog
-Pokedex = It is said that a dog Pokémon that died in the wild without ever interacting with a human was reborn as this Pokémon.
+Category = Can Fantasma
+Pokedex = Se cree que es la reencarnación de un Pokémon perro vagabundo que murió sin haber tenido contacto con humanos.
 Generation = 9
 Evolutions = HOUNDSTONE,LevelNight,30
 #-------------------------------
@@ -25538,8 +25538,8 @@ Weight = 15.0
 Color = White
 Shape = Quadruped
 Habitat = Forest
-Category = Ghost Dog
-Pokedex = Houndstone spends most of its time sleeping in graveyards. Among all the dog Pokémon, this one is most loyal to its master.
+Category = Can Fantasma
+Pokedex = Pasa la mayor parte del tiempo durmiendo en cementerios. De todos los Pokémon perro, es el que profesa una mayor lealtad por su Entrenador.
 Generation = 9
 #-------------------------------
 [FLAMIGO]
@@ -25564,8 +25564,8 @@ Weight = 37.0
 Color = Pink
 Shape = Winged
 Habitat = WatersEdge
-Category = Synchronize
-Pokedex = This Pokémon apparently ties the base of its neck into a knot so that energy stored in its belly does not escape from its beak.
+Category = Sincronizado
+Pokedex = Al parecer, se anudan la base del cuello para impedir que la energía que tienen almacenada en el estómago escape por el pico.
 Generation = 9
 #-------------------------------
 [CETODDLE]
@@ -25590,8 +25590,8 @@ Weight = 45.0
 Color = White
 Shape = BipedalTail
 Habitat = Mountain
-Category = Terra Whale
-Pokedex = This species left the ocean and began living on land a very long time ago. It seems to be closely related to Wailmer.
+Category = Geoballena
+Pokedex = Los miembros de esta especie, emparentada al parecer con los Wailmer, abandonaron hace ya mucho tiempo el mar para vivir en tierra firme.
 Generation = 9
 Evolutions = CETITAN,Item,ICESTONE
 #-------------------------------
@@ -25617,8 +25617,8 @@ Weight = 700.0
 Color = White
 Shape = BipedalTail
 Habitat = Mountain
-Category = Terra Whale
-Pokedex = This Pokémon wanders around snowy, icy areas. It protects its body with powerful muscles and a thick layer of fat under its skin.
+Category = Geoballena
+Pokedex = Este Pokémon vive en áreas cubiertas de nieve y hielo. Se protege con su fuerte musculatura y una gruesa capa de grasa subcutánea.
 Generation = 9
 #-------------------------------
 [VELUZA]
@@ -25643,8 +25643,8 @@ Weight = 90.0
 Color = Gray
 Shape = Finned
 Habitat = WatersEdge
-Category = Jettison
-Pokedex = When Veluza discards unnecessary flesh, its mind becomes honed and its psychic power increases. The spare flesh has a mild but delicious flavor.
+Category = Sueltalastre
+Pokedex = Al desechar la carne que no necesita, agudiza la mente y sus poderes psíquicos se incrementan. Dicha carne tiene un sabor suave pero exquisito.
 Generation = 9
 #-------------------------------
 [DONDOZO]
@@ -25669,13 +25669,13 @@ Weight = 220.0
 Color = Blue
 Shape = Finned
 Habitat = Sea
-Category = Big Catfish
-Pokedex = This Pokémon is a glutton, but it’s bad at getting food. It teams up with a Tatsugiri to catch prey.
+Category = Gran Siluro
+Pokedex = Le gusta mucho comer, pero no se le da bien cazar, por lo que aúna fuerzas con Tatsugiri con el fin de capturar presas.
 Generation = 9
 #-------------------------------
 [TATSUGIRI]
 Name = Tatsugiri
-FormName = Curly Form
+FormName = Forma curvada
 Types = DRAGON,WATER
 BaseStats = 68,50,60,82,120,95
 GenderRatio = Female50Percent
@@ -25696,8 +25696,8 @@ Weight = 8.0
 Color = Pink
 Shape = Finned
 Habitat = Sea
-Category = Mimicry
-Pokedex = This is a small dragon Pokémon. It lives inside the mouth of Dondozo to protect itself from enemies on the outside.
+Category = Mimetismo
+Pokedex = Pokémon dragón de pequeño tamaño. Vive en la boca de un Dondozo para protegerse de los ataques de los depredadores.
 Generation = 9
 #-------------------------------
 [ANNIHILAPE]
@@ -25722,8 +25722,8 @@ Weight = 56.0
 Color = Gray
 Shape = BipedalTail
 Habitat = Forest
-Category = Rage Monkey
-Pokedex = When its anger rose beyond a critical point, this Pokémon gained power that is unfettered by the limits of its physical body.
+Category = Mono Furia
+Pokedex = Cuando su ira explosiva rebasó el punto crítico, adquirió un poder que lo libró para siempre de las limitaciones de su cuerpo material.
 Generation = 9
 #-------------------------------
 [CLODSIRE]
@@ -25748,8 +25748,8 @@ Weight = 223.0
 Color = Brown
 Shape = Quadruped
 Habitat = WatersEdge
-Category = Spiny Fish
-Pokedex = When attacked, this Pokémon will retaliate by sticking thick spines out from its body. It’s a risky move that puts everything on the line.
+Category = Pez Púas
+Pokedex = Cuando se siente amenazado, repele al enemigo con sus gruesas púas retráctiles. Esta técnica tan peligrosa es un arma de doble filo.
 Generation = 9
 Flags = DefaultForm_1,InheritFormWithEverStone
 #-------------------------------
@@ -25775,13 +25775,13 @@ Weight = 160.0
 Color = Brown
 Shape = Quadruped
 Habitat = Grassland
-Category = Long Neck
-Pokedex = Now that the brain waves from the head and tail are synced up, the psychic power of this Pokémon is 10 times stronger than Girafarig’s.
+Category = Gran Cuello
+Pokedex = Las ondas cerebrales de la cola y la cabeza van al compás, lo que le confiere poderes psíquicos diez veces más potentes que los de los Girafarig.
 Generation = 9
 #-------------------------------
 [DUDUNSPARCE]
 Name = Dudunsparce
-FormName = Two-Segment Form
+FormName = Forma binodular
 Types = NORMAL
 BaseStats = 125,100,80,55,85,75
 GenderRatio = Female50Percent
@@ -25802,8 +25802,8 @@ Weight = 39.2
 Color = Yellow
 Shape = Serpentine
 Habitat = Cave
-Category = Land Snake
-Pokedex = This Pokémon uses its hard tail to make its nest by boring holes into bedrock deep underground. The nest can reach lengths of over six miles.
+Category = Serpiente tierra
+Pokedex = Usa su dura cola para horadar el lecho rocoso en las profundidades de la tierra y establecer su madriguera, cuyos túneles se extienden 10 km.
 Generation = 9
 #-------------------------------
 [KINGAMBIT]
@@ -25828,12 +25828,12 @@ Weight = 120.0
 Color = Black
 Shape = Bipedal
 Habitat = RoughTerrain
-Category = Big Blade
-Pokedex = Only a Bisharp that stands above all others in its vast army can evolve into Kingambit.
+Category = Gran Espada
+Pokedex = Solo el Bisharp más destacado entre las filas de cada gran ejército tiene el honor de evolucionar a Kingambit.
 Generation = 9
 #-------------------------------
 [GREATTUSK]
-Name = Great Tusk
+Name = Colmilargo
 Types = GROUND,FIGHTING
 BaseStats = 115,131,131,87,53,53
 GenderRatio = Genderless
@@ -25852,14 +25852,14 @@ Weight = 320.0
 Color = Purple
 Shape = Quadruped
 Habitat = Rare
-Category = Paradox
-Pokedex = Sightings of this Pokémon have occurred in recent years. The name Great Tusk was taken from a creature listed in a certain book.
+Category = Paradoja
+Pokedex = Testigos afirman haberlo visto recientemente. El nombre Colmilargo está tomado de una criatura mencionada en cierto libro.
 Generation = 9
 Flags = Paradox
 WildItemUncommon = BOOSTERENERGY
 #-------------------------------
 [SCREAMTAIL]
-Name = Scream Tail
+Name = Colagrito
 Types = FAIRY,PSYCHIC
 BaseStats = 115,65,99,111,65,115
 GenderRatio = Genderless
@@ -25878,14 +25878,14 @@ Weight = 8.0
 Color = Pink
 Shape = Bipedal
 Habitat = Rare
-Category = Paradox
-Pokedex = There has been only one reported sighting of this Pokémon. It resembles a mysterious creature depicted in an old expedition journal.
+Category = Paradoja
+Pokedex = Solo se había avistado una vez en el pasado. Su aspecto se asemeja al de una misteriosa criatura descrita en cierto diario antiguo.
 Generation = 9
 Flags = Paradox
 WildItemUncommon = BOOSTERENERGY
 #-------------------------------
 [BRUTEBONNET]
-Name = Brute Bonnet
+Name = Furioseta
 Types = GRASS,DARK
 BaseStats = 111,127,99,55,79,99
 GenderRatio = Genderless
@@ -25904,14 +25904,14 @@ Weight = 21.0
 Color = Gray
 Shape = Bipedal
 Habitat = Rare
-Category = Paradox
-Pokedex = It is possible that the creature listed as Brute Bonnet in a certain book could actually be this Pokémon.
+Category = Paradoja
+Pokedex = Es posible que se trate de la criatura que se menciona en cierto libro bajo el nombre de Furioseta.
 Generation = 9
 Flags = Paradox
 WildItemUncommon = BOOSTERENERGY
 #-------------------------------
 [FLUTTERMANE]
-Name = Flutter Mane
+Name = Melenaleteo
 Types = GHOST,FAIRY
 BaseStats = 55,55,55,135,135,135
 GenderRatio = Genderless
@@ -25930,14 +25930,14 @@ Weight = 4.0
 Color = Gray
 Shape = Head
 Habitat = Rare
-Category = Paradox
-Pokedex = This Pokémon has characteristics similar to those of Flutter Mane, a creature mentioned in a certain book.
+Category = Paradoja
+Pokedex = Sus rasgos distintivos encajan con la descripción de una criatura mencionada en cierto libro bajo el nombre de Melenaleteo.
 Generation = 9
 Flags = Paradox
 WildItemUncommon = BOOSTERENERGY
 #-------------------------------
 [SLITHERWING]
-Name = Slither Wing
+Name = Reptalada
 Types = BUG,FIGHTING
 BaseStats = 85,135,79,81,85,105
 GenderRatio = Genderless
@@ -25956,14 +25956,14 @@ Weight = 92.0
 Color = Red
 Shape = Insectoid
 Habitat = Rare
-Category = Paradox
-Pokedex = This mysterious Pokémon has some similarities to a creature that an old book introduced as Slither Wing.
+Category = Paradoja
+Pokedex = Un misterioso Pokémon que presenta ciertas similitudes con Reptalada, una criatura descrita en un tomo antiguo.
 Generation = 9
 Flags = Paradox
 WildItemUncommon = BOOSTERENERGY
 #-------------------------------
 [SANDYSHOCKS]
-Name = Sandy Shocks
+Name = Pelarena
 Types = ELECTRIC,GROUND
 BaseStats = 85,81,97,101,121,85
 GenderRatio = Genderless
@@ -25982,14 +25982,14 @@ Weight = 60.0
 Color = Gray
 Shape = MultiBody
 Habitat = Rare
-Category = Paradox
-Pokedex = No records exist of this Pokémon being caught. Data is lacking, but the Pokémon’s traits match up with a creature shown in an expedition journal.
+Category = Paradoja
+Pokedex = Nunca se había capturado uno, ergo los datos al respecto escasean. Su descripción coincide con la de una criatura mencionada en cierto diario.
 Generation = 9
 Flags = Paradox
 WildItemUncommon = BOOSTERENERGY
 #-------------------------------
 [IRONTREADS]
-Name = Iron Treads
+Name = Ferrodada
 Types = GROUND,STEEL
 BaseStats = 90,112,120,106,72,70
 GenderRatio = Genderless
@@ -26008,14 +26008,14 @@ Weight = 240.0
 Color = Gray
 Shape = Quadruped
 Habitat = Rare
-Category = Paradox
-Pokedex = This Pokémon closely resembles a scientific weapon that a paranormal magazine claimed was sent to this planet by aliens.
+Category = Paradoja
+Pokedex = Su aspecto recuerda al de un arma científica de origen extraterrestre que apareció en un artículo de una revista esotérica.
 Generation = 9
 Flags = Paradox
 WildItemUncommon = BOOSTERENERGY
 #-------------------------------
 [IRONBUNDLE]
-Name = Iron Bundle
+Name = Ferrosaco
 Types = ICE,WATER
 BaseStats = 56,80,114,136,124,60
 GenderRatio = Genderless
@@ -26034,14 +26034,14 @@ Weight = 11.0
 Color = Red
 Shape = Bipedal
 Habitat = Rare
-Category = Paradox
-Pokedex = Its shape is similar to a robot featured in a paranormal magazine article. The robot was said to have been created by an ancient civilization.
+Category = Paradoja
+Pokedex = Tiene una forma similar a la del robot construido por una civilización antigua mencionado en cierto artículo de una revista esotérica.
 Generation = 9
 Flags = Paradox
 WildItemUncommon = BOOSTERENERGY
 #-------------------------------
 [IRONHANDS]
-Name = Iron Hands
+Name = Ferropalmas
 Types = FIGHTING,ELECTRIC
 BaseStats = 154,140,108,50,50,68
 GenderRatio = Genderless
@@ -26060,14 +26060,14 @@ Weight = 380.7
 Color = Gray
 Shape = Bipedal
 Habitat = Rare
-Category = Paradox
-Pokedex = It is very similar to a cyborg covered exclusively by a paranormal magazine. The cyborg was said to be the modified form of a certain athlete.
+Category = Paradoja
+Pokedex = Guarda parecido con un atleta, supuestamente transformado en cíborg, que apareció entre las exclusivas de una revista esotérica.
 Generation = 9
 Flags = Paradox
 WildItemUncommon = BOOSTERENERGY
 #-------------------------------
 [IRONJUGULIS]
-Name = Iron Jugulis
+Name = Ferrocuello
 Types = DARK,FLYING
 BaseStats = 94,80,86,108,122,80
 GenderRatio = Genderless
@@ -26086,14 +26086,14 @@ Weight = 111.0
 Color = Blue
 Shape = BipedalTail
 Habitat = Rare
-Category = Paradox
-Pokedex = It resembles a certain Pokémon introduced in a paranormal magazine, described as the offspring of a Hydreigon that fell in love with a robot.
+Category = Paradoja
+Pokedex = Se asemeja a un Pokémon que apareció en una revista esotérica descrito como "el fruto de un romance entre un Hydreigon y un robot".
 Generation = 9
 Flags = Paradox
 WildItemUncommon = BOOSTERENERGY
 #-------------------------------
 [IRONMOTH]
-Name = Iron Moth
+Name = Ferropolilla
 Types = FIRE,POISON
 BaseStats = 80,70,60,110,140,110
 GenderRatio = Genderless
@@ -26112,14 +26112,14 @@ Weight = 36.0
 Color = Yellow
 Shape = Insectoid
 Habitat = Rare
-Category = Paradox
-Pokedex = This Pokémon resembles an unknown object described in a paranormal magazine as a UFO sent to observe humanity.
+Category = Paradoja
+Pokedex = Se asemeja a un extraño objeto descrito en una revista esotérica como "un ovni enviado con el objetivo de espiar a la raza humana".
 Generation = 9
 Flags = Paradox
 WildItemUncommon = BOOSTERENERGY
 #-------------------------------
 [IRONTHORNS]
-Name = Iron Thorns
+Name = Ferropúas
 Types = ROCK,ELECTRIC
 BaseStats = 100,134,110,72,70,84
 GenderRatio = Genderless
@@ -26138,8 +26138,8 @@ Weight = 303.0
 Color = Green
 Shape = BipedalTail
 Habitat = Rare
-Category = Paradox
-Pokedex = It has some similarities to a Pokémon introduced in a dubious magazine as a Tyranitar from one billion years into the future.
+Category = Paradoja
+Pokedex = Guarda similitudes con el supuesto aspecto que, según cierta revista de dudosa veracidad, tendrá Tyranitar dentro de mil millones de años.
 Generation = 9
 Flags = Paradox
 WildItemUncommon = BOOSTERENERGY
@@ -26166,8 +26166,8 @@ Weight = 17.0
 Color = Gray
 Shape = BipedalTail
 Habitat = Mountain
-Category = Ice Fin
-Pokedex = Frigibax absorbs heat through its dorsal fin and converts the heat into ice energy. The higher the temperature, the more energy Frigibax stores.
+Category = Aleta Hielo
+Pokedex = Absorbe el calor a través de la placa dorsal y lo convierte en energía gélida. Cuanto más alta es la temperatura, más energía acumula.
 Generation = 9
 Evolutions = ARCTIBAX,Level,35
 #-------------------------------
@@ -26193,8 +26193,8 @@ Weight = 30.0
 Color = Gray
 Shape = BipedalTail
 Habitat = Mountain
-Category = Ice Fin
-Pokedex = Arctibax freezes the air around it, protecting its face with an ice mask and turning its dorsal fin into a blade of ice.
+Category = Aleta Hielo
+Pokedex = Congela el aire a su alrededor para cubrirse el rostro con una máscara de hielo protectora y dotar su placa dorsal de cuchillas glaciales.
 Generation = 9
 Evolutions = BAXCALIBUR,Level,54
 #-------------------------------
@@ -26220,13 +26220,13 @@ Weight = 210.0
 Color = Gray
 Shape = BipedalTail
 Habitat = Mountain
-Category = Ice Dragon
-Pokedex = This Pokémon blasts cryogenic air out from its mouth. This air can instantly freeze even liquid-hot lava.
+Category = Dragón Hielo
+Pokedex = Exhala un aliento extremadamente frío por la boca que es capaz de congelar al instante incluso magma al rojo vivo.
 Generation = 9
 #-------------------------------
 [GIMMIGHOUL]
 Name = Gimmighoul
-FormName = Chest Form
+FormName = Forma cofre
 Types = GHOST
 BaseStats = 45,30,70,10,75,70
 GenderRatio = Genderless
@@ -26245,8 +26245,8 @@ Weight = 5.0
 Color = Brown
 Shape = HeadBase
 Habitat = Urban
-Category = Coin Chest
-Pokedex = This Pokémon was born inside a treasure chest about 1,500 years ago. It sucks the life-force out of scoundrels who try to steal the treasure.
+Category = Cofre
+Pokedex = El cofre en el que nació data de hace 1500 años aproximadamente. Absorbe la energía vital de los granujas que intentan hacerse con su tesoro.
 Generation = 9
 Evolutions = GHOLDENGO,CollectItems,GIMMIGHOULCOIN
 #-------------------------------
@@ -26270,8 +26270,8 @@ Weight = 30.0
 Color = Yellow
 Shape = Bipedal
 Habitat = Urban
-Category = Coin Entity
-Pokedex = Its body seems to be made up of 1,000 coins. This Pokémon gets along well with others and is quick to make friends with anybody.
+Category = Tesoro
+Pokedex = Se dice que su cuerpo está formado por 1000 monedas. Es capaz de hacer buenas migas con cualquiera rápidamente por su sociabilidad.
 Generation = 9
 #-------------------------------
 [WOCHIEN]
@@ -26294,8 +26294,8 @@ Weight = 74.2
 Color = Brown
 Shape = Serpentine
 Habitat = Rare
-Category = Ruinous
-Pokedex = The grudge of a person punished for writing the king’s evil deeds upon wooden tablets has clad itself in dead leaves to become a Pokémon.
+Category = Debacle
+Pokedex = Este Pokémon nació al imbuirse en hojas marchitas el rencor de una persona castigada por enumerar las fechorías de su rey en unas tablillas.
 Generation = 9
 Flags = Legendary
 #-------------------------------
@@ -26319,8 +26319,8 @@ Weight = 152.2
 Color = White
 Shape = Quadruped
 Habitat = Rare
-Category = Ruinous
-Pokedex = This Pokémon can control 100 tons of fallen snow. It plays around innocently by leaping in and out of avalanches it has caused.
+Category = Debacle
+Pokedex = Controla a su voluntad masas de nieve de hasta cien toneladas. Se divierte zambulléndose y saltando felizmente en los aludes que provoca.
 Generation = 9
 Flags = Legendary
 #-------------------------------
@@ -26344,8 +26344,8 @@ Weight = 699.7
 Color = Brown
 Shape = Quadruped
 Habitat = Rare
-Category = Ruinous
-Pokedex = The fear poured into an ancient ritual vessel has clad itself in rocks and dirt to become a Pokémon.
+Category = Debacle
+Pokedex = Este Pokémon nació al imbuirse en tierra y rocas el miedo vertido en un caldero que se utilizaba en rituales antiguos.
 Generation = 9
 Flags = Legendary
 #-------------------------------
@@ -26369,13 +26369,13 @@ Weight = 4.9
 Color = Red
 Shape = Finned
 Habitat = Rare
-Category = Ruinous
-Pokedex = It controls flames burning at over 5,400 degrees Fahrenheit. It casually swims through the sea of lava it creates by melting rock and sand.
+Category = Debacle
+Pokedex = Controla a su voluntad llamas de hasta 3000 ºC. Nada tranquilamente por los mares de magma que crea al derretir las rocas y la grava a su paso.
 Generation = 9
 Flags = Legendary
 #-------------------------------
 [ROARINGMOON]
-Name = Roaring Moon
+Name = Bramaluna
 Types = DRAGON,DARK
 BaseStats = 105,139,71,119,55,101
 GenderRatio = Genderless
@@ -26394,14 +26394,14 @@ Weight = 380.0
 Color = Green
 Shape = Quadruped
 Habitat = Rare
-Category = Paradox
-Pokedex = It is possible that this is the creature listed as Roaring Moon in an expedition journal that still holds many mysteries.
+Category = Paradoja
+Pokedex = Podría tratarse de la criatura que aparece bajo el nombre de Bramaluna en cierto diario repleto de incógnitas.
 Generation = 9
 Flags = Paradox
 WildItemUncommon = BOOSTERENERGY
 #-------------------------------
 [IRONVALIANT]
-Name = Iron Valiant
+Name = Ferropaladín
 Types = FAIRY,FIGHTING
 BaseStats = 74,130,90,116,120,60
 GenderRatio = Genderless
@@ -26420,8 +26420,8 @@ Weight = 35.0
 Color = White
 Shape = Bipedal
 Habitat = Rare
-Category = Paradox
-Pokedex = It has some similarities to a mad scientist’s invention covered in a paranormal magazine.
+Category = Paradoja
+Pokedex = Comparte varios rasgos con el invento de un científico loco que apareció en un artículo de una revista esotérica.
 Generation = 9
 Flags = Paradox
 WildItemUncommon = BOOSTERENERGY
@@ -26446,8 +26446,8 @@ Weight = 303.0
 Color = Red
 Shape = BipedalTail
 Habitat = Rare
-Category = Paradox
-Pokedex = This seems to be the Winged King mentioned in an old expedition journal. It was said to have split the land with its bare fists.
+Category = Paradoja
+Pokedex = Parece tratarse de Reyalado, la criatura que, según lo narrado en un antiguo diario, fue capaz de dividir la tierra con sus puños.
 Generation = 9
 Flags = Paradox,Legendary
 #-------------------------------
@@ -26471,13 +26471,13 @@ Weight = 240.0
 Color = Blue
 Shape = BipedalTail
 Habitat = Rare
-Category = Paradox
-Pokedex = Much remains unknown about this creature. It resembles Cyclizar, but it is far more ruthless and powerful.
+Category = Paradoja
+Pokedex = Pese a las similitudes con los Cyclizar, es mucho más fuerte y despiadado que ellos. Está rodeado de incógnitas.
 Generation = 9
 Flags = Paradox,Legendary
 #-------------------------------
 [WALKINGWAKE]
-Name = Walking Wake
+Name = Ondulagua
 Types = WATER,DRAGON
 BaseStats = 99,83,91,109,125,83
 GenderRatio = Genderless
@@ -26496,13 +26496,13 @@ Weight = 280.0
 Color = Blue
 Shape = BipedalTail
 Habitat = Rare
-Category = Paradox
-Pokedex = Ecology under analysis.
+Category = Paradoja
+Pokedex = Ecología bajo análisis.
 Generation = 9
 Flags = Paradox
 #-------------------------------
 [IRONLEAVES]
-Name = Iron Leaves
+Name = Ferroverdor
 Types = GRASS,PSYCHIC
 BaseStats = 90,130,88,104,70,108
 GenderRatio = Genderless
@@ -26521,7 +26521,7 @@ Weight = 125.0
 Color = Green
 Shape = Quadruped
 Habitat = Rare
-Category = Paradox
-Pokedex = Ecology under analysis.
+Category = Paradoja
+Pokedex = Ecología bajo análisis.
 Generation = 9
 Flags = Paradox
