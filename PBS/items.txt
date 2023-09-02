@@ -3900,7 +3900,7 @@ BPPrice = 32
 FieldUse = TR
 Flags = Fling_50
 Move = TRAILBLAZE
-Description = //TODO
+Description = El usuario ataca de repente como si saltara de la hierba alta. Esto aumenta la Velocidad del usuario.
 #-------------------------------
 [TM021]
 Pocket = 4
@@ -3909,7 +3909,7 @@ BPPrice = 32
 FieldUse = TR
 Flags = Fling_50
 Move = POUNCE
-Description = //TODO
+Description = El usuario ataca abalanzándose sobre el objetivo. Esto también reduce la Velocidad del objetivo.
 #-------------------------------
 [TM022]
 Name = MT020
@@ -3920,7 +3920,7 @@ BPPrice = 32
 FieldUse = TR
 Flags = Fling_50
 Move = CHILLINGWATER
-Description = //TODO
+Description = El usuario baña al objetivo con agua helada. Esto también reduce la estadística de Ataque del objetivo.
 #-------------------------------
 [TM023]
 Name = MT021
@@ -4223,7 +4223,7 @@ Price = 3000
 FieldUse = TR
 Flags = Fling_10
 Move = SNOWSCAPE
-Description = //TODO
+Description = Invoca una tormenta de nieve de cinco turnos que aumenta la Defensa de los Pokémon de tipo Hielo.
 #-------------------------------
 [TM053]
 Name = MT053
@@ -4943,7 +4943,7 @@ Price = 8000
 FieldUse = TR
 Flags = Fling_80
 Move = ICESPINNER
-Description = //TODO
+Description = El usuario gira hacia el objetivo con los pies cubiertos de hielo fino. Esto también destruye el terreno.
 #-------------------------------
 [TM125]
 Name = MT125
@@ -5413,7 +5413,7 @@ Price = 8000
 FieldUse = TR
 Flags = Fling_80
 Move = TERABLAST
-Description = //TODO
+Description = El tipo de movimiento cambia para coincidir con el Teratipo del usuario Terastalizado. Inflige daño según la estadística más alta del usuario.
 #-------------------------------
 [TM172]
 Name = MT172
@@ -5423,7 +5423,7 @@ Price = 8000
 FieldUse = TR
 Flags = Fling_70
 Move = PSYSHIELDBASH
-Description = //TODO
+Description = Envolviéndose en energía psíquica, el usuario golpea al objetivo. Esto aumenta la Defensa del usuario.
 #-------------------------------
 [HM01]
 Name = MO01
@@ -6825,498 +6825,498 @@ Flags = KeyItem
 Description = Un mapa viejo descolorido que muestra el camino a una determinada isla.
 #-------------------------------
 [BLACKAUGURITE]
-Name = Black Augurite
-NamePlural = Black Augurites
+Name = Mineral negro
+NamePlural = Minerales negros
 Pocket = 1
 Price = 2100
 FieldUse = OnPokemon
 Flags = Fling_30,EvolutionStone
-Description = A glassy black stone that produces a sharp cutting edge when split. It’s loved by a certain Pokémon.
+Description = Piedra negra vidriosa que al partirse produce un filo cortante. Le encanta a cierto Pokémon.
 #-------------------------------
 [PEATBLOCK]
-Name = Peat Block
-NamePlural = Peat Blocks
+Name = Bloque de turba
+NamePlural = Bloques de turba
 Pocket = 1
 Price = 2100
 FieldUse = OnPokemon
 Flags = Fling_30,EvolutionStone
-Description = A block of muddy material that is for fuel. It’s loved by a certain Pokémon.
+Description = Un bloque de material fangoso que sirve de combustible. Le encanta a cierto Pokémon.
 #-------------------------------
 [LINKINGCORD]
-Name = Linking Cord
-NamePlural = Linking Cords
+Name = Cordón unión
+NamePlural = Cordones unión
 Pocket = 1
 Price = 2100
 FieldUse = OnPokemon
 Flags = Fling_30,EvolutionStone
-Description = A string exuding a mysterious energy of connection. It’s loved by certain Pokémon.
+Description = Una cuerda que emana una misteriosa energía de conexión. Algunos Pokémon la adoran.
 #-------------------------------
 [ADAMANTCRYSTAL]
-Name = Adamant Crystal
-NamePlural = Adamant Crystals
+Name = Gran diamansfera
+NamePlural = Grandes diamansferas
 Pocket = 1
 Price = 20000
 SellPrice = 0
 Flags = Fling_60
-Description = When held by Dialga, this large, glowing gem wells with power and allows the Pokémon to change form.
+Description = Cuando Dialga la sostiene, esta gran gema brillante rebosa poder y permite al Pokémon cambiar de forma.
 #-------------------------------
 [LUSTROUSGLOBE]
-Name = Lustrous Globe
-NamePlural = Lustrous Globes
+Name = Gran lustresfera
+NamePlural = Grandes lustresferas
 Pocket = 1
 Price = 20000
 SellPrice = 0
 Flags = Fling_60
-Description = When held by Palkia, this large, glowing orb wells with power and allows the Pokémon to change form.
+Description = Cuando Palkia lo sujeta, este gran orbe brillante emana poder y permite al Pokémon cambiar de forma.
 #-------------------------------
 [LEGENDPLATE]
-Name = Legend Plate
-NamePlural = Legend Plates
+Name = Tabla Legendaria
+NamePlural = Tablas Legendarias
 Pocket = 1
 Price = 20000
 SellPrice = 0
 Flags = Fling_90,Plate
-Description = A stone tablet to be held by a certain Pokémon. It the holder the power of every type there is.
+Description = Una tabla de piedra que debe sostener un Pokémon determinado. Otorga a su poseedor el poder de todos los tipos existentes.
 #-------------------------------
 [BLANKPLATE]
-Name = Blank Plate
-NamePlural = Blank Plates
+Name = Tabla neutra
+NamePlural = Tablas neutras
 Pocket = 1
 Price = 10000
 SellPrice = 500
 Flags = Fling_90,Plate
-Description = An item to be held by a Pokémon. It is a stone tablet that boosts the power of Normal-type moves.
+Description = Un objeto que puede llevar un Pokémon. Es una tabla de piedra que potencia los movimientos de tipo Normal.
 #-------------------------------
 [HOPOBERRY]
-Name = Hopo Berry
-NamePlural = Hopo Berries
+Name = Baya Lupu
+NamePlural = Bayas Lupu
 Pocket = 5
 Price = 20
 Flags = Berry,Fling_10,NaturalGift_FIGHTING_80
-Description = A Berry that can be fed to a Pokémon to restore its PP.
+Description = Baya que se puede dar a un Pokémon para que recupere sus PP.
 #-------------------------------
 [GRISEOUSCORE]
-Name = Griseous Core
-NamePlural = Griseous Cores
+Name = Gran griseosfera
+NamePlural = Grandes griseosferas
 Pocket = 1
 Price = 20000
 SellPrice = 0
 Flags = Fling_60
-Description = When held by Giratina, this large, glowing gem wells with power and allows the Pokémon to change form.
+Description = Cuando Giratina la sujeta, esta gema grande y brillante rebosa poder y permite al Pokémon cambiar de forma.
 #-------------------------------
 [HISUIANPOKEBALL]
-Name = Poké Ball
-NamePlural = Poké Balls
+Name = Poké Ball de Hisui
+NamePlural = Poké Balls de Hisui
 Pocket = 3
 Price = 500
 BattleUse = OnFoe
 Flags = PokeBall
-Description = A mysterious ball that can be thrown at wild Pokémon in order to catch them.
+Description = Una misteriosa bola que se puede lanzar a los Pokémon salvajes para atraparlos.
 #-------------------------------
 [HISUIANGREATBALL]
-Name = Great Ball
-NamePlural = Great Balls
+Name = Super Ball de Hisui
+NamePlural = Super Balls de Hisui
 Pocket = 3
 Price = 900
 BattleUse = OnFoe
 Flags = PokeBall
-Description = A mysterious ball that provides a higher success catch rate than a standard Poké Ball.
+Description = Una misteriosa bola que proporciona un mayor índice de éxito en las capturas que una Poké Ball estándar.
 #-------------------------------
 [HISUIANULTRABALL]
-Name = Ultra Ball
-NamePlural = Ultra Balls
+Name = Ultra Ball de Hisui
+NamePlural = Ultra Balls de Hisui
 Pocket = 3
 Price = 1500
 BattleUse = OnFoe
 Flags = PokeBall
-Description = A mysterious ball that provides an even higher success catch rate than a Great Ball does.
+Description = Una bola misteriosa que proporciona un índice de éxito en la captura aún mayor que la Super Ball.
 #-------------------------------
 [FEATHERBALL]
-Name = Feather Ball
-NamePlural = Feather Balls
+Name = Pluma Ball
+NamePlural = Pluma Balls
 Pocket = 3
 Price = 700
 BattleUse = OnFoe
 Flags = PokeBall
-Description = A ball that flies fast and true ideal for catching nimble Pokémon or Pokémon that fly high in the air.
+Description = Una bola que vuela rápido y verdadero ideal para atrapar Pokémon ágiles o Pokémon que vuelan alto en el aire.
 #-------------------------------
 [WINGBALL]
-Name = Wing Ball
-NamePlural = Wing Balls
+Name = Ala Ball
+NamePlural = Ala Balls
 Pocket = 3
 Price = 1000
 BattleUse = OnFoe
 Flags = PokeBall
-Description = An improvement on the original Feather Ball design. It has a higher success rate than the Feather Ball.
+Description = Una mejora del diseño original de la Pluma Ball. Tiene un mayor porcentaje de éxito que la Pluma Ball.
 #-------------------------------
 [JETBALL]
-Name = Jet Ball
-NamePlural = Jet Balls
+Name = Aero Ball
+NamePlural = Aero Balls
 Pocket = 3
 Price = 1500
 BattleUse = OnFoe
 Flags = PokeBall
-Description = The ultimate iteration of the Feather Ball. It has an even higher success rate than the Wing Ball does.
+Description = La última iteración de la Pluma Ball. Tiene un porcentaje de éxito aún mayor que la Ala Ball.
 #-------------------------------
 [HISUIANHEAVYBALL]
-Name = Heavy Ball
-NamePlural = Heavy Balls
+Name = Peso Ball de Hisui
+NamePlural = Peso Balls de Hisui
 Pocket = 3
 Price = 700
 BattleUse = OnFoe
 Flags = PokeBall
-Description = A ball that is too heavy to throw, but it is highly effective to an unsuspecting Pokémon.
+Description = Una bola demasiado pesada para lanzarla, pero muy eficaz ante un Pokémon desprevenido.
 #-------------------------------
 [LEADENBALL]
-Name = Leaden Ball
-NamePlural = Leaden Balls
+Name = Kilo Ball
+NamePlural = Kilo Balls
 Pocket = 3
 Price = 1000
 BattleUse = OnFoe
 Flags = PokeBall
-Description = An improvement on the original Heavy Ball design. It has a higher success rate than the Heavy Ball.
+Description = Una mejora del diseño original de la Peso Ball. Tiene un mayor porcentaje de éxito que la Peso Ball.
 #-------------------------------
 [GIGATONBALL]
-Name = Gigaton Ball
-NamePlural = Gigaton Balls
+Name = Quintal Ball
+NamePlural = Quintal Balls
 Pocket = 3
 Price = 1500
 BattleUse = OnFoe
 Flags = PokeBall
-Description = The ultimate iteration of the Heavy Ball. It has an even higher success rate than the Leaden Ball does.
+Description = La iteración definitiva de la Peso Ball. Tiene un porcentaje de éxito aún mayor que la Kilo Ball.
 #-------------------------------
 [ORIGINBALL]
-Name = Origin Ball
-NamePlural = Origin Balls
+Name = Origen Ball
+NamePlural = Origen Balls
 Pocket = 3
 Price = 0
 BattleUse = OnFoe
 Flags = PokeBall
-Description = An irreplicable Poké Ball that was once used to catch the frenzied Pokémon at the Temple of Sinnoh.
+Description = Una Poké Ball irreplicable que una vez se utilizó para atrapar a los Pokémon frenéticos del Templo de Sinnoh.
 #-------------------------------
 [STRANGEBALL]
-Name = Strange Ball
-NamePlural = Strange Balls
+Name = Extraña Ball
+NamePlural = Extraña Balls
 Pocket = 3
 Price = 0
 BattleUse = OnFoe
 Flags = PokeBall
-Description = A strange looking Poke Ball that arrived from the past Sinnoh.
+Description = Una Poke Ball de aspecto extraño que llegó del pasado Sinnoh.
 #-------------------------------
 [AUSPICIOUSARMOR]
-Name = Auspicious Armor
-NamePlural = Auspicious Armors
+Name = Armadura auspiciosa
+NamePlural = Armaduras auspiciosas
 Pocket = 1
 Price = 3000
 FieldUse = OnPokemon
 Flags = EvolutionStone,Fling_30
-Description = A peculiar set of armor that can make a certain Pokémon evolve. Auspicious wishes live within it.
+Description = Una peculiar armadura que puede hacer evolucionar a un Pokémon determinado. En su interior habitan deseos auspiciosos.
 #-------------------------------
 [MALICIOUSARMOR]
-Name = Malicious Armor
-NamePlural = Malicious Armors
+Name = Armadura maldita
+NamePlural = Armaduras malditas
 Pocket = 1
 Price = 3000
 FieldUse = OnPokemon
 Flags = EvolutionStone,Fling_30
-Description = A peculiar set of armor that can make a certain Pokémon evolve. Malicious will lurks within it.
+Description = Una peculiar armadura que puede hacer evolucionar a un Pokémon determinado. Una voluntad maliciosa acecha en su interior.
 #-------------------------------
 [SCROLLOFDARKNESS]
-Name = Scroll of Darkness
-NamePlural = Scroll of Darkness
+Name = Manuscrito sombras
+NamePlural = Manuscritos sombras
 Pocket = 1
 Price = 0
 FieldUse = OnPokemon
 Flags = EvolutionStone,Fling_30
-Description = A scroll that evolves certain Pokémon. Written on it are the true secrets of the path of darkness.
+Description = Un pergamino que hace evolucionar a ciertos Pokémon. En él están escritos los verdaderos secretos del camino de la oscuridad.
 #-------------------------------
 [SCROLLOFWATERS]
-Name = Scroll of Waters
-NamePlural = Scroll of Waters
+Name = Manuscrito aguas
+NamePlural = Manuscritos aguas
 Pocket = 1
 Price = 0
 FieldUse = OnPokemon
 Flags = EvolutionStone,Fling_30
-Description = A scroll that evolves certain Pokémon. Written on it are the true secrets of the path of water.
+Description = Un pergamino que hace evolucionar a ciertos Pokémon. En él están escritos los verdaderos secretos del camino del agua.
 #-------------------------------
 [LEADERSCREST]
-Name = Leader's Crest
-NamePlural = Leader's Crests
+Name = Distintivo de líder
+NamePlural = Distintivos de líder
 Pocket = 1
 Price = 3000
 Flags = Fling_30
-Description = A shard of what appears to be an old blade of some sort. It is held only by a head of certain Pokémon group.
+Description = Un fragmento de lo que parece ser una antigua espada. Solo la tiene un jefe de cierto grupo Pokémon.
 #-------------------------------
 [BOOSTERENERGY]
-Name = Booster Energy
-NamePlural = Booster Energies
+Name = Energía Potenciadora
+NamePlural = Energías Potenciadoras
 Pocket = 1
 Price = 0
 Flags = Fling_30
-Description = An item to be held by Pokémon with certain Abilities. It boosts the strength of the Pokémon.
+Description = Objeto para Pokémon con ciertas habilidades. Aumenta la Fuerza del Pokémon.
 #-------------------------------
 [ABILITYSHIELD]
-Name = Ability Shield
-NamePlural = Ability Shields
+Name = Escudo Habilidad
+NamePlural = Escudos Habilidad
 Pocket = 1
 Price = 20000
 Flags = Fling_30
-Description = An item to be held by a Pokémon. This  shield protects the holder from having its Ability changed by others.
+Description = Objeto que puede llevar un Pokémon. Este escudo protege al poseedor de que otros cambien su Habilidad.
 #-------------------------------
 [CLEARAMULET]
-Name = Clear Amulet
-NamePlural = Clear Amulets
+Name = Amuleto Puro
+NamePlural = Amuletos Puros
 Pocket = 1
 Price = 30000
 Flags = Fling_30
-Description = An item to be held by a Pokémon. It protects the holder from having its stats lowered.
+Description = Objeto que puede llevar un Pokémon. Protege al poseedor de la reducción de sus estadísticas.
 #-------------------------------
 [MIRRORHERB]
-Name = Mirror Herb
-NamePlural = Mirror Herbs
+Name = Hierba Copia
+NamePlural = Hierbas Copia
 Pocket = 1
 Price = 30000
 Flags = Fling_30
-Description = An item to be held by a Pokémon. This herb will allow the holder to mirror an opponent's stat increases once.
+Description = Objeto que puede llevar un Pokémon. Esta hierba permite a su poseedor reflejar una vez el aumento de estadísticas de su rival.
 #-------------------------------
 [PUNCHINGGLOVE]
-Name = Punching Glove
-NamePlural = Punching Gloves
+Name = Guante de Boxeo
+NamePlural = Guantes de Boxeo
 Pocket = 1
 Price = 15000
 Flags = Fling_30
-Description = An item to be held by a Pokémon. It boosts the holder's punching moves and prevents direct contact.
+Description = Objeto que puede llevar un Pokémon. Potencia los movimientos de golpeo del poseedor y evita el contacto directo.
 #-------------------------------
 [COVERTCLOAK]
-Name = Covert Cloak
-NamePlural = Covert Cloaks
+Name = Capa Furtiva
+NamePlural = Capas Furtivas
 Pocket = 1
 Price = 20000
 Flags = Fling_30
-Description = An item to be held by a Pokémon. It conceals the holder, protecting it from move's additional effects.
+Description = Objeto que puede llevar un Pokémon. Oculta al poseedor, protegiéndolo de los efectos adicionales del movimiento.
 #-------------------------------
 [LOADEDDICE]
-Name = Loaded Dice
-NamePlural = Loaded Dices
+Name = Dado Trucado
+NamePlural = Dados Trucados
 Pocket = 1
 Price = 20000
 Flags = Fling_30
-Description = An item to be held by a Pokémon. It ensures the holder's multistrike moves hit more times.
+Description = Objeto que puede llevar un Pokémon. Garantiza que los movimientos multigolpe del poseedor golpeen más veces.
 #-------------------------------
 [GIMMIGHOULCOIN]
-Name = Gimmighoul Coin
-NamePlural = Gimmighoul Coins
+Name = Moneda de Gimmighoul
+NamePlural = Monedas de Gimmighoul
 Pocket = 1
 Price = 0
 Flags = Fling_10
-Description = An item that accidentally dropped by a Pokémon. It seems that Gimmighoul treasure and hoard these.
+Description = Un objeto que deja caer accidentalmente un Pokémon. Parece que Gimmighoul los atesora y acumula.
 #-------------------------------
 [TINYBAMBOOSHOOT]
-Name = Tiny Bamboo Shoot
-NamePlural = Tiny Bamboo Shoots
+Name = Bambú Pequeño
+NamePlural = Bambús Pequeños
 Pocket = 1
 Price = 1500
 Flags = Fling_30
-Description = A small and rare bamboo shoot. It's quite popular with a certain class of gourmands.
+Description = Un pequeño y raro brote de bambú. Es muy popular entre cierta clase de gourmands.
 #-------------------------------
 [BIGBAMBOOSHOOT]
-Name = Big Bamboo Shoot
-NamePlural = Big Bamboo Shoots
+Name = Bambús Grande
+NamePlural = Bambús Grandes
 Pocket = 1
 Price = 6000
 Flags = Fling_30
-Description = A large and rare bamboo shoot. It's extremely popular with a certain class of gourmands.
+Description = Un brote de bambú grande y poco común. Es muy popular entre cierta clase de gourmands.
 #-------------------------------
 [ROTOMPHONE]
-Name = Rotom Phone
-NamePlural = Rotom Phones
+Name = SmartRotom
+NamePlural = SmartRotom
 Pocket = 8
 Price = 0
 Flags = KeyItem
-Description = The latest model of smartphone. A Rotom lives within it, and it can be used to run all sorts of handy apps.
+Description = El último modelo de smartphone. En su interior vive un Rotom, con el que se pueden ejecutar todo tipo de prácticas aplicaciones.
 #-------------------------------
 [SCARLETBOOK]
-Name = Scarlet Book
-NamePlural = Scarlet Books
+Name = Libro Escarlata
+NamePlural = Libros Escarlata
 Pocket = 8
 Price = 0
 Flags = KeyItem
-Description = A record of the Heath's expedition on the Great Crater of Paldea. It has the name "Sada" written on it.
+Description = Un registro de la expedición de Eriad en el Gran Cráter de Paldea. Lleva escrito el nombre de "Albora".
 #-------------------------------
 [VIOLETBOOK]
-Name = Violet Book
-NamePlural = Violet Books
+Name = Libro Púrpura
+NamePlural = Libros Púrpura
 Pocket = 8
 Price = 0
 Flags = KeyItem
-Description = A record of the Heath's expedition on the Great Crater of Paldea. It has the name "Turo" written on it.
+Description = Un registro de la expedición de Eriad en el Gran Cráter de Paldea. Lleva escrito el nombre de "Turo".
 #-------------------------------
 [TERAORB]
-Name = Tera Orb
-NamePlural = Tera Orbs
+Name = Orbe Teracristal
+NamePlural = Orbes Teracristal
 Pocket = 8
 Price = 0
 Flags = KeyItem,TeraOrb
-Description = An orb that holds the power to crystallize. When it is charged, it can be used on Pokémon to Terastallize.
+Description = Un orbe que contiene el poder de cristalizar. Cuando está cargado, puede usarse en Pokémon para Terastalizar.
 #-------------------------------
 [NORMALTERASHARD]
-Name = Normal Tera Shard
-NamePlural = Normal Tera Shards
+Name = Teralito normal
+NamePlural = Teralitos normal
 Pocket = 1
 Price = 2000
 FieldUse = OnPokemon
 Flags = Fling_30,TeraShard_NORMAL
-Description = On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.
+Description = En raras ocasiones, estos fragmentos se forman cuando un Pokémon Teracristal cae en combate y su Joya Tera se hace añicos.
 #-------------------------------
 [FIGHTINGTERASHARD]
-Name = Fighting Tera Shard
-NamePlural = Fighting Tera Shards
+Name = Teralito lucha
+NamePlural = Teralitos lucha
 Pocket = 1
 Price = 2000
 FieldUse = OnPokemon
 Flags = Fling_30,TeraShard_FIGHTING
-Description = On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.
+Description = En raras ocasiones, estos fragmentos se forman cuando un Pokémon Teracristal cae en combate y su Joya Tera se hace añicos.
 #-------------------------------
 [FLYINGTERASHARD]
-Name = Flying Tera Shard
-NamePlural = Flying Tera Shards
+Name = Teralito volador
+NamePlural = Teralitos volador
 Pocket = 1
 Price = 2000
 FieldUse = OnPokemon
 Flags = Fling_30,TeraShard_FLYING
-Description = On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.
+Description = En raras ocasiones, estos fragmentos se forman cuando un Pokémon Teracristal cae en combate y su Joya Tera se hace añicos.
 #-------------------------------
 [POISONTERASHARD]
-Name = Poison Tera Shard
-NamePlural = Poison Tera Shards
+Name = Teralito veneno
+NamePlural = Teralitos veneno
 Pocket = 1
 Price = 2000
 FieldUse = OnPokemon
 Flags = Fling_30,TeraShard_POISON
-Description = On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.
+Description = En raras ocasiones, estos fragmentos se forman cuando un Pokémon Teracristal cae en combate y su Joya Tera se hace añicos.
 #-------------------------------
 [GROUNDTERASHARD]
-Name = Ground Tera Shard
-NamePlural = Ground Tera Shards
+Name = Teralito tierra
+NamePlural = Teralitos tierra
 Pocket = 1
 Price = 2000
 FieldUse = OnPokemon
 Flags = Fling_30,TeraShard_GROUND
-Description = On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.
+Description = En raras ocasiones, estos fragmentos se forman cuando un Pokémon Teracristal cae en combate y su Joya Tera se hace añicos.
 #-------------------------------
 [ROCKTERASHARD]
-Name = Rock Tera Shard
-NamePlural = Rock Tera Shards
+Name = Teralito roca
+NamePlural = Teralitos roca
 Pocket = 1
 Price = 2000
 FieldUse = OnPokemon
 Flags = Fling_30,TeraShard_ROCK
-Description = On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.
+Description = En raras ocasiones, estos fragmentos se forman cuando un Pokémon Teracristal cae en combate y su Joya Tera se hace añicos.
 #-------------------------------
 [BUGTERASHARD]
-Name = Bug Tera Shard
-NamePlural = Bug Tera Shards
+Name = Teralito bicho
+NamePlural = Teralitos bicho
 Pocket = 1
 Price = 2000
 FieldUse = OnPokemon
 Flags = Fling_30,TeraShard_BUG
-Description = On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.
+Description = En raras ocasiones, estos fragmentos se forman cuando un Pokémon Teracristal cae en combate y su Joya Tera se hace añicos.
 #-------------------------------
 [GHOSTTERASHARD]
-Name = Ghost Tera Shard
-NamePlural = Ghost Tera Shards
+Name = Teralito fantasma
+NamePlural = Teralitos fantasma
 Pocket = 1
 Price = 2000
 FieldUse = OnPokemon
 Flags = Fling_30,TeraShard_GHOST
-Description = On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.
+Description = En raras ocasiones, estos fragmentos se forman cuando un Pokémon Teracristal cae en combate y su Joya Tera se hace añicos.
 #-------------------------------
 [STEELTERASHARD]
-Name = Steel Tera Shard
-NamePlural = Steel Tera Shards
+Name = Teralito acero
+NamePlural = Teralitos acero
 Pocket = 1
 Price = 2000
 FieldUse = OnPokemon
 Flags = Fling_30,TeraShard_STEEL
-Description = On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.
+Description = En raras ocasiones, estos fragmentos se forman cuando un Pokémon Teracristal cae en combate y su Joya Tera se hace añicos.
 #-------------------------------
 [FIRETERASHARD]
-Name = Fire Tera Shard
-NamePlural = Fire Tera Shards
+Name = Teralito fuego
+NamePlural = Teralitos fuego
 Pocket = 1
 Price = 2000
 FieldUse = OnPokemon
 Flags = Fling_30,TeraShard_FIRE
-Description = On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.
+Description = En raras ocasiones, estos fragmentos se forman cuando un Pokémon Teracristal cae en combate y su Joya Tera se hace añicos.
 #-------------------------------
 [WATERTERASHARD]
-Name = Water Tera Shard
-NamePlural = Water Tera Shards
+Name = Teralito agua
+NamePlural = Teralitos agua
 Pocket = 1
 Price = 2000
 FieldUse = OnPokemon
 Flags = Fling_30,TeraShard_WATER
-Description = On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.
+Description = En raras ocasiones, estos fragmentos se forman cuando un Pokémon Teracristal cae en combate y su Joya Tera se hace añicos.
 #-------------------------------
 [GRASSTERASHARD]
-Name = Grass Tera Shard
-NamePlural = Grass Tera Shards
+Name = Teralito planta
+NamePlural = Teralitos planta
 Pocket = 1
 Price = 2000
 FieldUse = OnPokemon
 Flags = Fling_30,TeraShard_GRASS
-Description = On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.
+Description = En raras ocasiones, estos fragmentos se forman cuando un Pokémon Teracristal cae en combate y su Joya Tera se hace añicos.
 #-------------------------------
 [ELECTRICTERASHARD]
-Name = Electric Tera Shard
-NamePlural = Electric Tera Shards
+Name = Teralito eléctrico
+NamePlural = Teralitos eléctrico
 Pocket = 1
 Price = 2000
 FieldUse = OnPokemon
 Flags = Fling_30,TeraShard_ELECTRIC
-Description = On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.
+Description = En raras ocasiones, estos fragmentos se forman cuando un Pokémon Teracristal cae en combate y su Joya Tera se hace añicos.
 #-------------------------------
 [PSYCHICTERASHARD]
-Name = Psychic Tera Shard
-NamePlural = Psychic Tera Shards
+Name = Teralito psíquico
+NamePlural = Teralitos psíquico
 Pocket = 1
 Price = 2000
 FieldUse = OnPokemon
 Flags = Fling_30,TeraShard_PSYCHIC
-Description = On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.
+Description = En raras ocasiones, estos fragmentos se forman cuando un Pokémon Teracristal cae en combate y su Joya Tera se hace añicos.
 #-------------------------------
 [ICETERASHARD]
-Name = Ice Tera Shard
-NamePlural = Ice Tera Shards
+Name = Teralito hielo
+NamePlural = Teralitos hielo
 Pocket = 1
 Price = 2000
 FieldUse = OnPokemon
 Flags = Fling_30,TeraShard_ICE
-Description = On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.
+Description = En raras ocasiones, estos fragmentos se forman cuando un Pokémon Teracristal cae en combate y su Joya Tera se hace añicos.
 #-------------------------------
 [DRAGONTERASHARD]
-Name = Dragon Tera Shard
-NamePlural = Dragon Tera Shards
+Name = Teralito dragón
+NamePlural = Teralitos dragón
 Pocket = 1
 Price = 2000
 FieldUse = OnPokemon
 Flags = Fling_30,TeraShard_DRAGON
-Description = On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.
+Description = En raras ocasiones, estos fragmentos se forman cuando un Pokémon Teracristal cae en combate y su Joya Tera se hace añicos.
 #-------------------------------
 [DARKTERASHARD]
-Name = Dark Tera Shard
-NamePlural = Dark Tera Shards
+Name = Teralito siniestro
+NamePlural = Teralitos siniestro
 Pocket = 1
 Price = 2000
 FieldUse = OnPokemon
 Flags = Fling_30,TeraShard_DARK
-Description = On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.
+Description = En raras ocasiones, estos fragmentos se forman cuando un Pokémon Teracristal cae en combate y su Joya Tera se hace añicos.
 #-------------------------------
 [FAIRYTERASHARD]
-Name = Fairy Tera Shard
-NamePlural = Fairy Tera Shards
+Name = Teralito hada
+NamePlural = Teralitos hada
 Pocket = 1
 Price = 2000
 FieldUse = OnPokemon
 Flags = Fling_30,TeraShard_FAIRY
-Description = On rare occasions, these shards form when a Tera Pokémon falls in battle and its Tera Jewel shatters.
+Description = En raras ocasiones, estos fragmentos se forman cuando un Pokémon Teracristal cae en combate y su Joya Tera se hace añicos.
