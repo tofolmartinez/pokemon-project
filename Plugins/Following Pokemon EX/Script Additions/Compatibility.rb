@@ -59,11 +59,11 @@ end
 # New option in the Options menu to toggle Following Pokemon
 #-------------------------------------------------------------------------------
 MenuHandlers.add(:options_menu, :follower_toggle, {
-  "name"        => _INTL("Following Pokemon"),
+  "name"        => _INTL("Seguidor Pokemon"),
   "order"       => 999,
   "type"        => EnumOption,
-  "parameters"  => [_INTL("On"), _INTL("Off")],
-  "description" => _INTL("Let the first Pokemon in your party follow you in the overworld."),
+  "parameters"  => [_INTL("Sí"), _INTL("No")],
+  "description" => _INTL("Deja que el primer Pokemon de tu grupo te siga por el mundo."),
   "condition"   => proc { FollowingPkmn.can_check? && FollowingPkmn.get_event && FollowingPkmn::SHOW_TOGGLE_IN_OPTIONS },
   "get_proc"    => proc { next ($PokemonGlobal&.follower_toggled ? 0 : 1) },
   "set_proc"    => proc { |value, _scene|

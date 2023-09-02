@@ -93,20 +93,20 @@ class PokemonSummary_Scene
     cmdTeachTMs   = -1
     case @page
     when 4
-      commands[cmdCheckMoves = commands.length] = _INTL("Check Moves") if !@pokemon.moves.empty?
-      commands[cmdLearnMoves = commands.length] = _INTL("Remember Moves") if @pokemon.can_relearn_move?
-      commands[cmdForgetMove = commands.length] = _INTL("Forget Moves") if @pokemon.moves.length > 1
-      commands[cmdTeachTMs   = commands.length] = _INTL("Use TM's")
+      commands[cmdCheckMoves = commands.length] = _INTL("Comprobar movimientos") if !@pokemon.moves.empty?
+      commands[cmdLearnMoves = commands.length] = _INTL("Recordar movimientos") if @pokemon.can_relearn_move?
+      commands[cmdForgetMove = commands.length] = _INTL("Olvidar movimientos") if @pokemon.moves.length > 1
+      commands[cmdTeachTMs   = commands.length] = _INTL("Usar MT")
     else
       if !@pokemon.egg?
-        commands[cmdGiveItem = commands.length] = _INTL("Give item")
-        commands[cmdTakeItem = commands.length] = _INTL("Take item") if @pokemon.hasItem?
-        commands[cmdNickname = commands.length] = _INTL("Nickname") if !@pokemon.foreign?
-        commands[cmdPokedex  = commands.length] = _INTL("View Pokédex") if $player.has_pokedex
+        commands[cmdGiveItem = commands.length] = _INTL("Dar objeto")
+        commands[cmdTakeItem = commands.length] = _INTL("Coger objeto") if @pokemon.hasItem?
+        commands[cmdNickname = commands.length] = _INTL("Mote") if !@pokemon.foreign?
+        commands[cmdPokedex  = commands.length] = _INTL("Ver Pokédex") if $player.has_pokedex
       end
-      commands[cmdMark = commands.length] = _INTL("Mark")
+      commands[cmdMark = commands.length] = _INTL("Marcar")
     end
-    commands[commands.length] = _INTL("Cancel")
+    commands[commands.length] = _INTL("Cancelar")
     command = pbShowCommands(commands)
     if cmdGiveItem >= 0 && command == cmdGiveItem
       item = nil
@@ -121,7 +121,7 @@ class PokemonSummary_Scene
     elsif cmdTakeItem >= 0 && command == cmdTakeItem
       dorefresh = pbTakeItemFromPokemon(@pokemon, self)
     elsif cmdNickname >= 0 && command == cmdNickname
-      nickname = pbEnterPokemonName(_INTL("{1}'s nickname?", @pokemon.name), 0, Pokemon::MAX_NAME_SIZE, "", @pokemon, true)
+      nickname = pbEnterPokemonName(_INTL("¿Mote de {1}?", @pokemon.name), 0, Pokemon::MAX_NAME_SIZE, "", @pokemon, true)
       @pokemon.name = nickname
       dorefresh = true
     elsif cmdPokedex >= 0 && command == cmdPokedex
@@ -145,7 +145,7 @@ class PokemonSummary_Scene
       move_index = pbForgetMove(@pokemon, nil)
       if move_index >= 0
         old_move_name = @pokemon.moves[move_index].name
-        pbMessage(_INTL("{1} forgot how to use {2}.", @pokemon.name, old_move_name))
+        pbMessage(_INTL("{1} olvidó cómo usar {2}.", @pokemon.name, old_move_name))
         @pokemon.forget_move_at_index(move_index)
         dorefresh = true
       end

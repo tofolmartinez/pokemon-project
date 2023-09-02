@@ -21,15 +21,15 @@ class PokemonPokedexInfo_Scene
        246, 48, 0, Color.new(248, 248, 248), Color.new(0, 0, 0)]
     ]
     if @show_battled_count
-      textpos.push([_INTL("Number Battled"), 314, 164, 0, base, shadow])
+      textpos.push([_INTL("Combatidos"), 314, 164, 0, base, shadow])
       textpos.push([$player.pokedex.battled_count(@species).to_s, 452, 196, 1, base, shadow])
     else
-      textpos.push([_INTL("Height"), 314, 164, 0, base, shadow])
-      textpos.push([_INTL("Weight"), 314, 196, 0, base, shadow])
+      textpos.push([_INTL("Altura"), 314, 164, 0, base, shadow])
+      textpos.push([_INTL("Peso"), 314, 196, 0, base, shadow])
     end
     if $player.owned?(@species)
       # Write the category
-      textpos.push([_INTL("{1} Pokémon", species_data.category), 246, 80, 0, base, shadow])
+      textpos.push([_INTL("Pokémon {1}", species_data.category), 246, 80, 0, base, shadow])
       # Write the height and weight
       if !@show_battled_count
         height = species_data.height
@@ -75,7 +75,7 @@ class PokemonPokedexInfo_Scene
       end
     else
       # Write the category
-      textpos.push([_INTL("????? Pokémon"), 246, 80, 0, base, shadow])
+      textpos.push([_INTL("Pokémon ?????"), 246, 80, 0, base, shadow])
       # Write the height and weight
       if !@show_battled_count
         if System.user_language[3..4] == "US"   # If the user is in the United States
