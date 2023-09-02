@@ -1073,124 +1073,124 @@ Description = Combina las habilidades Nerviosismo y Relincho Negro.
 #-------------------------------
 [ANGERSHELL]
 Name = Coraza ira
-Description = Gets a powerful boost if a hit makes its HP half or less.
+Description = Recibe un potente impulso si un golpe reduce sus PS a la mitad o menos.
 #-------------------------------
 [ARMORTAIL]
 Name = Cola armadura
-Description = Prevents opposing Pokémon from using priority moves.
+Description = Impide que los Pokémon rivales utilicen movimientos prioritarios.
 #-------------------------------
 [BEADSOFRUIN]
 Name = Abalorio debacle
-Description = Lowers the Sp. Def of all Pokémon except the user.
+Description = Reduce la Defensa Especial de todos los Pokémon excepto del usuario.
 #-------------------------------
 [COMMANDER]
 Name = Comandar
-Description = Pairs up and commands with an active Dondozo.
+Description = Se empareja y comanda con un Dondozo activo.
 #-------------------------------
 [COSTAR]
 Name = Unísono
-Description = Copies an ally's stat changes upon entry to battle.
+Description = Copia los cambios de estadísticas de un aliado al entrar en combate.
 #-------------------------------
 [CUDCHEW]
 Name = Rumia
-Description = Reuses an eaten Berry at the end of the next turn.
+Description = Reutiliza una Baya consumida al final del siguiente turno.
 #-------------------------------
 [EARTHEATER]
 Name = Geofagia
-Description = Restores HP if hit by a Ground-type move.
+Description = Restaura los PS si es golpeado por un movimiento de tipo Tierra.
 #-------------------------------
 [ELECTROMORPHOSIS]
 Name = Dinamo
-Description = The Pokémon becomes charged upon taking damage.
+Description = El Pokémon se carga al recibir daño.
 #-------------------------------
 [GOODASGOLD]
 Name = Cuerpo áureo
-Description = The Pokémon becomes immune to status moves.
+Description = El Pokémon se vuelve inmune a los cambios de estado.
 #-------------------------------
 [GUARDDOG]
 Name = Perro guardián
-Description = Boosts Atk if intimidated and immune to being forced out.
+Description = Aumenta el ataque si es intimidado e inmune a ser forzado a salir.
 #-------------------------------
 [HADRONENGINE]
 Name = Motor hadrónico
-Description = Turns the ground into Electric Terrain and boosts Sp. Atk.
+Description = Convierte el suelo en Terreno Eléctrico y aumenta el Ataque Especial.
 #-------------------------------
 [LINGERINGAROMA]
 Name = Olor persistente
-Description = Contact with this Pokémon spreads this Ability.
+Description = El contacto con este Pokémon propaga esta habilidad.
 #-------------------------------
 [MYCELIUMMIGHT]
 Name = Poder fúngico
-Description = Status moves are unimpeded by this Ability but slower to use.
+Description = Los cambios de estado no se ven obstaculizados por esta Habilidad, pero son más lentos de usar.
 #-------------------------------
 [OPPORTUNIST]
 Name = Oportunista
-Description = Copies an opponent's stat boost during a turn.
+Description = Copia el aumento de estadísticas de un oponente durante un turno.
 #-------------------------------
 [ORICHALCUMPULSE]
 Name = Latido oricalco
-Description = Turns the sunlight harsh while boosing Attack.
+Description = Hace que salga el sol y potencia el Ataque.
 #-------------------------------
 [PROTOSYNTHESIS]
 Name = Paleosíntesis
-Description = Boosts its best stat in harsh sunlight.
+Description = Aumenta su mejor estadística con luz solar intensa.
 #-------------------------------
 [PURIFYINGSALT]
 Name = Sal purificadora
-Description = Gains protection from status effects and Ghost-type moves.
+Description = Obtiene protección contra cambios de estado y movimientos de tipo Fantasma.
 #-------------------------------
 [QUARKDRIVE]
 Name = Carga cuark
-Description = Boosts its best stat in Electric Terrain.
+Description = Potencia su mejor estadística en Terreno Eléctrico.
 #-------------------------------
 [ROCKYPAYLOAD]
 Name = Transportarrocas
-Description = Powers up Rock-type moves.
+Description = Potencia los movimientos tipo Roca.
 #-------------------------------
 [SEEDSOWER]
 Name = Disemillar
-Description = Turns the ground into Grassy Terrain upon taking damage.
+Description = Convierte el suelo en Terreno Herboso al recibir daño.
 #-------------------------------
 [SHARPNESS]
 Name = Cortante
-Description = Powers up slicing moves.
+Description = Potencia los movimientos cortantes.
 #-------------------------------
 [SUPREMEOVERLORD]
 Name = General supremo
-Description = Boosts the power of its moves with every fainted ally.
+Description = Aumenta el poder de sus movimientos con cada aliado derrotado.
 #-------------------------------
 [SWORDOFRUIN]
 Name = Espada debacle
-Description = Lowers the Defense of all Pokémon except the user.
+Description = Reduce la Defensa de todos los Pokémon excepto la del usuario.
 #-------------------------------
 [TABLETSOFRUIN]
 Name = Tablilla debacle
-Description = Lowers the Attack of all Pokémon except the user.
+Description = Reduce el Ataque de todos los Pokémon excepto el del usuario.
 #-------------------------------
 [THERMALEXCHANGE]
 Name = Termoconversión
-Description = Boosts Atk when hit by a Fire-type move and prevents burns.
+Description = Aumenta el Ataque al ser golpeado por un movimiento de tipo Fuego y evita quemaduras.
 #-------------------------------
 [TOXICDEBRIS]
 Name = Capa tóxica
-Description = Scatters poison spikes when hit by physical moves.
+Description = Dispersa púas venenosas al ser golpeado por movimientos físicos.
 #-------------------------------
 [VESSELOFRUIN]
 Name = Caldero debacle
-Description = Lowers the Sp. Atk of all Pokémon except the user.
+Description = Reduce el Ataque Especial de todos los Pokémon excepto del usuario.
 #-------------------------------
 [WELLBAKEDBODY]
 Name = Cuerpo horneado
-Description = Fire-type moves deal no damage and sharply boost Defense.
+Description = Los movimientos de tipo Fuego no infligen daño y aumentan drásticamente la Defensa.
 #-------------------------------
 [WINDPOWER]
 Name = Energía eólica
-Description = The Pokémon becomes charged from taking wind damage.
+Description = El Pokémon se carga al recibir daño de viento.
 #-------------------------------
 [WINDRIDER]
 Name = Surcavientos
-Description = Boosts Attack in Tailwind or when attacked by wind moves.
+Description = Potencia el Viento afín o cuando es atacado por movimientos de viento.
 #-------------------------------
 [ZEROTOHERO]
 Name = Cambio heroico
-Description = Transforms into its Hero Form when it switches out.
+Description = Se transforma en su Forma de Héroe cuando se cambia.
