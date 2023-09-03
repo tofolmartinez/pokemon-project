@@ -53,7 +53,7 @@ module FollowingPkmn
     return false if !FollowingPkmn.can_check?
     return false if !$PokemonGlobal.follower_hold_item
     pokename = FollowingPkmn.get_pokemon&.name
-    message = _INTL("{1} seems to be holding something...") if nil_or_empty?(message)
+    message = _INTL("{1} parece llevar algo...") if nil_or_empty?(message)
     pbMessage(_INTL(message, pokename))
     item = GameData::Item.get(item)
     return false if !item || quantity < 1
@@ -63,19 +63,19 @@ module FollowingPkmn
     if $bag.add(item, quantity)   # If item can be picked up
       meName = (item.is_key_item?) ? "Key item get" : "Item get"
       if item == :LEFTOVERS
-        pbMessage(_INTL("\\me[{1}]{3} found some \\c[1]{2}\\c[0]!\\wtnp[30]", meName, itemname, pokename))
+        pbMessage(_INTL("\\me[{1}]{3} encontró \\c[1]{2}\\c[0]!\\wtnp[30]", meName, itemname, pokename))
       elsif item == :DNASPLICERS
-        pbMessage(_INTL("\\me[{1}]{3} found \\c[1]{2}\\c[0]!\\wtnp[30]", meName, itemname, pokename))
+        pbMessage(_INTL("\\me[{1}]{3} encontró \\c[1]{2}\\c[0]!\\wtnp[30]", meName, itemname, pokename))
       elsif item.is_machine?   # TM or HM
-        pbMessage(_INTL("\\me[{1}]{4} found \\c[1]{2} {3}\\c[0]!\\wtnp[30]", meName, itemname, GameData::Move.get(move).name, pokename))
+        pbMessage(_INTL("\\me[{1}]{4} encontró \\c[1]{2} {3}\\c[0]!\\wtnp[30]", meName, itemname, GameData::Move.get(move).name, pokename))
       elsif quantity>1
-        pbMessage(_INTL("\\me[{1}]{4} found {2} \\c[1]{3}\\c[0]!\\wtnp[30]", meName, quantity, itemname, pokename))
+        pbMessage(_INTL("\\me[{1}]{4} encontró {2} \\c[1]{3}\\c[0]!\\wtnp[30]", meName, quantity, itemname, pokename))
       elsif itemname.starts_with_vowel?
-        pbMessage(_INTL("\\me[{1}]{3} found an \\c[1]{2}\\c[0]!\\wtnp[30]", meName, itemname, pokename))
+        pbMessage(_INTL("\\me[{1}]{3} encontró \\c[1]{2}\\c[0]!\\wtnp[30]", meName, itemname, pokename))
       else
-        pbMessage(_INTL("\\me[{1}]{3} found a \\c[1]{2}\\c[0]!\\wtnp[30]", meName, itemname, pokename))
+        pbMessage(_INTL("\\me[{1}]{3} encontró \\c[1]{2}\\c[0]!\\wtnp[30]", meName, itemname, pokename))
       end
-      pbMessage(_INTL("You put the {1} away\\nin the <icon=bagPocket{2}>\\c[1]{3} Pocket\\c[0].",
+      pbMessage(_INTL("Guardaste el {1} \\nen el <icon=bagPocket{2}>\\c[1]{3} bolsillo\\c[0].",
          itemname, pocket, PokemonBag.pocket_names[pocket]))
       $PokemonGlobal.follower_hold_item = false
       $PokemonGlobal.time_taken         = 0
@@ -83,19 +83,19 @@ module FollowingPkmn
     end
     # Can't add the item
     if item == :LEFTOVERS
-      pbMessage(_INTL("{1} found some \\c[1]{2}\\c[0]!\\wtnp[30]", pokename, itemname))
+      pbMessage(_INTL("{1} encontró \\c[1]{2}\\c[0]!\\wtnp[30]", pokename, itemname))
     elsif item == :DNASPLICERS
-      pbMessage(_INTL("{1} found \\c[1]{2}\\c[0]!\\wtnp[30]", pokename, itemname))
+      pbMessage(_INTL("{1} encontró \\c[1]{2}\\c[0]!\\wtnp[30]", pokename, itemname))
     elsif item.is_machine?   # TM or HM
-      pbMessage(_INTL("{1} found \\c[1]{2} {3}\\c[0]!\\wtnp[30]", pokename, itemname, GameData::Move.get(move).name))
+      pbMessage(_INTL("{1} encontró \\c[1]{2} {3}\\c[0]!\\wtnp[30]", pokename, itemname, GameData::Move.get(move).name))
     elsif quantity>1
-      pbMessage(_INTL("{1} found {2} \\c[1]{3}\\c[0]!\\wtnp[30]", pokename, quantity, itemname))
+      pbMessage(_INTL("{1} encontró {2} \\c[1]{3}\\c[0]!\\wtnp[30]", pokename, quantity, itemname))
     elsif itemname.starts_with_vowel?
-      pbMessage(_INTL("{1} found an \\c[1]{2}\\c[0]!\\wtnp[30]", pokename, itemname))
+      pbMessage(_INTL("{1} encontró \\c[1]{2}\\c[0]!\\wtnp[30]", pokename, itemname))
     else
-      pbMessage(_INTL("{1} found a \\c[1]{2}\\c[0]!\\wtnp[30]", pokename, itemname))
+      pbMessage(_INTL("{1} encontró \\c[1]{2}\\c[0]!\\wtnp[30]", pokename, itemname))
     end
-    pbMessage(_INTL("But your Bag is full..."))
+    pbMessage(_INTL("Pero tu bolsa está llena..."))
     return false
   end
   #-----------------------------------------------------------------------------
