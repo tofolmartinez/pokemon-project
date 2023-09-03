@@ -1,3 +1,4 @@
+# TODO Traducir
 #===============================================================================
 # "v20.1 Hotfixes" plugin
 # This file contains fixes for bugs in battle code in Essentials v20.1.

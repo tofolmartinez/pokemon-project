@@ -1,3 +1,4 @@
+# TODO Traducir
 ################################################################################
 # 
 # Updates to old item handlers (overworld use).

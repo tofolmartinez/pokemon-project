@@ -1,3 +1,4 @@
+# TODO Traducir
 #===============================================================================
 # "v20.1 Hotfixes" plugin
 # This file contains fixes for miscellaneous bugs in Essentials v20.1.
