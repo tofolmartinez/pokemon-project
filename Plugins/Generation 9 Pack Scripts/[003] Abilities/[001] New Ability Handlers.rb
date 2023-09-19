@@ -1,4 +1,3 @@
-# TODO Traducir
 ################################################################################
 # 
 # New ability handlers.
@@ -45,7 +44,7 @@ Battle::AbilityEffects::OnSwitchIn.add(:SUPREMEOVERLORD,
     numFainted = [5, battler.num_fainted_allies].min
     next if numFainted <= 0
     battle.pbShowAbilitySplash(battler)
-    battle.pbDisplay(_INTL("{1} gained strength from the fallen!", battler.pbThis))
+    battle.pbDisplay(_INTL("¡{1} obtuvo fuerzas de los caídos!", battler.pbThis))
     battler.effects[PBEffects::SupremeOverlord] = numFainted
     battle.pbHideAbilitySplash(battler)
   }
@@ -97,9 +96,9 @@ Battle::AbilityEffects::MoveImmunity.add(:GOODASGOLD,
     if show_message
       battle.pbShowAbilitySplash(target)
       if Battle::Scene::USE_ABILITY_SPLASH
-        battle.pbDisplay(_INTL("It doesn't affect {1}...", target.pbThis(true)))
+        battle.pbDisplay(_INTL("No afecta a {1}...", target.pbThis(true)))
       else
-        battle.pbDisplay(_INTL("{1}'s {2} blocks {3}!",
+        battle.pbDisplay(_INTL("¡El {2} de {1} bloquea {3}!",
            target.pbThis, target.abilityName, move.name))
       end
       battle.pbHideAbilitySplash(target)
@@ -133,9 +132,9 @@ Battle::AbilityEffects::MoveImmunity.add(:WINDRIDER,
           target.pbRaiseStatStageByCause(:ATTACK, 1, user, target.abilityName)
         end
       elsif Battle::Scene::USE_ABILITY_SPLASH
-        battle.pbDisplay(_INTL("It doesn't affect {1}...", target.pbThis(true)))
+        battle.pbDisplay(_INTL("No afecta a {1}...", target.pbThis(true)))
       else
-        battle.pbDisplay(_INTL("{1}'s {2} made {3} ineffective!", target.pbThis, target.abilityName, move.name))
+        battle.pbDisplay(_INTL("¡El {2} de {1} hizo que {3} fuera ineficaz!", target.pbThis, target.abilityName, move.name))
       end
       battle.pbHideAbilitySplash(target)
     end
@@ -186,7 +185,7 @@ Battle::AbilityEffects::OnBeingHit.add(:ELECTROMORPHOSIS,
     next if target.effects[PBEffects::Charge] > 0
     battle.pbShowAbilitySplash(target)
     target.effects[PBEffects::Charge] = 2
-    battle.pbDisplay(_INTL("Being hit by {1} charged {2} with power!", move.name, target.pbThis(true)))
+    battle.pbDisplay(_INTL("¡Ser golpeado por {1} llenó a {2} de poder!", move.name, target.pbThis(true)))
     battle.pbHideAbilitySplash(target)
   }
 )
@@ -237,7 +236,7 @@ Battle::AbilityEffects::OnBeingHit.add(:TOXICDEBRIS,
     battle.pbShowAbilitySplash(target)
     target.pbOpposingSide.effects[PBEffects::ToxicSpikes] += 1
     battle.pbAnimation(:TOXICSPIKES, target, target.pbDirectOpposing)
-    battle.pbDisplay(_INTL("Poison spikes were scattered on the ground all around {1}!", target.pbOpposingTeam(true)))
+    battle.pbDisplay(_INTL("¡Púas venenosas se esparcieron por el suelo alrededor de {1}!", target.pbOpposingTeam(true)))
     battle.pbHideAbilitySplash(target)
   }
 )
@@ -251,7 +250,7 @@ Battle::AbilityEffects::OnBeingHit.add(:WINDPOWER,
     next if target.effects[PBEffects::Charge] > 0
     battle.pbShowAbilitySplash(target)
     target.effects[PBEffects::Charge] = 2
-    battle.pbDisplay(_INTL("Being hit by {1} charged {2} with power!", move.name, target.pbThis(true)))
+    battle.pbDisplay(_INTL("¡Ser golpeado por {1} cargó a {2} de poder!", move.name, target.pbThis(true)))
     battle.pbHideAbilitySplash(target)
   }
 )
@@ -289,7 +288,7 @@ Battle::AbilityEffects::OnOpposingStatGain.add(:OPPORTUNIST,
         showAnim = false
       end
     end
-    battle.pbDisplay(_INTL("{1}'s stats won't go any higher!", user.pbThis)) if showAnim
+    battle.pbDisplay(_INTL("¡Las estadísticas de {1} no subirán más!", user.pbThis)) if showAnim
     battle.pbHideAbilitySplash(battler)
     battler.pbItemOpposingStatGainCheck(statUps)
     # Mirror Herb can trigger off this ability.
@@ -317,7 +316,7 @@ Battle::AbilityEffects::OnSwitchIn.add(:COSTAR,
       battle.pbShowAbilitySplash(battler)
       battler.effects[PBEffects::FocusEnergy] = b.effects[PBEffects::FocusEnergy]
       GameData::Stat.each_battle { |stat| battler.stages[stat.id] = b.stages[stat.id] }
-      battle.pbDisplay(_INTL("{1} copied {2}'s stat changes!", battler.pbThis, b.pbThis(true)))
+      battle.pbDisplay(_INTL("¡{1} copió los cambios de estadísticas de {2}!", battler.pbThis, b.pbThis(true)))
       battle.pbHideAbilitySplash(battler)
       break
     end
@@ -331,7 +330,7 @@ Battle::AbilityEffects::OnSwitchIn.add(:ZEROTOHERO,
   proc { |ability, battler, battle, switch_in|
     next if battler.form == 0 || battler.ability_triggered?
     battle.pbShowAbilitySplash(battler)
-    battle.pbDisplay(_INTL("{1} underwent a heroic transformation!", battler.pbThis))
+    battle.pbDisplay(_INTL("¡{1} sufrió una transformación heroica!", battler.pbThis))
     battle.pbHideAbilitySplash(battler)
     battle.pbSetAbilityTrigger(battler)
   }
@@ -358,7 +357,7 @@ Battle::AbilityEffects::OnSwitchIn.add(:COMMANDER,
       next if b.effects[PBEffects::Commander]
       battle.pbShowAbilitySplash(battler)
       battle.pbClearChoice(battler.index)
-      battle.pbDisplay(_INTL("{1} goes inside the mouth of {2}!", battler.pbThis, b.pbThis(true)))
+      battle.pbDisplay(_INTL("¡{1} entra en la boca de {2}!", battler.pbThis, b.pbThis(true)))
       battle.scene.sprites["pokemon_#{battler.index}"].visible = false
       b.effects[PBEffects::Commander] = [battler.index, battler.form]
       battler.effects[PBEffects::Commander] = [b.index]
@@ -377,7 +376,7 @@ Battle::AbilityEffects::OnSwitchIn.add(:COMMANDER,
 Battle::AbilityEffects::MoveImmunity.add(:COMMANDER,
   proc { |ability, user, target, move, type, battle, show_message|
     next false if !target.isCommander?
-    battle.pbDisplay(_INTL("{1} avoided the attack!", target.pbThis)) if show_message
+    battle.pbDisplay(_INTL("¡{1} evitó el ataque!", target.pbThis)) if show_message
     next true
   }
 )
@@ -394,7 +393,7 @@ Battle::AbilityEffects::OnSwitchIn.add(:TABLETSOFRUIN,
     when :BEADSOFRUIN   then stat_name = GameData::Stat.get(:SPECIAL_DEFENSE).name
     end
     battle.pbShowAbilitySplash(battler)
-    battle.pbDisplay(_INTL("{1}'s {2} weakened the {3} of all surrounding Pokémon!", battler.pbThis, battler.abilityName, stat_name))
+    battle.pbDisplay(_INTL("¡El {2} de {1} debilitó el {3} de todos los Pokémon de alrededor!", battler.pbThis, battler.abilityName, stat_name))
     battle.pbHideAbilitySplash(battler)
   }
 )
@@ -408,11 +407,11 @@ Battle::AbilityEffects::OnSwitchIn.add(:ORICHALCUMPULSE,
   proc { |ability, battler, battle, switch_in|
     if [:Sun, :HarshSun].include?(battler.effectiveWeather)
       battle.pbShowAbilitySplash(battler)
-      battle.pbDisplay(_INTL("{1} basked in the sunlight, sending its ancient pulse into a frenzy!", battler.pbThis))
+      battle.pbDisplay(_INTL("¡{1} se deleitó con la luz del sol, provocando un frenesí en su pulso oricalco!", battler.pbThis))
       battle.pbHideAbilitySplash(battler)
     else
       battle.pbStartWeatherAbility(:Sun, battler)
-      battle.pbDisplay(_INTL("{1} turned the sunlight harsh, sending its ancient pulse into a frenzy!", battler.pbThis))
+      battle.pbDisplay(_INTL("¡{1} hizo que la luz del sol se volviera áspera, haciendo que su pulso oricalco se volviera frenético!", battler.pbThis))
     end
   }
 )
@@ -430,11 +429,11 @@ Battle::AbilityEffects::OnSwitchIn.add(:HADRONENGINE,
   proc { |ability, battler, battle, switch_in|
     battle.pbShowAbilitySplash(battler)
     if battle.field.terrain == :Electric
-      battle.pbDisplay(_INTL("{1} used the Electric Terrain to energize its futuristic engine!", battler.pbThis))
+      battle.pbDisplay(_INTL("¡{1} utilizó el Terreno Eléctrico para energizar su motor futurista!", battler.pbThis))
       battle.pbHideAbilitySplash(battler)
     else
       battle.pbStartTerrain(battler, :Electric)
-      battle.pbDisplay(_INTL("{1} turned the ground into Electric Terrain, energizing its futuristic engine!", battler.pbThis))
+      battle.pbDisplay(_INTL("¡{1} convirtió el suelo en Terreno Eléctrico, energizando su motor futurista!", battler.pbThis))
     end
   }
 )
@@ -455,7 +454,7 @@ Battle::AbilityEffects::OnSwitchIn.add(:PROTOSYNTHESIS,
     when :QUARKDRIVE     then field_check = battle.field.terrain == :Electric
     end
     if !field_check && !battler.effects[PBEffects::BoosterEnergy] && battler.effects[PBEffects::ParadoxStat]
-      battle.pbDisplay(_INTL("The effects of {1}'s {2} wore off!", battler.pbThis(true), battler.abilityName))
+      battle.pbDisplay(_INTL("¡Los efectos del {2} de {1} desaparecieron!", battler.pbThis(true), battler.abilityName))
       battler.effects[PBEffects::ParadoxStat] = nil
     end
     next if battler.effects[PBEffects::ParadoxStat]
@@ -476,17 +475,17 @@ Battle::AbilityEffects::OnSwitchIn.add(:PROTOSYNTHESIS,
       battle.pbShowAbilitySplash(battler)
       if field_check
         case ability
-        when :PROTOSYNTHESIS then cause = "harsh sunlight"
-        when :QUARKDRIVE     then cause = "Electric Terrain"
+        when :PROTOSYNTHESIS then cause = "La luz solar intensa"
+        when :QUARKDRIVE     then cause = "El Terreno Eléctrico"
         end
-        battle.pbDisplay(_INTL("The #{cause} activated {1}'s {2}!", battler.pbThis(true), battler.abilityName))
+        battle.pbDisplay(_INTL("¡#{cause} activó el {2} de {1}!", battler.pbThis(true), battler.abilityName))
       elsif battler.item == :BOOSTERENERGY
         battler.effects[PBEffects::BoosterEnergy] = true
-        battle.pbDisplay(_INTL("{1} used its {2} to activate its {3}!", battler.pbThis, battler.itemName, battler.abilityName))
+        battle.pbDisplay(_INTL("¡{1} usó su {2} para activar su {3}!", battler.pbThis, battler.itemName, battler.abilityName))
         battler.pbHeldItemTriggered(battler.item)
       end
       battler.effects[PBEffects::ParadoxStat] = highestStat
-      battle.pbDisplay(_INTL("{1}'s {2} was heightened!", battler.pbThis, GameData::Stat.get(highestStat).name))
+      battle.pbDisplay(_INTL("¡El {2} de {1} creció!", battler.pbThis, GameData::Stat.get(highestStat).name))
       battle.pbHideAbilitySplash(battler)
     end
   }
