@@ -1,4 +1,3 @@
-# TODO Traducir
 ################################################################################
 # 
 # Ability triggers.
@@ -48,8 +47,8 @@ Battle::AbilityEffects::StatusCure.add(:INSOMNIA,
     battler.pbCureStatus(Battle::Scene::USE_ABILITY_SPLASH)
     if !Battle::Scene::USE_ABILITY_SPLASH
       case battler.status
-      when :SLEEP  then msg = _INTL("{1}'s {2} woke it up!", battler.pbThis, battler.abilityName)
-      when :DROWSY then msg = _INTL("{1}'s {2} made it alert again!", battler.pbThis, battler.abilityName)
+      when :SLEEP  then msg = _INTL("¡El {2} de {1} le despertó!", battler.pbThis, battler.abilityName)
+      when :DROWSY then msg = _INTL("¡El {2} de {1} le puso de nuevo en alerta!", battler.pbThis, battler.abilityName)
       end
       battler.battle.pbDisplay(msg)
     end
@@ -72,8 +71,8 @@ Battle::AbilityEffects::StatusCure.add(:MAGMAARMOR,
     battler.pbCureStatus(Battle::Scene::USE_ABILITY_SPLASH)
     if !Battle::Scene::USE_ABILITY_SPLASH
       case battler.status
-      when :FROZEN    then msg = _INTL("{1}'s {2} defrosted it!", battler.pbThis, battler.abilityName)
-      when :FROSTBITE then msg = _INTL("{1}'s {2} healed its frostbite!", battler.pbThis, battler.abilityName)
+      when :FROZEN    then msg = _INTL("¡La {2} de {1} lo descongeló!", battler.pbThis, battler.abilityName)
+      when :FROSTBITE then msg = _INTL("¡La {2} de {1} le curó de la congelación!", battler.pbThis, battler.abilityName)
       end
       battler.battle.pbDisplay(msg)
     end
@@ -97,19 +96,19 @@ Battle::AbilityEffects::EndOfRoundHealing.add(:HEALER,
       if !Battle::Scene::USE_ABILITY_SPLASH
         case oldStatus
         when :SLEEP
-          battle.pbDisplay(_INTL("{1}'s {2} woke its partner up!", battler.pbThis, battler.abilityName))
+          battle.pbDisplay(_INTL("¡El {2} de {1} despertó a su compañero!", battler.pbThis, battler.abilityName))
         when :POISON
-          battle.pbDisplay(_INTL("{1}'s {2} cured its partner's poison!", battler.pbThis, battler.abilityName))
+          battle.pbDisplay(_INTL("¡El {2} de {1} curó el veneno de su compañero!", battler.pbThis, battler.abilityName))
         when :BURN
-          battle.pbDisplay(_INTL("{1}'s {2} healed its partner's burn!", battler.pbThis, battler.abilityName))
+          battle.pbDisplay(_INTL("¡El {2} de {1} curó la quemadura de su compañero!", battler.pbThis, battler.abilityName))
         when :PARALYSIS
-          battle.pbDisplay(_INTL("{1}'s {2} cured its partner's paralysis!", battler.pbThis, battler.abilityName))
+          battle.pbDisplay(_INTL("¡El {2} de {1} curó la parálisis de su compañero!", battler.pbThis, battler.abilityName))
         when :FROZEN
-          battle.pbDisplay(_INTL("{1}'s {2} defrosted its partner!", battler.pbThis, battler.abilityName))
+          battle.pbDisplay(_INTL("¡El {2} de {1} descongeló a su compañero!", battler.pbThis, battler.abilityName))
         when :DROWSY
-          battle.pbDisplay(_INTL("{1}'s {2} made its partner alert again!", battler.pbThis, battler.abilityName))
+          battle.pbDisplay(_INTL("¡{1}'s {2} hizo que su compañero se alertara de nuevo!", battler.pbThis, battler.abilityName))
         when :FROSTBITE
-          battle.pbDisplay(_INTL("{1}'s {2} healed its partner's frostbite!", battler.pbThis, battler.abilityName))
+          battle.pbDisplay(_INTL("¡El {2} de {1} curó la congelación de su compañero!", battler.pbThis, battler.abilityName))
         end
       end
       battle.pbHideAbilitySplash(battler)
@@ -132,19 +131,19 @@ Battle::AbilityEffects::EndOfRoundHealing.add(:HYDRATION,
     if !Battle::Scene::USE_ABILITY_SPLASH
       case oldStatus
       when :SLEEP
-        battle.pbDisplay(_INTL("{1}'s {2} woke it up!", battler.pbThis, battler.abilityName))
+        battle.pbDisplay(_INTL("¡El {2} de {1} le despertó!", battler.pbThis, battler.abilityName))
       when :POISON
-        battle.pbDisplay(_INTL("{1}'s {2} cured its poison!", battler.pbThis, battler.abilityName))
+        battle.pbDisplay(_INTL("¡El {2} de {1} curó su veneno!", battler.pbThis, battler.abilityName))
       when :BURN
-        battle.pbDisplay(_INTL("{1}'s {2} healed its burn!", battler.pbThis, battler.abilityName))
+        battle.pbDisplay(_INTL("¡El {2} de {1} ha curado su quemadura!", battler.pbThis, battler.abilityName))
       when :PARALYSIS
-        battle.pbDisplay(_INTL("{1}'s {2} cured its paralysis!", battler.pbThis, battler.abilityName))
+        battle.pbDisplay(_INTL("¡El {2} de {1} curó su parálisis!", battler.pbThis, battler.abilityName))
       when :FROZEN
-        battle.pbDisplay(_INTL("{1}'s {2} defrosted it!", battler.pbThis, battler.abilityName))
+        battle.pbDisplay(_INTL("¡El {2} de {1} lo descongeló!", battler.pbThis, battler.abilityName))
       when :DROWSY
-        battle.pbDisplay(_INTL("{1}'s {2} made it alert again!", battler.pbThis, battler.abilityName))
+        battle.pbDisplay(_INTL("¡El {2} de {1} lo puso en alerta de nuevo!", battler.pbThis, battler.abilityName))
       when :FROSTBITE
-        battle.pbDisplay(_INTL("{1}'s {2} healed its frostbite!", battler.pbThis, battler.abilityName))
+        battle.pbDisplay(_INTL("¡El {2} de {1} ha curado su congelación!", battler.pbThis, battler.abilityName))
       end
     end
     battle.pbHideAbilitySplash(battler)
@@ -166,19 +165,19 @@ Battle::AbilityEffects::EndOfRoundHealing.add(:SHEDSKIN,
     if !Battle::Scene::USE_ABILITY_SPLASH
       case oldStatus
       when :SLEEP
-        battle.pbDisplay(_INTL("{1}'s {2} woke it up!", battler.pbThis, battler.abilityName))
+        battle.pbDisplay(_INTL("¡El {2} de {1} le despertó!", battler.pbThis, battler.abilityName))
       when :POISON
-        battle.pbDisplay(_INTL("{1}'s {2} cured its poison!", battler.pbThis, battler.abilityName))
+        battle.pbDisplay(_INTL("¡El {2} de {1} curó su veneno!", battler.pbThis, battler.abilityName))
       when :BURN
-        battle.pbDisplay(_INTL("{1}'s {2} healed its burn!", battler.pbThis, battler.abilityName))
+        battle.pbDisplay(_INTL("¡El {2} de {1} curó su quemadura!", battler.pbThis, battler.abilityName))
       when :PARALYSIS
-        battle.pbDisplay(_INTL("{1}'s {2} cured its paralysis!", battler.pbThis, battler.abilityName))
+        battle.pbDisplay(_INTL("¡El {2} de {1} curó su parálisis!", battler.pbThis, battler.abilityName))
       when :FROZEN
-        battle.pbDisplay(_INTL("{1}'s {2} defrosted it!", battler.pbThis, battler.abilityName))
+        battle.pbDisplay(_INTL("¡El {2} de {1} le descongeló!", battler.pbThis, battler.abilityName))
       when :DROWSY
-        battle.pbDisplay(_INTL("{1}'s {2} made it alert again!", battler.pbThis, battler.abilityName))
+        battle.pbDisplay(_INTL("¡El {2} de {1} le puso de nuevo en alerta!", battler.pbThis, battler.abilityName))
       when :FROSTBITE
-        battle.pbDisplay(_INTL("{1}'s {2} healed its frostbite!", battler.pbThis, battler.abilityName))
+        battle.pbDisplay(_INTL("¡El {2} de {1} ha curado su congelación!", battler.pbThis, battler.abilityName))
       end
     end
     battle.pbHideAbilitySplash(battler)
@@ -199,7 +198,7 @@ Battle::AbilityEffects::OnStatusInflicted.add(:SYNCHRONIZE,
         battler.battle.pbShowAbilitySplash(battler)
         msg = nil
         if !Battle::Scene::USE_ABILITY_SPLASH
-          msg = _INTL("{1}'s {2} poisoned {3}!", battler.pbThis, battler.abilityName, user.pbThis(true))
+          msg = _INTL("¡El {2} de {1} envenenó a {3}!", battler.pbThis, battler.abilityName, user.pbThis(true))
         end
         user.pbPoison(nil, msg, (battler.statusCount > 0))
         battler.battle.pbHideAbilitySplash(battler)
@@ -209,7 +208,7 @@ Battle::AbilityEffects::OnStatusInflicted.add(:SYNCHRONIZE,
         battler.battle.pbShowAbilitySplash(battler)
         msg = nil
         if !Battle::Scene::USE_ABILITY_SPLASH
-          msg = _INTL("{1}'s {2} burned {3}!", battler.pbThis, battler.abilityName, user.pbThis(true))
+          msg = _INTL("¡El {2} de {1} quemó a {3}!", battler.pbThis, battler.abilityName, user.pbThis(true))
         end
         user.pbBurn(nil, msg)
         battler.battle.pbHideAbilitySplash(battler)
@@ -219,7 +218,7 @@ Battle::AbilityEffects::OnStatusInflicted.add(:SYNCHRONIZE,
         battler.battle.pbShowAbilitySplash(battler)
         msg = nil
         if !Battle::Scene::USE_ABILITY_SPLASH
-          msg = _INTL("{1}'s {2} paralyzed {3}! It may be unable to move!",
+          msg = _INTL("¡El {2} de {1} paralizó a {3}! ¡Puede que sea incapaz de moverse!",
              battler.pbThis, battler.abilityName, user.pbThis(true))
         end
         user.pbParalyze(nil, msg)
@@ -230,7 +229,7 @@ Battle::AbilityEffects::OnStatusInflicted.add(:SYNCHRONIZE,
         battler.battle.pbShowAbilitySplash(battler)
         msg = nil
         if !Battle::Scene::USE_ABILITY_SPLASH
-          msg = _INTL("{1}'s {2} made {3} drowsy! It may be too sleepy to move!",
+          msg = _INTL("¡El {2} de {1} ha adormecido al {3}! ¡Puede estar demasiado somnoliento para moverse!",
              battler.pbThis, battler.abilityName, user.pbThis(true))
         end
         user.pbSleep(nil, msg)
@@ -241,7 +240,7 @@ Battle::AbilityEffects::OnStatusInflicted.add(:SYNCHRONIZE,
         battler.battle.pbShowAbilitySplash(battler)
         msg = nil
         if !Battle::Scene::USE_ABILITY_SPLASH
-          msg = _INTL("{1}'s {2} caused {3} to become frostbitten!", battler.pbThis, battler.abilityName, user.pbThis(true))
+          msg = _INTL("¡El {2} de {1} hizo que {3} se congelara!", battler.pbThis, battler.abilityName, user.pbThis(true))
         end
         user.pbFreeze(nil, msg)
         battler.battle.pbHideAbilitySplash(battler)
@@ -264,13 +263,13 @@ Battle::AbilityEffects::OnDealingHit.add(:POISONTOUCH,
     if target.hasActiveAbility?(:SHIELDDUST) && !battle.moldBreaker
       battle.pbShowAbilitySplash(target)
       if !Battle::Scene::USE_ABILITY_SPLASH
-        battle.pbDisplay(_INTL("{1} is unaffected!", target.pbThis))
+        battle.pbDisplay(_INTL("¡No afectó a {1}!", target.pbThis))
       end
       battle.pbHideAbilitySplash(target)
     elsif target.pbCanPoison?(user, Battle::Scene::USE_ABILITY_SPLASH)
       msg = nil
       if !Battle::Scene::USE_ABILITY_SPLASH
-        msg = _INTL("{1}'s {2} poisoned {3}!", user.pbThis, user.abilityName, target.pbThis(true))
+        msg = _INTL("¡El {2} de {1} envenenó a {3}!", user.pbThis, user.abilityName, target.pbThis(true))
       end
       target.pbPoison(user, msg)
     end
@@ -291,7 +290,7 @@ Battle::AbilityEffects::ChangeOnBattlerFainting.add(:POWEROFALCHEMY,
     battle.pbShowAbilitySplash(battler, true)
     battler.ability = fainted.ability
     battle.pbReplaceAbilitySplash(battler)
-    battle.pbDisplay(_INTL("{1}'s {2} was taken over!", fainted.pbThis, fainted.abilityName))
+    battle.pbDisplay(_INTL("¡El {2} de {1} fue tomado!", fainted.pbThis, fainted.abilityName))
     battle.pbHideAbilitySplash(battler)
   }
 )
@@ -321,13 +320,13 @@ Battle::AbilityEffects::OnBeingHit.add(:MUMMY,
       if Battle::Scene::USE_ABILITY_SPLASH
 	    case ability
 		when :MUMMY
-		  msg = _INTL("{1}'s Ability became {2}!", user.pbThis, user.abilityName)
+		  msg = _INTL("¡La habilidad de {1} cambió a {2}!", user.pbThis, user.abilityName)
 		when :LINGERINGAROMA
-		  msg = _INTL("A lingering aroma clings to {1}!", user.pbThis(true))
+		  msg = _INTL("¡Un aroma persistente se aferra a {1}!", user.pbThis(true))
 		end
         battle.pbDisplay(msg)
       else
-        battle.pbDisplay(_INTL("{1}'s Ability became {2} because of {3}!",
+        battle.pbDisplay(_INTL("¡La habilidad de {1} se convirtió en {2} gracias a {3}!",
            user.pbThis, user.abilityName, target.pbThis(true)))
       end
       battle.pbHideAbilitySplash(user) if user.opposes?(target)
@@ -362,9 +361,9 @@ Battle::AbilityEffects::OnBeingHit.add(:WANDERINGSPIRIT,
         battle.pbReplaceAbilitySplash(target)
       end
       if Battle::Scene::USE_ABILITY_SPLASH
-        battle.pbDisplay(_INTL("{1} swapped Abilities with {2}!", target.pbThis, user.pbThis(true)))
+        battle.pbDisplay(_INTL("¡{1} intercambió su habilidad con {2}!", target.pbThis, user.pbThis(true)))
       else
-        battle.pbDisplay(_INTL("{1} swapped its {2} Ability with {3}'s {4} Ability!",
+        battle.pbDisplay(_INTL("¡{1} intercambió su habilidad {2} con la habilidad {4} de {3}!",
            target.pbThis, user.abilityName, user.pbThis(true), target.abilityName))
       end
       if user.opposes?(target)
@@ -389,11 +388,11 @@ Battle::AbilityEffects::OnSwitchIn.add(:NEUTRALIZINGGAS,
   proc { |ability, battler, battle, switch_in|
     battle.pbShowAbilitySplash(battler, true)
     battle.pbHideAbilitySplash(battler)
-    battle.pbDisplay(_INTL("Neutralizing gas filled the area!"))
+    battle.pbDisplay(_INTL("¡Gas neutralizante llenó el área!"))
     battle.allBattlers.each do |b|
       if b.hasActiveItem?(:ABILITYSHIELD)
         itemname = GameData::Item.get(target.item).name
-        @battle.pbDisplay(_INTL("{1}'s Ability is protected by the effects of its {2}!",b.pbThis,itemname))
+        @battle.pbDisplay(_INTL("¡La habilidad de {1} está protegida por los efectos de su {2}!",b.pbThis,itemname))
         next
       end
       b.effects[PBEffects::SlowStart] = 0
@@ -405,7 +404,7 @@ Battle::AbilityEffects::OnSwitchIn.add(:NEUTRALIZINGGAS,
         b.effects[PBEffects::Illusion] = nil
         if !b.effects[PBEffects::Transform]
           battle.scene.pbChangePokemon(b, b.pokemon)
-          battle.pbDisplay(_INTL("{1}'s {2} wore off!", b.pbThis, b.abilityName))
+          battle.pbDisplay(_INTL("¡La {2} de {1} se agotó!", b.pbThis, b.abilityName))
           battle.pbSetSeen(b)
         end
       end
@@ -458,9 +457,9 @@ Battle::AbilityEffects::OnBeingHit.add(:ANGERPOINT,
     target.statsRaisedThisRound = true
     battle.pbCommonAnimation("StatUp", target)
     if Battle::Scene::USE_ABILITY_SPLASH
-      battle.pbDisplay(_INTL("{1} maxed its {2}!", target.pbThis, GameData::Stat.get(:ATTACK).name))
+      battle.pbDisplay(_INTL("¡{1} maximizó su {2}!", target.pbThis, GameData::Stat.get(:ATTACK).name))
     else
-      battle.pbDisplay(_INTL("{1}'s {2} maxed its {3}!",
+      battle.pbDisplay(_INTL("El {2} de {1} maximizó su {3}!",
          target.pbThis, target.abilityName, GameData::Stat.get(:ATTACK).name))
     end
     battle.pbHideAbilitySplash(target)
@@ -524,7 +523,7 @@ Battle::AbilityEffects::OnEndOfUsingMove.add(:BATTLEBOND,
     next if numFainted == 0
     battle.pbShowAbilitySplash(user)
     battle.battleBond[user.index & 1][user.pokemonIndex] = true
-    battle.pbDisplay(_INTL("{1} became fully charged due to its bond with its Trainer!", user.pbThis))
+    battle.pbDisplay(_INTL("¡{1} se cargó completamente debido a su vínculo con su entrenador!", user.pbThis))
     battle.pbHideAbilitySplash(user)
     showAnim = true
     [:ATTACK, :SPECIAL_ATTACK, :SPEED].each do |stat|
@@ -533,7 +532,7 @@ Battle::AbilityEffects::OnEndOfUsingMove.add(:BATTLEBOND,
         showAnim = false
       end
     end
-    battle.pbDisplay(_INTL("{1}'s stats won't go any higher!", user.pbThis)) if showAnim
+    battle.pbDisplay(_INTL("¡Las estadísticas de {1} no subirán más!", user.pbThis)) if showAnim
   }
 )
 
@@ -548,9 +547,9 @@ Battle::AbilityEffects::StatLossImmunity.add(:ILLUMINATE,
     if showMessages
       battle.pbShowAbilitySplash(battler)
       if Battle::Scene::USE_ABILITY_SPLASH
-        battle.pbDisplay(_INTL("{1}'s {2} cannot be lowered!", battler.pbThis, GameData::Stat.get(stat).name))
+        battle.pbDisplay(_INTL("¡La {2} de {1} no puede bajar!", battler.pbThis, GameData::Stat.get(stat).name))
       else
-        battle.pbDisplay(_INTL("{1}'s {2} prevents {3} loss!", battler.pbThis,
+        battle.pbDisplay(_INTL("¡{2} de {1} impide que baje su {3}!", battler.pbThis,
            battler.abilityName, GameData::Stat.get(stat).name))
       end
       battle.pbHideAbilitySplash(battler)
