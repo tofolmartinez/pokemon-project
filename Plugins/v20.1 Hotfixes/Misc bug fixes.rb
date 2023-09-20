@@ -13,22 +13,22 @@ Essentials::ERROR_TEXT += "[v20.1 Hotfixes 1.0.7]\r\n"
 #===============================================================================
 MenuHandlers.add(:pc_menu, :pokemon_storage, {
   "name"      => proc {
-    next ($player.seen_storage_creator) ? _INTL("{1}'s PC", pbGetStorageCreator) : _INTL("Someone's PC")
+    next ($player.seen_storage_creator) ? _INTL("PC de {1}", pbGetStorageCreator) : _INTL("PC de alguien")
   },
   "order"     => 10,
   "effect"    => proc { |menu|
-    pbMessage(_INTL("\\se[PC access]The Pokémon Storage System was opened."))
+    pbMessage(_INTL("\\se[PC access]Se abrió el Sistema de Almacenamiento Pokémon."))
     command = 0
     loop do
       command = pbShowCommandsWithHelp(nil,
-         [_INTL("Organize Boxes"),
-          _INTL("Withdraw Pokémon"),
-          _INTL("Deposit Pokémon"),
-          _INTL("See ya!")],
-         [_INTL("Organize the Pokémon in Boxes and in your party."),
-          _INTL("Move Pokémon stored in Boxes to your party."),
-          _INTL("Store Pokémon in your party in Boxes."),
-          _INTL("Return to the previous menu.")], -1, command)
+         [_INTL("Organizar cajas"),
+          _INTL("Sacar Pokémon"),
+          _INTL("Depositar Pokémon"),
+          _INTL("¡Hasta luego!")],
+         [_INTL("Organiza los Pokémon en cajas y en tu equipo."),
+          _INTL("Mueve Pokémon guardados en cajas a tu equipo."),
+          _INTL("Guarda los Pokémon de tu equipo en cajas."),
+          _INTL("Volver al menú anterior.")], -1, command)
       break if command < 0
       case command
       when 0   # Organize
@@ -39,7 +39,7 @@ MenuHandlers.add(:pc_menu, :pokemon_storage, {
         }
       when 1   # Withdraw
         if $PokemonStorage.party_full?
-          pbMessage(_INTL("Your party is full!"))
+          pbMessage(_INTL("¡Tu equipo está lleno!"))
           next
         end
         pbFadeOutIn {
@@ -53,7 +53,7 @@ MenuHandlers.add(:pc_menu, :pokemon_storage, {
           count += 1 if p && !p.egg? && p.hp > 0
         end
         if count <= 1
-          pbMessage(_INTL("Can't deposit the last Pokémon!"))
+          pbMessage(_INTL("¡No puedes depositar a tu último Pokémon!"))
           next
         end
         pbFadeOutIn {
@@ -103,9 +103,9 @@ def pbChangeLevel(pkmn, new_level, scene)
   new_level = new_level.clamp(1, GameData::GrowthRate.max_level)
   if pkmn.level == new_level
     if scene.is_a?(PokemonPartyScreen)
-      scene.pbDisplay(_INTL("{1}'s level remained unchanged.", pkmn.name))
+      scene.pbDisplay(_INTL("El nivel de {1} no cambió.", pkmn.name))
     else
-      pbMessage(_INTL("{1}'s level remained unchanged.", pkmn.name))
+      pbMessage(_INTL("El nivel de {1} no cambió.", pkmn.name))
     end
     return
   end
@@ -122,9 +122,9 @@ def pbChangeLevel(pkmn, new_level, scene)
   scene.pbRefresh
   if old_level > new_level
     if scene.is_a?(PokemonPartyScreen)
-      scene.pbDisplay(_INTL("{1} dropped to Lv. {2}!", pkmn.name, pkmn.level))
+      scene.pbDisplay(_INTL("¡{1} bajó al Nv. {2}!", pkmn.name, pkmn.level))
     else
-      pbMessage(_INTL("{1} dropped to Lv. {2}!", pkmn.name, pkmn.level))
+      pbMessage(_INTL("¡{1} bajó al Nv. {2}!", pkmn.name, pkmn.level))
     end
     total_hp_diff        = pkmn.totalhp - old_total_hp
     attack_diff          = pkmn.attack - old_attack
@@ -132,16 +132,16 @@ def pbChangeLevel(pkmn, new_level, scene)
     special_attack_diff  = pkmn.spatk - old_special_attack
     special_defense_diff = pkmn.spdef - old_special_defense
     speed_diff           = pkmn.speed - old_speed
-    pbTopRightWindow(_INTL("Max. HP<r>{1}\r\nAttack<r>{2}\r\nDefense<r>{3}\r\nSp. Atk<r>{4}\r\nSp. Def<r>{5}\r\nSpeed<r>{6}",
+    pbTopRightWindow(_INTL("PS<r>{1}\r\nAtaque<r>{2}\r\nDefensa<r>{3}\r\nAt. Esp<r>{4}\r\nDef. Esp<r>{5}\r\nVelocidad<r>{6}",
                            total_hp_diff, attack_diff, defense_diff, special_attack_diff, special_defense_diff, speed_diff), scene)
-    pbTopRightWindow(_INTL("Max. HP<r>{1}\r\nAttack<r>{2}\r\nDefense<r>{3}\r\nSp. Atk<r>{4}\r\nSp. Def<r>{5}\r\nSpeed<r>{6}",
+    pbTopRightWindow(_INTL("PS<r>{1}\r\nAtaque<r>{2}\r\nDefensa<r>{3}\r\nAt. Esp<r>{4}\r\nDef. Esp<r>{5}\r\nVelocidad<r>{6}",
                            pkmn.totalhp, pkmn.attack, pkmn.defense, pkmn.spatk, pkmn.spdef, pkmn.speed), scene)
   else
     pkmn.changeHappiness("vitamin")
     if scene.is_a?(PokemonPartyScreen)
-      scene.pbDisplay(_INTL("{1} grew to Lv. {2}!", pkmn.name, pkmn.level))
+      scene.pbDisplay(_INTL("¡{1} subió al Nv. {2}!", pkmn.name, pkmn.level))
     else
-      pbMessage(_INTL("{1} grew to Lv. {2}!", pkmn.name, pkmn.level))
+      pbMessage(_INTL("¡{1} subió al Nv. {2}!", pkmn.name, pkmn.level))
     end
     total_hp_diff        = pkmn.totalhp - old_total_hp
     attack_diff          = pkmn.attack - old_attack
@@ -149,9 +149,9 @@ def pbChangeLevel(pkmn, new_level, scene)
     special_attack_diff  = pkmn.spatk - old_special_attack
     special_defense_diff = pkmn.spdef - old_special_defense
     speed_diff           = pkmn.speed - old_speed
-    pbTopRightWindow(_INTL("Max. HP<r>+{1}\r\nAttack<r>+{2}\r\nDefense<r>+{3}\r\nSp. Atk<r>+{4}\r\nSp. Def<r>+{5}\r\nSpeed<r>+{6}",
+    pbTopRightWindow(_INTL("PS<r>+{1}\r\nAtaque<r>+{2}\r\nDefensa<r>+{3}\r\nAt. Esp<r>+{4}\r\nDef. Esp<r>+{5}\r\nVelocidad<r>+{6}",
                            total_hp_diff, attack_diff, defense_diff, special_attack_diff, special_defense_diff, speed_diff), scene)
-    pbTopRightWindow(_INTL("Max. HP<r>{1}\r\nAttack<r>{2}\r\nDefense<r>{3}\r\nSp. Atk<r>{4}\r\nSp. Def<r>{5}\r\nSpeed<r>{6}",
+    pbTopRightWindow(_INTL("PS<r>{1}\r\nAtaque<r>{2}\r\nDefensa<r>{3}\r\nAt. Esp<r>{4}\r\nDef. Esp<r>{5}\r\nVelocidad<r>{6}",
                            pkmn.totalhp, pkmn.attack, pkmn.defense, pkmn.spatk, pkmn.spdef, pkmn.speed), scene)
     # Learn new moves upon level up
     movelist = pkmn.getMoveList
@@ -191,7 +191,7 @@ class PokemonEvolutionScene
     pbMEPlay("Evolution success")
     newspeciesname = GameData::Species.get(@newspecies).name
     pbMessageDisplay(@sprites["msgwindow"],
-                     _INTL("\\se[]Congratulations! Your {1} evolved into {2}!\\wt[80]",
+                     _INTL("\\se[]¡Enhorabuena! Tu {1} evolucionó a {2}!\\wt[80]",
                            @pokemon.name, newspeciesname)) { pbUpdate }
     @sprites["msgwindow"].text = ""
     # Check for consumed item and check if Pokémon should be duplicated
@@ -215,7 +215,7 @@ class PokemonEvolutionScene
     # Show Pokédex entry for new species if it hasn't been owned before
     if Settings::SHOW_NEW_SPECIES_POKEDEX_ENTRY_MORE_OFTEN && !was_owned && $player.has_pokedex
       pbMessageDisplay(@sprites["msgwindow"],
-                       _INTL("{1}'s data was added to the Pokédex.", newspeciesname)) { pbUpdate }
+                       _INTL("Los datos de {1} fueron añadidos a la Pokédex.", newspeciesname)) { pbUpdate }
       $player.pokedex.register_last_seen(@pokemon)
       pbFadeOutIn {
         scene = PokemonPokedexInfo_Scene.new
@@ -390,7 +390,7 @@ class PokemonMartScreen
       itemname       = @adapter.getDisplayName(item)
       itemnameplural = @adapter.getDisplayNamePlural(item)
       if !@adapter.canSell?(item)
-        pbDisplayPaused(_INTL("Oh, no. I can't buy {1}.", itemnameplural))
+        pbDisplayPaused(_INTL("Oh, no. No puedo comprar {1}.", itemnameplural))
         next
       end
       price = @adapter.getPrice(item, true)
@@ -399,7 +399,7 @@ class PokemonMartScreen
       @scene.pbShowMoney
       if qty > 1
         qty = @scene.pbChooseNumber(
-          _INTL("How many {1} would you like to sell?", itemnameplural), item, qty
+          _INTL("¿Cuánto {1} quieres vender?", itemnameplural), item, qty
         )
       end
       if qty == 0
@@ -407,13 +407,13 @@ class PokemonMartScreen
         next
       end
       price *= qty
-      if pbConfirm(_INTL("I can pay ${1}.\nWould that be OK?", price.to_s_formatted))
+      if pbConfirm(_INTL("Te podría pagar ${1}.\n¿Te parece bien?", price.to_s_formatted))
         old_money = @adapter.getMoney
         @adapter.setMoney(@adapter.getMoney + price)
         $stats.money_earned_at_marts += @adapter.getMoney - old_money
         qty.times { @adapter.removeItem(item) }
         sold_item_name = (qty > 1) ? itemnameplural : itemname
-        pbDisplayPaused(_INTL("You turned over the {1} and got ${2}.",
+        pbDisplayPaused(_INTL("Vendiste {1} por ${2}.",
                               sold_item_name, price.to_s_formatted)) { pbSEPlay("Mart buy item") }
         @scene.pbRefresh
       end

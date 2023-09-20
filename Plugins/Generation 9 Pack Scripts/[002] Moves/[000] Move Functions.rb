@@ -18,11 +18,11 @@ class Battle::Move::GiveUserStatusToTarget < Battle::Move
       when :DROWSY
         target.pbSleep
         user.pbCureStatus(false)
-        @battle.pbDisplay(_INTL("{1} became alert again.", user.pbThis))
+        @battle.pbDisplay(_INTL("{1} vuelve a estar alerta.", user.pbThis))
       when :FROSTBITE
         target.pbFreeze
         user.pbCureStatus(false)
-        @battle.pbDisplay(_INTL("{1}'s frostbite was healed.", user.pbThis))
+        @battle.pbDisplay(_INTL("La congelación de {1} se curó.", user.pbThis))
       end
     else
       paldea_pbEffectAgainstTarget
@@ -47,19 +47,19 @@ class Battle::Move::CureUserPartyStatus < Battle::Move
     end
     case oldStatus
     when :SLEEP
-      @battle.pbDisplay(_INTL("{1} was woken from sleep.", curedName))
+      @battle.pbDisplay(_INTL("{1} se despertó.", curedName))
     when :POISON
-      @battle.pbDisplay(_INTL("{1} was cured of its poisoning.", curedName))
+      @battle.pbDisplay(_INTL("{1} se curó del envenenamiento.", curedName))
     when :BURN
-      @battle.pbDisplay(_INTL("{1}'s burn was healed.", curedName))
+      @battle.pbDisplay(_INTL("{1} se curó de sus quemaduras.", curedName))
     when :PARALYSIS
-      @battle.pbDisplay(_INTL("{1} was cured of paralysis.", curedName))
+      @battle.pbDisplay(_INTL("{1} se curó de su parálisis.", curedName))
     when :FROZEN
-      @battle.pbDisplay(_INTL("{1} was thawed out.", curedName))
+      @battle.pbDisplay(_INTL("{1} fue descongelado.", curedName))
     when :DROWSY
-      @battle.pbDisplay(_INTL("{1} became alert again.", curedName))
+      @battle.pbDisplay(_INTL("{1} vuelve a estar alerta.", curedName))
     when :FROSTBITE
-      @battle.pbDisplay(_INTL("{1}'s frostbite was healed.", curedName))
+      @battle.pbDisplay(_INTL("La congelación de {1} se curó.", curedName))
     end
   end
 end
@@ -73,26 +73,26 @@ class Battle::Move::HealUserAndAlliesQuarterOfTotalHPCureStatus < Battle::Move
   def pbEffectAgainstTarget(user, target)
     if target.canHeal?
       target.pbRecoverHP(target.totalhp / 4)
-      @battle.pbDisplay(_INTL("{1}'s HP was restored.", target.pbThis))
+      @battle.pbDisplay(_INTL("Los PS de {1} fueron restaurados.", target.pbThis))
     end
     if target.status != :NONE
       old_status = target.status
       target.pbCureStatus(false)
       case old_status
       when :SLEEP
-        @battle.pbDisplay(_INTL("{1} was woken from sleep.", target.pbThis))
+        @battle.pbDisplay(_INTL("{1} se despertó.", target.pbThis))
       when :POISON
-        @battle.pbDisplay(_INTL("{1} was cured of its poisoning.", target.pbThis))
+        @battle.pbDisplay(_INTL("{1} se curó del envenenamiento.", target.pbThis))
       when :BURN
-        @battle.pbDisplay(_INTL("{1}'s burn was healed.", target.pbThis))
+        @battle.pbDisplay(_INTL("{1} se curó de sus quemaduras.", target.pbThis))
       when :PARALYSIS
-        @battle.pbDisplay(_INTL("{1} was cured of paralysis.", target.pbThis))
+        @battle.pbDisplay(_INTL("{1} se curó de su parálisis.", target.pbThis))
       when :FROZEN
-        @battle.pbDisplay(_INTL("{1} was thawed out.", target.pbThis))
+        @battle.pbDisplay(_INTL("{1} fue descongelado.", target.pbThis))
       when :DROWSY
-        @battle.pbDisplay(_INTL("{1} became alert again.", target.pbThis))
+        @battle.pbDisplay(_INTL("{1} vuelve a estar alerta.", target.pbThis))
       when :FROSTBITE
-        @battle.pbDisplay(_INTL("{1}'s frostbite was healed.", target.pbThis))
+        @battle.pbDisplay(_INTL("La congelación de {1} se curó.", target.pbThis))
       end
     end
   end
@@ -122,7 +122,7 @@ class Battle::Move::MultiTurnAttackPreventSleeping < Battle::Move
     return if user.effects[PBEffects::Uproar] > 0
     user.effects[PBEffects::Uproar] = 3
     user.currentMove = @id
-    @battle.pbDisplay(_INTL("{1} caused an uproar!", user.pbThis))
+    @battle.pbDisplay(_INTL("¡{1} causó un gran alboroto!", user.pbThis))
     @battle.pbPriority(true).each do |b|
       next if b.fainted? || ![:SLEEP, :DROWSY].include?(b.status)
       next if b.hasActiveAbility?(:SOUNDPROOF)
@@ -140,7 +140,7 @@ class Battle::Move::HealUserFullyAndFallAsleep < Battle::Move::HealingMove
   alias paldea_pbMoveFailed? pbMoveFailed?
   def pbMoveFailed?(user, targets)
     if user.hasActiveAbility?(:PURIFYINGSALT)
-      @battle.pbDisplay(_INTL("But it failed!"))
+      @battle.pbDisplay(_INTL("¡Pero falló!"))
       return true
     end
     return paldea_pbMoveFailed?(user, targets)
@@ -156,16 +156,16 @@ class Battle::Move::SwitchOutTargetStatusMove < Battle::Move
   alias paldea_pbFailsAgainstTarget? pbFailsAgainstTarget?
   def pbFailsAgainstTarget?(user, target, show_message)
 	if target.isCommander?
-      @battle.pbDisplay(_INTL("But it failed!")) if show_message
+      @battle.pbDisplay(_INTL("¡Pero falló!")) if show_message
       return true
     end
     if target.hasActiveAbility?(:GUARDDOG) && !@battle.moldBreaker
       if show_message
         @battle.pbShowAbilitySplash(target)
         if Battle::Scene::USE_ABILITY_SPLASH
-          @battle.pbDisplay(_INTL("{1} anchors itself!", target.pbThis))
+          @battle.pbDisplay(_INTL("¡{1} se ancla a sí mismo!", target.pbThis))
         else
-          @battle.pbDisplay(_INTL("{1} anchors itself with {2}!", target.pbThis, target.abilityName))
+          @battle.pbDisplay(_INTL("¡{1} se ancla con {2}!", target.pbThis, target.abilityName))
         end
         @battle.pbHideAbilitySplash(target)
       end
@@ -185,7 +185,7 @@ class Battle::Move::SwitchOutTargetStatusMove < Battle::Move
       newPkmn = @battle.pbGetReplacementPokemonIndex(b.index, true)
       next if newPkmn < 0
       @battle.pbRecallAndReplace(b.index, newPkmn, true)
-      @battle.pbDisplay(_INTL("{1} was dragged out!", b.pbThis))
+      @battle.pbDisplay(_INTL("¡{1} fue arrastrado!", b.pbThis))
       @battle.pbClearChoice(b.index)
       @battle.pbOnBattlerEnteringBattle(b.index)
       switched_battlers.push(b.index)
@@ -211,7 +211,7 @@ class Battle::Move::SwitchOutTargetDamagingMove < Battle::Move
       newPkmn = @battle.pbGetReplacementPokemonIndex(b.index, true)
       next if newPkmn < 0
       @battle.pbRecallAndReplace(b.index, newPkmn, true)
-      @battle.pbDisplay(_INTL("{1} was dragged out!", b.pbThis))
+      @battle.pbDisplay(_INTL("¡{1} fue arrastrado!", b.pbThis))
       @battle.pbClearChoice(b.index)
       @battle.pbOnBattlerEnteringBattle(b.index)
       switched_battlers.push(b.index)
@@ -228,7 +228,7 @@ end
 class Battle::Move::StartUserSideDoubleSpeed < Battle::Move
   def pbEffectGeneral(user)
     user.pbOwnSide.effects[PBEffects::Tailwind] = 4
-    @battle.pbDisplay(_INTL("The Tailwind blew from behind {1}!", user.pbTeam(true)))
+    @battle.pbDisplay(_INTL("¡El Viento afín sopló por detrás de {1}!", user.pbTeam(true)))
     @battle.allSameSideBattlers.each do |b| 
       next if !b || b.fainted?
       if b.hasActiveAbility?(:WINDRIDER) && b.pbCanRaiseStatStage?(:ATTACK, b, self)
@@ -236,7 +236,7 @@ class Battle::Move::StartUserSideDoubleSpeed < Battle::Move
       elsif b.hasActiveAbility?(:WINDPOWER) && b.effects[PBEffects::Charge] == 0
         @battle.pbShowAbilitySplash(b)
         b.effects[PBEffects::Charge] = 2
-        @battle.pbDisplay(_INTL("Being hit by Tailwind charged {1} with power!", b.pbThis(true)))
+        @battle.pbDisplay(_INTL("¡Ser golpeado por Viento afín llenó a {1} de poder!", b.pbThis(true)))
         @battle.pbHideAbilitySplash(b)
       end
     end
@@ -260,13 +260,13 @@ class Battle::Move::UserSwapsPositionsWithAlly < Battle::Move
     if Settings::MECHANICS_GENERATION >= 9
       if user.effects[PBEffects::AllySwitch]
         user.effects[PBEffects::ProtectRate] = 1
-        @battle.pbDisplay(_INTL("But it failed!"))
+        @battle.pbDisplay(_INTL("¡Pero falló!"))
         return true
       end
       if user.effects[PBEffects::ProtectRate] > 1 &&
          @battle.pbRandom(user.effects[PBEffects::ProtectRate]) != 0
         user.effects[PBEffects::ProtectRate] = 1
-        @battle.pbDisplay(_INTL("But it failed!"))
+        @battle.pbDisplay(_INTL("¡Pero falló!"))
         return true
       end
     end
@@ -357,7 +357,7 @@ class Battle::Move::SetUserAbilityToTargetAbility < Battle::Move
   alias paldea_pbMoveFailed? pbMoveFailed?
   def pbMoveFailed?(user, targets)
     if user.hasActiveItem?(:ABILITYSHIELD)
-      @battle.pbDisplay(_INTL("{1}'s Ability is protected by the effects of its Ability Shield!", user.pbThis))
+      @battle.pbDisplay(_INTL("La habilidad de {1} está protegida por los efectos de su Escudo habilidad.", user.pbThis))
       return true
     end
     return paldea_pbMoveFailed?(user, targets)
@@ -373,7 +373,7 @@ class Battle::Move::UserTargetSwapAbilities < Battle::Move
   alias paldea_pbMoveFailed? pbMoveFailed?
   def pbMoveFailed?(user, targets)
     if user.hasActiveItem?(:ABILITYSHIELD)
-      @battle.pbDisplay(_INTL("{1}'s Ability is protected by the effects of its Ability Shield!", user.pbThis))
+      @battle.pbDisplay(_INTL("¡La habilidad de {1} está protegida por los efectos de su Escudo habilidad!", user.pbThis))
       return true
     end
     return paldea_pbMoveFailed?(user, targets)
@@ -383,7 +383,7 @@ class Battle::Move::UserTargetSwapAbilities < Battle::Move
   def pbFailsAgainstTarget?(user, target, show_message)
     ret = paldea_pbFailsAgainstTarget?(user, target, show_message)
     if !ret && target.hasActiveItem?(:ABILITYSHIELD)
-      @battle.pbDisplay(_INTL("{1}'s Ability is protected by the effects of its Ability Shield!", target.pbThis))
+      @battle.pbDisplay(_INTL("¡La habilidad de {1} está protegida por los efectos de su Escudo habilidad!", target.pbThis))
       return true
     end
     return ret
@@ -400,7 +400,7 @@ class Battle::Move::SetTargetAbilityToUserAbility < Battle::Move
   def pbFailsAgainstTarget?(user, target, show_message)
     ret = paldea_pbFailsAgainstTarget?(user, target, show_message)
     if !ret && target.hasActiveItem?(:ABILITYSHIELD)
-      @battle.pbDisplay(_INTL("{1}'s Ability is protected by the effects of its Ability Shield!", target.pbThis))
+      @battle.pbDisplay(_INTL("¡La habilidad de {1} está protegida por los efectos de su Escudo habilidad!", target.pbThis))
       return true
     end
     return ret
@@ -417,7 +417,7 @@ class Battle::Move::SetTargetAbilityToInsomnia < Battle::Move
   def pbFailsAgainstTarget?(user, target, show_message)
     ret = paldea_pbFailsAgainstTarget?(user, target, show_message)
     if !ret && target.hasActiveItem?(:ABILITYSHIELD)
-      @battle.pbDisplay(_INTL("{1}'s Ability is protected by the effects of its Ability Shield!", target.pbThis))
+      @battle.pbDisplay(_INTL("¡La habilidad de {1} está protegida por los efectos de su Escudo habilidad!", target.pbThis))
       return true
     end
     return ret
@@ -434,7 +434,7 @@ class Battle::Move::SetTargetAbilityToSimple < Battle::Move
   def pbFailsAgainstTarget?(user, target, show_message)
     ret = paldea_pbFailsAgainstTarget?(user, target, show_message)
     if !ret && target.hasActiveItem?(:ABILITYSHIELD)
-      @battle.pbDisplay(_INTL("{1}'s Ability is protected by the effects of its Ability Shield!", target.pbThis))
+      @battle.pbDisplay(_INTL("¡La habilidad de {1} está protegida por los efectos de su Escudo habilidad!", target.pbThis))
       return true
     end
     return ret
@@ -451,7 +451,7 @@ class Battle::Move::NegateTargetAbility < Battle::Move
   def pbFailsAgainstTarget?(user, target, show_message)
     ret = paldea_pbFailsAgainstTarget?(user, target, show_message)
     if !ret && target.hasActiveItem?(:ABILITYSHIELD)
-      @battle.pbDisplay(_INTL("{1}'s Ability is protected by the effects of its Ability Shield!", target.pbThis))
+      @battle.pbDisplay(_INTL("¡La habilidad de {1} está protegida por los efectos de su Escudo habilidad!", target.pbThis))
       return true
     end
     return ret
@@ -513,13 +513,13 @@ class Battle::Move::MaxUserAttackLoseHalfOfTotalHP < Battle::Move
       user.statsLoweredThisRound = true
       user.statsDropped = true
       @battle.pbCommonAnimation("StatDown", user)
-      @battle.pbDisplay(_INTL("{1} cut its own HP and minimized its Attack!", user.pbThis))
+      @battle.pbDisplay(_INTL("¡{1} redujo sus PS y minimizó su Ataque!", user.pbThis))
     else
       user.stages[:ATTACK] = 6
       user.addSideStatUps(:ATTACK, 6)
       user.statsRaisedThisRound = true
       @battle.pbCommonAnimation("StatUp", user)
-      @battle.pbDisplay(_INTL("{1} cut its own HP and maximized its Attack!", user.pbThis))
+      @battle.pbDisplay(_INTL("¡{1} redujo sus PS y maximizó su Ataque!", user.pbThis))
     end
     user.pbItemHPHealCheck
   end
@@ -589,7 +589,7 @@ class Battle::Move::TypeDependsOnUserPlate < Battle::Move
       if user.form != newForm
         @battle.scene.pbArceusTransform(user.index, newType)
         user.pbChangeForm(newForm,
-        _INTL("{1} transformed into the {2} type!", user.pbThis, typeName))
+        _INTL("¡{1} se cambió al tipo {2}!", user.pbThis, typeName))
       end
     end
   end

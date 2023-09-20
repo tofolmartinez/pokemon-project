@@ -17,7 +17,7 @@
 #-------------------------------------------------------------------------------
 GameData::Status.register({
   :id            => :DROWSY,
-  :name          => _INTL("Drowsy"),
+  :name          => _INTL("Somnoliento"),
   :animation     => "Drowsy",
   :icon_position => 5
 })
@@ -33,7 +33,7 @@ GameData::Status.register({
 #-------------------------------------------------------------------------------
 GameData::Status.register({
   :id            => :FROSTBITE,
-  :name          => _INTL("Frostbite"),
+  :name          => _INTL("Helado"),
   :animation     => "Frostbite",
   :icon_position => 6
 })
@@ -64,9 +64,9 @@ class Battle
       pbCommonAnimation(weather_data.animation) if showAnim && weather_data
       pbHideAbilitySplash(user) if user
       if Settings::HAIL_WEATHER_TYPE == 2
-        pbDisplay(_INTL("A harsh hailstorm bellows!"))
+        pbDisplay(_INTL("¡Una fuerte tormenta de granizo brama!"))
       else
-        pbDisplay(_INTL("It started to snow!"))
+        pbDisplay(_INTL("¡Empezó a nevar!"))
       end
       allBattlers.each { |b| b.pbCheckFormOnWeatherChange }
       pbEndPrimordialWeather
@@ -84,9 +84,9 @@ class Battle
       @field.weatherDuration -= 1 if @field.weatherDuration > 0
       if @field.weatherDuration == 0
         if Settings::HAIL_WEATHER_TYPE == 2
-          pbDisplay(_INTL("The hailstorm ended."))
+          pbDisplay(_INTL("La granizada terminó."))
         else
-          pbDisplay(_INTL("The snow stopped."))
+          pbDisplay(_INTL("La nieve se detuvo."))
         end
         @field.weather = :None
         allBattlers.each { |battler| battler.pbCheckFormOnWeatherChange }
@@ -95,7 +95,7 @@ class Battle
       end
       weather_data = GameData::BattleWeather.try_get(@field.weather)
       pbCommonAnimation(weather_data.animation) if weather_data && !@weather
-      pbDisplay(_INTL("The hail is crashing down.")) if Settings::HAIL_WEATHER_TYPE == 2
+      pbDisplay(_INTL("Está cayendo granizo.")) if Settings::HAIL_WEATHER_TYPE == 2
       priority.each do |battler|
         if battler.abilityActive?
           Battle::AbilityEffects.triggerEndOfRoundWeather(battler.ability, battler.effectiveWeather, battler, self)
@@ -223,14 +223,14 @@ class Battle::Battler
       #-------------------------------------------------------------------------
       if self.status == newStatus && !ignoreStatus
         if showMessages
-          @battle.pbDisplay(_INTL("{1} is already drowsy!", pbThis))      if newStatus == :DROWSY
-          @battle.pbDisplay(_INTL("{1} is already frostbitten!", pbThis)) if newStatus == :FROSTBITE
+          @battle.pbDisplay(_INTL("¡{1} ya está somnoliento!", pbThis))      if newStatus == :DROWSY
+          @battle.pbDisplay(_INTL("¡{1} ya está congelado!", pbThis)) if newStatus == :FROSTBITE
         end
         return false
       end
       if (self.status != :NONE && !ignoreStatus && !selfInflicted) ||
          (@effects[PBEffects::Substitute] > 0 && !(move && move.ignoresSubstitute?(user)) && !selfInflicted)
-        @battle.pbDisplay(_INTL("It doesn't affect {1}...", pbThis(true))) if showMessages
+        @battle.pbDisplay(_INTL("No afecta a {1}...", pbThis(true))) if showMessages
         return false
       end
       case newStatus
@@ -239,13 +239,13 @@ class Battle::Battler
       #-------------------------------------------------------------------------
       when :DROWSY
         if affectedByTerrain? && @battle.field.terrain == :Electric
-          @battle.pbDisplay(_INTL("{1} surrounds itself with electrified terrain!", pbThis(true))) if showMessages
+          @battle.pbDisplay(_INTL("¡{1} se rodea de terreno electrificado!", pbThis(true))) if showMessages
           return false
         end
         if !(hasActiveAbility?(:SOUNDPROOF) && !@battle.moldBreaker)
           @battle.allBattlers.each do |b|
             next if b.effects[PBEffects::Uproar] == 0
-            @battle.pbDisplay(_INTL("But the uproar kept {1} alert!", pbThis(true))) if showMessages
+            @battle.pbDisplay(_INTL("¡Pero el alboroto mantuvo alerta a {1}!", pbThis(true))) if showMessages
             return false
           end
         end
@@ -254,7 +254,7 @@ class Battle::Battler
       #-------------------------------------------------------------------------
       when :FROSTBITE
         if pbHasType?(:ICE) || [:Sun, :HarshSun].include?(effectiveWeather)
-          @battle.pbDisplay(_INTL("It doesn't affect {1}...", pbThis(true))) if showMessages
+          @battle.pbDisplay(_INTL("No afecta a {1}...", pbThis(true))) if showMessages
           return false
         end
       end
@@ -286,18 +286,18 @@ class Battle::Battler
           msg = ""
           if Battle::Scene::USE_ABILITY_SPLASH
             case originalStatus
-            when :SLEEP  then msg = _INTL("{1} stays alert!", pbThis)
-            when :FROZEN then msg = _INTL("{1} cannot be frostbitten!", pbThis)
+            when :SLEEP  then msg = _INTL("¡{1} se mantiene alerta!", pbThis)
+            when :FROZEN then msg = _INTL("¡{1} no se puede helar!", pbThis)
             end
           elsif immAlly
             case originalStatus
-            when :SLEEP  then msg = _INTL("{1} stays alert because of {2}'s {3}!", pbThis, immAlly.pbThis(true), immAlly.abilityName)
-            when :FROZEN then msg = _INTL("{1} cannot be frostbitten because of {2}'s {3}!", pbThis, immAlly.pbThis(true), immAlly.abilityName)
+            when :SLEEP  then msg = _INTL("¡{1} se mantiene alerta debido al {3} de {2}!", pbThis, immAlly.pbThis(true), immAlly.abilityName)
+            when :FROZEN then msg = _INTL("¡{1} no se puede helar debido al {3} de {2}!", pbThis, immAlly.pbThis(true), immAlly.abilityName)
             end
           else
             case originalStatus
-            when :SLEEP  then msg = _INTL("{1}'s {2} prevents drowsiness!", pbThis, abilityName)
-            when :FROZEN then msg = _INTL("{1}'s {2} prevents frostbites!", pbThis, abilityName)
+            when :SLEEP  then msg = _INTL("¡El {2} de {1} evita la somnolencia!", pbThis, abilityName)
+            when :FROZEN then msg = _INTL("¡El {2} de {1} evita la helada!", pbThis, abilityName)
             end
           end
           @battle.pbDisplay(msg)
@@ -310,7 +310,7 @@ class Battle::Battler
       #-------------------------------------------------------------------------
       if pbOwnSide.effects[PBEffects::Safeguard] > 0 && !selfInflicted && move &&
          !(user && user.hasActiveAbility?(:INFILTRATOR))
-        @battle.pbDisplay(_INTL("{1}'s team is protected by Safeguard!", pbThis)) if showMessages
+        @battle.pbDisplay(_INTL("¡El equipo de {1} está protegido por Velo sagrado!", pbThis)) if showMessages
         return false
       end
       return true
@@ -360,8 +360,8 @@ class Battle::Battler
         @battle.pbDisplay(msg)
       else
         case newStatus
-        when :DROWSY    then @battle.pbDisplay(_INTL("{1} grew drowsy!\nIt may be too sleepy to move!", pbThis))
-        when :FROSTBITE then @battle.pbDisplay(_INTL("{1} was frostbitten!", pbThis))
+        when :DROWSY    then @battle.pbDisplay(_INTL("¡{1} se adormeció!\nPuede que tenga demasiado sueño para moverse.", pbThis))
+        when :FROSTBITE then @battle.pbDisplay(_INTL("¡{1} se congeló!", pbThis))
         end
       end
       PBDebug.log("[Status change] #{pbThis}'s drowsy count is #{newStatusCount}") if newStatus == :DROWSY
@@ -386,8 +386,8 @@ class Battle::Battler
       self.status = :NONE
       if showMessages
         case oldStatus
-        when :DROWSY    then @battle.pbDisplay(_INTL("{1} became alert again.", pbThis))
-        when :FROSTBITE then @battle.pbDisplay(_INTL("{1}'s frostbite was healed.", pbThis))
+        when :DROWSY    then @battle.pbDisplay(_INTL("{1} se puso alerta de nuevo.", pbThis))
+        when :FROSTBITE then @battle.pbDisplay(_INTL("Se curó la congelación de {1}.", pbThis))
         end
       end
       PBDebug.log("[Status change] #{pbThis}'s status was cured") if !showMessages
@@ -409,21 +409,21 @@ class Battle::Battler
     yield if block_given?
     case self.status
     when :SLEEP
-      @battle.pbDisplay(_INTL("{1} is fast asleep.", pbThis))
+      @battle.pbDisplay(_INTL("{1} está profundamente dormido.", pbThis))
 	  PBDebug.log("[Status continues] #{pbThis}'s sleep count is #{@statusCount}")
     when :POISON
-      @battle.pbDisplay(_INTL("{1} was hurt by poison!", pbThis))
+      @battle.pbDisplay(_INTL("¡{1} fue herido por veneno!", pbThis))
     when :BURN
-      @battle.pbDisplay(_INTL("{1} was hurt by its burn!", pbThis))
+      @battle.pbDisplay(_INTL("¡{1} fue herido por su quemadura!", pbThis))
     when :PARALYSIS
-      @battle.pbDisplay(_INTL("{1} is paralyzed! It can't move!", pbThis))
+      @battle.pbDisplay(_INTL("¡{1} está paralizado! ¡No puede moverse!", pbThis))
     when :FROZEN
-      @battle.pbDisplay(_INTL("{1} is frozen solid!", pbThis))
+      @battle.pbDisplay(_INTL("¡{1} está congelado!", pbThis))
     when :DROWSY
-      @battle.pbDisplay(_INTL("{1} is too drowsy to move!", pbThis))
+      @battle.pbDisplay(_INTL("¡{1} está demasiado somnoliento para moverse!", pbThis))
 	  PBDebug.log("[Status continues] #{pbThis}'s drowsy count is #{@statusCount}")
     when :FROSTBITE
-      @battle.pbDisplay(_INTL("{1} was hurt by its frostbite!", pbThis))
+      @battle.pbDisplay(_INTL("¡{1} fue herido por su congelación!", pbThis))
     end
   end
   

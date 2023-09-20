@@ -3437,7 +3437,7 @@ Weight = 235.0
 Color = Blue
 Shape = Serpentine
 Habitat = WatersEdge
-Category = Atrocious
+Category = Atrocidad
 Pokedex = Es extremadamente feroz y violento. Cuando las personas comienzan a luchar, aparece y reduce a cenizas todo lo que pilla con intensas llamaradas.
 Generation = 1
 #-------------------------------

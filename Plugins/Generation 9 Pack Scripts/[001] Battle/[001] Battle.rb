@@ -68,7 +68,7 @@ class Battle
   def pbCanSwitch?(idxBattler, idxParty = -1, partyScene = nil)
     ret = paldea_pbCanSwitch?(idxBattler, idxParty, partyScene)
     if ret && @battlers[idxBattler].effects[PBEffects::Commander]
-      partyScene&.pbDisplay(_INTL("{1} can't be switched out!", battler.pbThis))
+      partyScene&.pbDisplay(_INTL("¡{1} no se puede cambiar!", battler.pbThis))
       return false
     end
     return ret
@@ -81,7 +81,7 @@ class Battle
   def pbEOREndBattlerEffects(priority)
     paldea_pbEOREndBattlerEffects(priority)
     pbEORCountDownBattlerEffect(priority, PBEffects::Splinters) { |battler|
-      pbDisplay(_INTL("{1} was freed from the jagged splinters!", battler.pbThis))
+      pbDisplay(_INTL("¡{1} se liberó de las astillas dentadas!", battler.pbThis))
       battler.effects[PBEffects::SplintersType] = nil
     }
   end
@@ -116,7 +116,7 @@ class Battle
       damage = ((((2.0 * battler.level / 5) + 2).floor * 25 * battler.attack / battler.defense).floor / 50).floor + 2
       damage *= effectiveness.to_f / Effectiveness::NORMAL_EFFECTIVE
       battler.pbTakeEffectDamage(damage) { |hp_lost|
-        pbDisplay(_INTL("{1} is hurt by the jagged splinters!", battler.pbThis))
+        pbDisplay(_INTL("¡{1} es herido por las astillas dentadas!", battler.pbThis))
       }
     end
     priority.each do |battler|
@@ -124,7 +124,7 @@ class Battle
       pbCommonAnimation("SaltCure", battler)
       fraction = (battler.pbHasType?(:STEEL) || battler.pbHasType?(:WATER)) ? 4 : 8
       battler.pbTakeEffectDamage(battler.totalhp / fraction) { |hp_lost|
-        pbDisplay(_INTL("{1} is hurt by Salt Cure!", battler.pbThis))
+        pbDisplay(_INTL("¡{1} es herido por el Salazón!", battler.pbThis))
       }
     end
   end
@@ -160,8 +160,8 @@ class Battle
     pkmn = party[party_index]
     pkmn.hp = [1, (pkmn.totalhp / 2).floor].max
     pkmn.heal_status
-    displayname = (pbOwnedByPlayer?(idxBattler)) ? pkmn.name : _INTL("The opposing {1}", pkmn.name)
-    pbDisplay(_INTL("{1} was revived and is ready to fight again!", displayname))
+    displayname = (pbOwnedByPlayer?(idxBattler)) ? pkmn.name : _INTL("El {1} enemigo", pkmn.name)
+    pbDisplay(_INTL("¡{1} ha revivido y está listo para luchar de nuevo!", displayname))
   end
 end
 
@@ -314,8 +314,8 @@ class Battle::Scene
     modParty = @battle.pbPlayerDisplayParty(idxBattler)
     scene = PokemonParty_Scene.new
     switchScreen = PokemonPartyScreen.new(scene, modParty)
-    msg = _INTL("Choose a Pokémon.")
-    msg = _INTL("Send which Pokémon to Boxes?") if mode == 1
+    msg = _INTL("Elige un Pokémon.")
+    msg = _INTL("¿Qué Pokémon enviar al PC?") if mode == 1
     switchScreen.pbStartScene(msg, @battle.pbNumPositions(0, 0))
     loop do
       scene.pbSetHelpText(msg)
@@ -329,12 +329,12 @@ class Battle::Scene
       cmdSelect  = -1
       cmdSummary = -1
       commands = []
-      commands[cmdSwitch  = commands.length] = _INTL("Switch In") if mode == 0 && modParty[idxParty].able?
-      commands[cmdBoxes   = commands.length] = _INTL("Send to Boxes") if mode == 1
-      commands[cmdSelect  = commands.length] = _INTL("Select") if mode == 2 && modParty[idxParty].fainted?
-      commands[cmdSummary = commands.length] = _INTL("Summary")
-      commands[commands.length]              = _INTL("Cancel")
-      command = scene.pbShowCommands(_INTL("Do what with {1}?", modParty[idxParty].name), commands)
+      commands[cmdSwitch  = commands.length] = _INTL("Cambiar") if mode == 0 && modParty[idxParty].able?
+      commands[cmdBoxes   = commands.length] = _INTL("Enviar al PC") if mode == 1
+      commands[cmdSelect  = commands.length] = _INTL("Elegir") if mode == 2 && modParty[idxParty].fainted?
+      commands[cmdSummary = commands.length] = _INTL("Datos")
+      commands[commands.length]              = _INTL("Cancelar")
+      command = scene.pbShowCommands(_INTL("¿Qué hacer con {1}?", modParty[idxParty].name), commands)
       if (cmdSwitch >= 0 && command == cmdSwitch) ||   # Switch In
          (cmdBoxes >= 0 && command == cmdBoxes)   ||   # Send to Boxes
          (cmdSelect >= 0 && command == cmdSelect)      # Select for Revival Blessing

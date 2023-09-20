@@ -61,25 +61,25 @@ module Battle::CatchAndStoreMixin
     # Nickname the Pokémon (unless it's a Shadow Pokémon)
     if !pkmn.shadowPokemon?
       if $PokemonSystem.givenicknames == 0 &&
-         pbDisplayConfirm(_INTL("Would you like to give a nickname to {1}?", pkmn.name))
-        nickname = @scene.pbNameEntry(_INTL("{1}'s nickname?", pkmn.speciesName), pkmn)
+         pbDisplayConfirm(_INTL("¿Quieres darle un mote a {1}?", pkmn.name))
+        nickname = @scene.pbNameEntry(_INTL("¿Mote de {1}?", pkmn.speciesName), pkmn)
         pkmn.name = nickname
       end
     end
     # Store the Pokémon
     if pbPlayer.party_full? && (@sendToBoxes == 0 || @sendToBoxes == 2)   # Ask/must add to party
-      cmds = [_INTL("Add to your party"),
-              _INTL("Send to a Box"),
-              _INTL("See {1}'s summary", pkmn.name),
-              _INTL("Check party")]
+      cmds = [_INTL("Añadir a tu equipo"),
+              _INTL("Enviar al PC"),
+              _INTL("Detalles de {1}", pkmn.name),
+              _INTL("Ver equipo")]
       cmds.delete_at(1) if @sendToBoxes == 2
       loop do
-        cmd = pbShowCommands(_INTL("Where do you want to send {1} to?", pkmn.name), cmds, 99)
+        cmd = pbShowCommands(_INTL("¿Dónde quieres enviar a {1}?", pkmn.name), cmds, 99)
         break if cmd == 99   # Cancelling = send to a Box
         cmd += 1 if cmd >= 1 && @sendToBoxes == 2
         case cmd
         when 0   # Add to your party
-          pbDisplay(_INTL("Choose a Pokémon in your party to send to your Boxes."))
+          pbDisplay(_INTL("Elige a qué Pokémon de tu equipo quieres enviar al PC."))
           party_index = -1
           @scene.pbPartyScreen(0, (@sendToBoxes != 2), 1) { |idxParty, _partyScene|
             party_index = idxParty
@@ -101,7 +101,7 @@ module Battle::CatchAndStoreMixin
           stored_box = @peer.pbStorePokemon(pbPlayer, send_pkmn)
           pbPlayer.party.delete_at(party_index)
           box_name = @peer.pbBoxName(stored_box)
-          pbDisplayPaused(_INTL("{1} has been sent to Box \"{2}\".", send_pkmn.name, box_name))
+          pbDisplayPaused(_INTL("{1} fue enviado a la Caja \"{2}\".", send_pkmn.name, box_name))
           # Rearrange all remembered properties of party Pokémon
           (party_index...party_size).each do |idx|
             if idx < party_size - 1
@@ -133,13 +133,13 @@ module Battle::CatchAndStoreMixin
     # Store as normal (add to party if there's space, or send to a Box if not)
     stored_box = @peer.pbStorePokemon(pbPlayer, pkmn)
     if stored_box < 0
-      pbDisplayPaused(_INTL("{1} has been added to your party.", pkmn.name))
+      pbDisplayPaused(_INTL("{1} fue añadido a tu equipo.", pkmn.name))
       @initialItems[0][pbPlayer.party.length - 1] = pkmn.item_id if @initialItems
       return
     end
     # Messages saying the Pokémon was stored in a PC box
     box_name = @peer.pbBoxName(stored_box)
-    pbDisplayPaused(_INTL("{1} has been sent to Box \"{2}\"!", pkmn.name, box_name))
+    pbDisplayPaused(_INTL("{1} fue enviado a la Caja \"{2}\"!", pkmn.name, box_name))
   end
 end
 
@@ -168,7 +168,7 @@ class Battle::Move::LowerPPOfTargetLastMoveBy3 < Battle::Move
     return if !last_move || last_move.pp == 0 || last_move.total_pp <= 0
     reduction = [3, last_move.pp].min
     target.pbSetPP(last_move, last_move.pp - reduction)
-    @battle.pbDisplay(_INTL("It reduced the PP of {1}'s {2} by {3}!",
+    @battle.pbDisplay(_INTL("¡Redujo los PP de {2} de {1} en {3}!",
                             target.pbThis(true), last_move.name, reduction))
   end
 end
@@ -221,9 +221,9 @@ class Battle
         next if !pbSwapBattlers(pair[0], pair[1])
         case pbSideSize(pair[1])
         when 2
-          pbDisplay(_INTL("{1} moved across!", @battlers[pair[1]].pbThis))
+          pbDisplay(_INTL("¡{1} cruzó al otro lado!", @battlers[pair[1]].pbThis))
         when 3
-          pbDisplay(_INTL("{1} moved to the center!", @battlers[pair[1]].pbThis))
+          pbDisplay(_INTL("¡{1} se movió al centro!", @battlers[pair[1]].pbThis))
         end
       end
     end
@@ -257,11 +257,11 @@ class Battle::Battler
       if showMessages
         msg = ""
         case self.status
-        when :SLEEP     then msg = _INTL("{1} is already asleep!", pbThis)
-        when :POISON    then msg = _INTL("{1} is already poisoned!", pbThis)
-        when :BURN      then msg = _INTL("{1} already has a burn!", pbThis)
-        when :PARALYSIS then msg = _INTL("{1} is already paralyzed!", pbThis)
-        when :FROZEN    then msg = _INTL("{1} is already frozen solid!", pbThis)
+        when :SLEEP     then msg = _INTL("¡{1} ya está dormido!", pbThis)
+        when :POISON    then msg = _INTL("¡{1} ya está envenenado!", pbThis)
+        when :BURN      then msg = _INTL("¡{1} ya tiene quemaduras!", pbThis)
+        when :PARALYSIS then msg = _INTL("¡{1} ya está paralizado!", pbThis)
+        when :FROZEN    then msg = _INTL("¡{1} ya está congelado!", pbThis)
         end
         @battle.pbDisplay(msg)
       end
@@ -269,18 +269,18 @@ class Battle::Battler
     end
     # Trying to replace a status problem with another one
     if self.status != :NONE && !ignoreStatus && !(self_inflicted && move)   # Rest can replace a status problem
-      @battle.pbDisplay(_INTL("It doesn't affect {1}...", pbThis(true))) if showMessages
+      @battle.pbDisplay(_INTL("No afecta a {1}...", pbThis(true))) if showMessages
       return false
     end
     # Trying to inflict a status problem on a Pokémon behind a substitute
     if @effects[PBEffects::Substitute] > 0 && !(move && move.ignoresSubstitute?(user)) &&
        !self_inflicted
-      @battle.pbDisplay(_INTL("It doesn't affect {1}...", pbThis(true))) if showMessages
+      @battle.pbDisplay(_INTL("No afecta a {1}...", pbThis(true))) if showMessages
       return false
     end
     # Weather immunity
     if newStatus == :FROZEN && [:Sun, :HarshSun].include?(effectiveWeather)
-      @battle.pbDisplay(_INTL("It doesn't affect {1}...", pbThis(true))) if showMessages
+      @battle.pbDisplay(_INTL("No afecta a {1}...", pbThis(true))) if showMessages
       return false
     end
     # Terrains immunity
@@ -289,12 +289,12 @@ class Battle::Battler
       when :Electric
         if newStatus == :SLEEP
           if showMessages
-            @battle.pbDisplay(_INTL("{1} surrounds itself with electrified terrain!", pbThis(true)))
+            @battle.pbDisplay(_INTL("¡{1} se rodea de terreno electrificado!", pbThis(true)))
           end
           return false
         end
       when :Misty
-        @battle.pbDisplay(_INTL("{1} surrounds itself with misty terrain!", pbThis(true))) if showMessages
+        @battle.pbDisplay(_INTL("¡{1} se rodea de terreno brumoso!", pbThis(true))) if showMessages
         return false
       end
     end
@@ -302,7 +302,7 @@ class Battle::Battler
     if newStatus == :SLEEP && !(hasActiveAbility?(:SOUNDPROOF) && !@battle.moldBreaker)
       @battle.allBattlers.each do |b|
         next if b.effects[PBEffects::Uproar] == 0
-        @battle.pbDisplay(_INTL("But the uproar kept {1} awake!", pbThis(true))) if showMessages
+        @battle.pbDisplay(_INTL("¡Pero el alboroto mantuvo despierto a {1}!", pbThis(true))) if showMessages
         return false
       end
     end
@@ -324,7 +324,7 @@ class Battle::Battler
       hasImmuneType |= pbHasType?(:ICE)
     end
     if hasImmuneType
-      @battle.pbDisplay(_INTL("It doesn't affect {1}...", pbThis(true))) if showMessages
+      @battle.pbDisplay(_INTL("No afecta a {1}...", pbThis(true))) if showMessages
       return false
     end
     # Ability immunity
@@ -351,37 +351,37 @@ class Battle::Battler
         msg = ""
         if Battle::Scene::USE_ABILITY_SPLASH
           case newStatus
-          when :SLEEP     then msg = _INTL("{1} stays awake!", pbThis)
-          when :POISON    then msg = _INTL("{1} cannot be poisoned!", pbThis)
-          when :BURN      then msg = _INTL("{1} cannot be burned!", pbThis)
-          when :PARALYSIS then msg = _INTL("{1} cannot be paralyzed!", pbThis)
-          when :FROZEN    then msg = _INTL("{1} cannot be frozen solid!", pbThis)
+          when :SLEEP     then msg = _INTL("¡{1} se mantiene despierto!", pbThis)
+          when :POISON    then msg = _INTL("¡{1} no puede ser envenenado!", pbThis)
+          when :BURN      then msg = _INTL("¡{1} no puede ser quemado!", pbThis)
+          when :PARALYSIS then msg = _INTL("¡{1} no puede ser paralizado!", pbThis)
+          when :FROZEN    then msg = _INTL("¡{1} no puede ser congelado!", pbThis)
           end
         elsif immAlly
           case newStatus
           when :SLEEP
-            msg = _INTL("{1} stays awake because of {2}'s {3}!",
+            msg = _INTL("¡{1} se mantiene despierto gracias a {3} de {2}!",
                         pbThis, immAlly.pbThis(true), immAlly.abilityName)
           when :POISON
-            msg = _INTL("{1} cannot be poisoned because of {2}'s {3}!",
+            msg = _INTL("¡{1} no puede ser envenenado gracias a {3} de {2}!",
                         pbThis, immAlly.pbThis(true), immAlly.abilityName)
           when :BURN
-            msg = _INTL("{1} cannot be burned because of {2}'s {3}!",
+            msg = _INTL("¡{1} no puede ser quemado gracias a {3} de {2}!",
                         pbThis, immAlly.pbThis(true), immAlly.abilityName)
           when :PARALYSIS
-            msg = _INTL("{1} cannot be paralyzed because of {2}'s {3}!",
+            msg = _INTL("¡{1} no puede ser paralizado gracias a {3} de {2}!",
                         pbThis, immAlly.pbThis(true), immAlly.abilityName)
           when :FROZEN
-            msg = _INTL("{1} cannot be frozen solid because of {2}'s {3}!",
+            msg = _INTL("¡{1} no puede ser congelado gracias a {3} de {2}!",
                         pbThis, immAlly.pbThis(true), immAlly.abilityName)
           end
         else
           case newStatus
-          when :SLEEP     then msg = _INTL("{1} stays awake because of its {2}!", pbThis, abilityName)
-          when :POISON    then msg = _INTL("{1}'s {2} prevents poisoning!", pbThis, abilityName)
-          when :BURN      then msg = _INTL("{1}'s {2} prevents burns!", pbThis, abilityName)
-          when :PARALYSIS then msg = _INTL("{1}'s {2} prevents paralysis!", pbThis, abilityName)
-          when :FROZEN    then msg = _INTL("{1}'s {2} prevents freezing!", pbThis, abilityName)
+          when :SLEEP     then msg = _INTL("¡{1} se mantiene despierto gracias a su {2}!", pbThis, abilityName)
+          when :POISON    then msg = _INTL("¡{2} de {1} impide el envenenamiento!", pbThis, abilityName)
+          when :BURN      then msg = _INTL("¡{2} de {1} impide las quemaduras!", pbThis, abilityName)
+          when :PARALYSIS then msg = _INTL("¡{2} de {1} impide la parálisis!", pbThis, abilityName)
+          when :FROZEN    then msg = _INTL("¡{2} de {1} impide la congelación!", pbThis, abilityName)
           end
         end
         @battle.pbDisplay(msg)
@@ -392,7 +392,7 @@ class Battle::Battler
     # Safeguard immunity
     if pbOwnSide.effects[PBEffects::Safeguard] > 0 && !self_inflicted && move &&
        !(user && user.hasActiveAbility?(:INFILTRATOR))
-      @battle.pbDisplay(_INTL("{1}'s team is protected by Safeguard!", pbThis)) if showMessages
+      @battle.pbDisplay(_INTL("¡El equipo de {1} está protegido por Velo sagrado!", pbThis)) if showMessages
       return false
     end
     return true
@@ -452,11 +452,11 @@ class Battle::Battler
     if target.hasActiveAbility?(:LIQUIDOOZE, true)
       @battle.pbShowAbilitySplash(target)
       pbReduceHP(amt)
-      @battle.pbDisplay(_INTL("{1} sucked up the liquid ooze!", pbThis))
+      @battle.pbDisplay(_INTL("¡{1} succionó el mejunje líquido!", pbThis))
       @battle.pbHideAbilitySplash(target)
       pbItemHPHealCheck
     else
-      msg = _INTL("{1} had its energy drained!", target.pbThis) if nil_or_empty?(msg)
+      msg = _INTL("¡{1} fue drenado!", target.pbThis) if nil_or_empty?(msg)
       @battle.pbDisplay(msg)
       if canHeal?
         amt = (amt * 1.3).floor if hasActiveItem?(:BIGROOT)
@@ -482,13 +482,13 @@ class Battle::Move::HealUserByTargetAttackLowerTargetAttack1 < Battle::Move
     if target.hasActiveAbility?(:LIQUIDOOZE, true)
       @battle.pbShowAbilitySplash(target)
       user.pbReduceHP(healAmt)
-      @battle.pbDisplay(_INTL("{1} sucked up the liquid ooze!", user.pbThis))
+      @battle.pbDisplay(_INTL("¡{1} succionó el mejunje líquido!", user.pbThis))
       @battle.pbHideAbilitySplash(target)
       user.pbItemHPHealCheck
     elsif user.canHeal?
       healAmt = (healAmt * 1.3).floor if user.hasActiveItem?(:BIGROOT)
       user.pbRecoverHP(healAmt)
-      @battle.pbDisplay(_INTL("{1}'s HP was restored.", user.pbThis))
+      @battle.pbDisplay(_INTL("{1} restauró sus PS.", user.pbThis))
     end
   end
 end

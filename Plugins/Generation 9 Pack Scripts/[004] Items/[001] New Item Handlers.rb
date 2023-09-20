@@ -45,7 +45,7 @@ ItemHandlers::BattleUseOnPokemon.copy(:ETHER, :LEPPABERRY, :HOPOBERRY)
 ItemHandlers::UseOnPokemon.add(:SCROLLOFWATERS,
   proc { |item, qty, pkmn, scene|
     if pkmn.shadowPokemon?
-      scene.pbDisplay(_INTL("It won't have any effect."))
+      scene.pbDisplay(_INTL("No tendrá ningún efecto."))
       next false
     end
     newspecies = pkmn.check_evolution_on_use_item(item)
@@ -63,7 +63,7 @@ ItemHandlers::UseOnPokemon.add(:SCROLLOFWATERS,
       }
       next true
     end
-    scene.pbDisplay(_INTL("It won't have any effect."))
+    scene.pbDisplay(_INTL("No tendrá ningún efecto."))
     next false
   }
 )
@@ -190,7 +190,7 @@ Battle::ItemEffects::DamageCalcFromUser.add(:PUNCHINGGLOVE,
 Battle::ItemEffects::StatLossImmunity.add(:CLEARAMULET,
   proc { |item, battler, stat, battle, showMessages|
     if showMessages
-      battle.pbDisplay(_INTL("{1}'s {2} prevents stat loss!", battler.pbThis, battler.itemName))
+      battle.pbDisplay(_INTL("¡El {2} de {1} evita la pérdida de estadísticas!", battler.pbThis, battler.itemName))
     end
     next true
   }
@@ -214,7 +214,7 @@ Battle::ItemEffects::OnOpposingStatGain.add(:MIRRORHERB,
     itemName = GameData::Item.get(item).name
     PBDebug.log("[Item triggered] #{battler.pbThis}'s #{itemName}") if forced
     battle.pbCommonAnimation("UseItem", battler) if !forced
-    battle.pbDisplay(_INTL("{1} used its {2} to mirror its opponent's stat changes!", battler.pbThis, itemName))
+    battle.pbDisplay(_INTL("¡{1} usó su {2} para reflejar los cambios de estadísticas de su oponente!", battler.pbThis, itemName))
     next true
   }
 )
