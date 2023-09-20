@@ -14,11 +14,11 @@ BicycleBGM = Bicycle
 #-------------------------------
 [1]
 TrainerType = POKEMONTRAINER_Red
-WalkCharset = trainer_POKEMONTRAINER_Red
-RunCharset = boy_run
-CycleCharset = boy_bike
-SurfCharset = boy_surf
-FishCharset = boy_fish_offset
+WalkCharset = BW_196_Hilbert
+RunCharset = BW_196_Hilbert_run
+CycleCharset = BW_196_Hilbert_bike
+SurfCharset = BW_196_Hilbert_surf
+FishCharset = BW_196_Hilbert_fish_offset
 #-------------------------------
 [2]
 TrainerType = POKEMONTRAINER_Leaf
