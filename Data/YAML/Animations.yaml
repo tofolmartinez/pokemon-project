@@ -1,0 +1,5384 @@
+---
+- 
+- !ruby/object:RPG::Animation
+  animation_hue: 0
+  animation_name: Overworld dust and grass
+  frame_max: 9
+  frames:
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0003 0000 fff0 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0003 0000 fff0 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0003 0000 fff0 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0005 0000 fff0 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0005 0000 fff0 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0005 0000 fff0 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0006 0000 fff0 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0006 0000 fff0 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0006 0000 fff0 0064 0000 0000 00ff 0000
+    cell_max: 1
+  id: 1
+  name: Grass rustle
+  position: 1
+  timings:
+  - !ruby/object:RPG::Animation::Timing
+    condition: 0
+    flash_color: !ruby/object:Color {alpha: 255.0, blue: 255.0, green: 255.0, red: 255.0}
+    flash_duration: 5
+    flash_scope: 0
+    frame: 0
+    se: !ruby/object:RPG::AudioFile
+      name: Battle damage normal
+      pitch: 150
+      volume: 15
+- !ruby/object:RPG::Animation
+  animation_hue: 0
+  animation_name: Overworld dust and grass
+  frame_max: 9
+  frames:
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0000 0000 fff0 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0000 0000 fff0 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0000 0000 fff0 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0001 0000 fff0 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0001 0000 fff0 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0001 0000 fff0 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0002 0000 fff0 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0002 0000 fff0 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0002 0000 fff0 0064 0000 0000 00ff 0000
+    cell_max: 1
+  id: 2
+  name: Dust
+  position: 1
+  timings: []
+- !ruby/object:RPG::Animation
+  animation_hue: 0
+  animation_name: Follower_Emote1
+  frame_max: 12
+  frames:
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0009
+      - 0008 0006
+      - fff0 ffcf
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0009
+      - 0008 0006
+      - fff0 ffd2
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0009
+      - 0008 0006
+      - fff0 ffd5
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0009
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0008
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0008
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0008
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0008
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0008
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0008
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0008
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0008
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  id: 3
+  name: Exclaim bubble
+  position: 2
+  timings:
+  - !ruby/object:RPG::Animation::Timing
+    condition: 0
+    flash_color: !ruby/object:Color {alpha: 255.0, blue: 255.0, green: 255.0, red: 255.0}
+    flash_duration: 5
+    flash_scope: 0
+    frame: 0
+    se: !ruby/object:RPG::AudioFile
+      name: Exclaim
+      pitch: 100
+      volume: 80
+- !ruby/object:RPG::Animation
+  animation_hue: 0
+  animation_name: Follower_Emote2
+  frame_max: 24
+  frames:
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0007
+      - 0008 0006
+      - fff0 ffcf
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0007
+      - 0008 0006
+      - fff0 ffd2
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0007
+      - 0008 0006
+      - fff0 ffd5
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0007
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0006
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0006
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0006
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0006
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0007
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0007
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0007
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0007
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0006
+      - 0030 0006
+      - 0078 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0001 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0006
+      - 0030 0006
+      - 0078 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0001 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0006
+      - 0030 0006
+      - 0078 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0001 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0006
+      - 0030 0006
+      - 0078 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0001 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0007
+      - 0030 0006
+      - 0078 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0001 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0007
+      - 0030 0006
+      - 0078 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0001 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0007
+      - 0030 0006
+      - 0078 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0001 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0007
+      - 0030 0006
+      - 0078 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0001 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0006
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0006
+      - ff78 0006
+      - 0070 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0001 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0006
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0006
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  id: 4
+  name: Question bubble
+  position: 2
+  timings:
+  - !ruby/object:RPG::Animation::Timing
+    condition: 0
+    flash_color: !ruby/object:Color {alpha: 255.0, blue: 255.0, green: 255.0, red: 255.0}
+    flash_duration: 5
+    flash_scope: 0
+    frame: 0
+    se: !ruby/object:RPG::AudioFile
+      name: Exclaim
+      pitch: 100
+      volume: 80
+- !ruby/object:RPG::Animation
+  animation_hue: 0
+  animation_name: Overworld dust and grass
+  frame_max: 19
+  frames:
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0003 0000 fff0 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0003 0000 fff0 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0003 0000 fff0 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0005 0000 fff0 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0005 0000 fff0 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0003 0000 fff0 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0003 0000 fff0 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0003 0000 fff0 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0005 0000 fff0 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0005 0000 fff0 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0003 0000 fff0 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0003 0000 fff0 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0003 0000 fff0 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0005 0000 fff0 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0005 0000 fff0 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0005 0000 fff0 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0006 0000 fff0 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0006 0000 fff0 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0006 0000 fff0 0064 0000 0000 00ff 0000
+    cell_max: 1
+  id: 5
+  name: Grass rustle vigorous
+  position: 1
+  timings: []
+- !ruby/object:RPG::Animation
+  animation_hue: 0
+  animation_name: Overworld dust and grass
+  frame_max: 14
+  frames:
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0003 0000 fff0 0064 0000 0000 00ff 0001
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0003 0000 fff0 0064 0000 0000 00ff 0001
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0003 0000 fff0 0064 0000 0000 00ff 0001
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0005 0000 fff0 0064 0000 0000 00ff 0001
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0005 0000 fff0 0064 0000 0000 00ff 0001
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0003 0000 fff0 0064 0000 0000 00ff 0001
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0003 0000 fff0 0064 0000 0000 00ff 0001
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0003 0000 fff0 0064 0000 0000 00ff 0001
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0005 0000 fff0 0064 0000 0000 00ff 0001
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0005 0000 fff0 0064 0000 0000 00ff 0001
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0005 0000 fff0 0064 0000 0000 00ff 0001
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0006 0000 fff0 0064 0000 0000 00ff 0001
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0006 0000 fff0 0064 0000 0000 00ff 0001
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0006 0000 fff0 0064 0000 0000 00ff 0001
+    cell_max: 1
+  id: 6
+  name: Grass rustle shiny
+  position: 1
+  timings: []
+- !ruby/object:RPG::Animation
+  animation_hue: 0
+  animation_name: Overworld dust and grass
+  frame_max: 23
+  frames:
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0007 0000 fff8 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0007 0000 fff8 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0007 0000 fff8 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0008 0000 fff8 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0008 0000 fff8 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0008 0000 fff8 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0008 0000 fff8 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0007 0000 fff8 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0007 0000 fff8 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0007 0000 fff8 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0008 0000 fff8 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0008 0000 fff8 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0007 0000 fff8 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0007 0000 fff8 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0008 0000 fff8 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0008 0000 fff8 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0007 0000 fff8 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0008 0000 fff8 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0007 0000 fff8 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0007 0000 fff8 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0008 0000 fff8 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0008 0000 fff8 0064 0000 0000 00ff 0000
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0008 0000 fff8 0064 0000 0000 00ff 0000
+    cell_max: 1
+  id: 7
+  name: Berry plant sparkle
+  position: 1
+  timings: []
+- !ruby/object:RPG::Animation
+  animation_hue: 0
+  animation_name: ''
+  frame_max: 1
+  frames:
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 0
+      y: 8
+      z: 1
+      data: []
+    cell_max: 0
+  id: 8
+  name: ''
+  position: 1
+  timings: []
+- !ruby/object:RPG::Animation
+  animation_hue: 0
+  animation_name: Follower_Emote2
+  frame_max: 24
+  frames:
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0009
+      - 0008 0006
+      - fff0 ffcf
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0009
+      - 0008 0006
+      - fff0 ffd2
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0009
+      - 0008 0006
+      - fff0 ffd5
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0009
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0008
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0008
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0008
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0008
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0009
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0009
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0009
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0009
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0008
+      - 0030 0006
+      - 0078 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0001 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0008
+      - 0030 0006
+      - 0078 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0001 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0008
+      - 0030 0006
+      - 0078 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0001 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0008
+      - 0030 0006
+      - 0078 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0001 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0009
+      - 0030 0006
+      - 0078 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0001 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0009
+      - 0030 0006
+      - 0078 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0001 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0009
+      - 0030 0006
+      - 0078 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0001 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0009
+      - 0030 0006
+      - 0078 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0001 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0008
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0008
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0008
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0008
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  id: 9
+  name: Heart bubble
+  position: 2
+  timings:
+  - !ruby/object:RPG::Animation::Timing
+    condition: 0
+    flash_color: !ruby/object:Color {alpha: 255.0, blue: 255.0, green: 255.0, red: 255.0}
+    flash_duration: 5
+    flash_scope: 0
+    frame: 0
+    se: !ruby/object:RPG::AudioFile
+      name: Exclaim
+      pitch: 100
+      volume: 80
+- !ruby/object:RPG::Animation
+  animation_hue: 0
+  animation_name: Follower_Emote2
+  frame_max: 24
+  frames:
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0001
+      - 0008 0006
+      - fff0 ffcf
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0001
+      - 0008 0006
+      - fff0 ffd2
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0001
+      - 0008 0006
+      - fff0 ffd5
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0001
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0002
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0002
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0002
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0002
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0001
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0001
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0001
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0001
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0002
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0002
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0002
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0002
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0001
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0001
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0001
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0001
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0002
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0002
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0002
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0002
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  id: 10
+  name: Happy bubble
+  position: 2
+  timings:
+  - !ruby/object:RPG::Animation::Timing
+    condition: 0
+    flash_color: !ruby/object:Color {alpha: 255.0, blue: 255.0, green: 255.0, red: 255.0}
+    flash_duration: 5
+    flash_scope: 0
+    frame: 0
+    se: !ruby/object:RPG::AudioFile
+      name: Exclaim
+      pitch: 100
+      volume: 80
+- !ruby/object:RPG::Animation
+  animation_hue: 0
+  animation_name: Follower_Emote2
+  frame_max: 24
+  frames:
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0003
+      - 0008 0006
+      - fff0 ffcf
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0003
+      - 0008 0006
+      - fff0 ffd2
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0003
+      - 0008 0006
+      - fff0 ffd5
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0003
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0004
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0004
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0004
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0004
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0003
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0003
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0003
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0003
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0004
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0004
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0004
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0004
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0003
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0003
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0003
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0003
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0004
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0004
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0004
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0004
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  id: 11
+  name: Smile bubble
+  position: 2
+  timings:
+  - !ruby/object:RPG::Animation::Timing
+    condition: 0
+    flash_color: !ruby/object:Color {alpha: 255.0, blue: 255.0, green: 255.0, red: 255.0}
+    flash_duration: 5
+    flash_scope: 0
+    frame: 0
+    se: !ruby/object:RPG::AudioFile
+      name: Exclaim
+      pitch: 100
+      volume: 80
+- !ruby/object:RPG::Animation
+  animation_hue: 0
+  animation_name: Follower_Emote2
+  frame_max: 24
+  frames:
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0005
+      - 0008 0006
+      - fff0 ffcf
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0005
+      - 0008 0006
+      - fff0 ffd2
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0005
+      - 0008 0006
+      - fff0 ffd5
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0005
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0000
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0000
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0000
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0000
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0005
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0005
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0005
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0005
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0000
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0000
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0000
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0000
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0005
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0005
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0005
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0005
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0000
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0000
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0000
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0000
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  id: 12
+  name: Music bubble
+  position: 2
+  timings:
+  - !ruby/object:RPG::Animation::Timing
+    condition: 0
+    flash_color: !ruby/object:Color {alpha: 255.0, blue: 255.0, green: 255.0, red: 255.0}
+    flash_duration: 5
+    flash_scope: 0
+    frame: 0
+    se: !ruby/object:RPG::AudioFile
+      name: Exclaim
+      pitch: 100
+      volume: 80
+- !ruby/object:RPG::Animation
+  animation_hue: 0
+  animation_name: Follower_Emote3
+  frame_max: 24
+  frames:
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0004
+      - 0008 0006
+      - fff0 ffcf
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0004
+      - 0008 0006
+      - fff0 ffd2
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0004
+      - 0008 0006
+      - fff0 ffd5
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0004
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0009
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0009
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0009
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0009
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0004
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0004
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0004
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0004
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0009
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0009
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0009
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0009
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0004
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0004
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0004
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0004
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0009
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0009
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0009
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0009
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  id: 13
+  name: Thinking bubble
+  position: 2
+  timings:
+  - !ruby/object:RPG::Animation::Timing
+    condition: 0
+    flash_color: !ruby/object:Color {alpha: 255.0, blue: 255.0, green: 255.0, red: 255.0}
+    flash_duration: 5
+    flash_scope: 0
+    frame: 0
+    se: !ruby/object:RPG::AudioFile
+      name: Exclaim
+      pitch: 100
+      volume: 80
+- !ruby/object:RPG::Animation
+  animation_hue: 0
+  animation_name: Follower_Emote3
+  frame_max: 24
+  frames:
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0005
+      - 0008 0006
+      - fff0 ffcf
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0005
+      - 0008 0006
+      - fff0 ffd2
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0005
+      - 0008 0006
+      - fff0 ffd5
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0005
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0006
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0006
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0006
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0006
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0005
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0005
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0005
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0005
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0006
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0006
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0006
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0006
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0005
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0005
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0005
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0005
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0006
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0006
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0006
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0006
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  id: 14
+  name: Sad bubble
+  position: 2
+  timings:
+  - !ruby/object:RPG::Animation::Timing
+    condition: 0
+    flash_color: !ruby/object:Color {alpha: 255.0, blue: 255.0, green: 255.0, red: 255.0}
+    flash_duration: 5
+    flash_scope: 0
+    frame: 0
+    se: !ruby/object:RPG::AudioFile
+      name: Exclaim
+      pitch: 100
+      volume: 80
+- !ruby/object:RPG::Animation
+  animation_hue: 0
+  animation_name: Follower_Emote3
+  frame_max: 24
+  frames:
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0007
+      - 0008 0006
+      - fff0 ffcf
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0007
+      - 0008 0006
+      - fff0 ffd2
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0007
+      - 0008 0006
+      - fff0 ffd5
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0007
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0008
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0008
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0008
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0008
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0007
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0007
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0007
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0007
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0008
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0008
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0008
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0008
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0007
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0007
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0007
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0007
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0008
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0008
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0008
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0008
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  id: 15
+  name: Mad bubble
+  position: 2
+  timings:
+  - !ruby/object:RPG::Animation::Timing
+    condition: 0
+    flash_color: !ruby/object:Color {alpha: 255.0, blue: 255.0, green: 255.0, red: 255.0}
+    flash_duration: 5
+    flash_scope: 0
+    frame: 0
+    se: !ruby/object:RPG::AudioFile
+      name: Exclaim
+      pitch: 100
+      volume: 80
+- !ruby/object:RPG::Animation
+  animation_hue: 0
+  animation_name: Follower_Emote3
+  frame_max: 24
+  frames:
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0002
+      - 0008 0006
+      - fff0 ffcf
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0002
+      - 0008 0006
+      - fff0 ffd2
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0002
+      - 0008 0006
+      - fff0 ffd5
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0002
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0003
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0003
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0003
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0003
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0002
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0002
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0002
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0002
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0003
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0003
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0003
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0003
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0002
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0002
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0002
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0002
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0003
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0003
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0003
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0003
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  id: 16
+  name: Angry bubble
+  position: 2
+  timings:
+  - !ruby/object:RPG::Animation::Timing
+    condition: 0
+    flash_color: !ruby/object:Color {alpha: 255.0, blue: 255.0, green: 255.0, red: 255.0}
+    flash_duration: 5
+    flash_scope: 0
+    frame: 0
+    se: !ruby/object:RPG::AudioFile
+      name: Exclaim
+      pitch: 100
+      volume: 80
+- !ruby/object:RPG::Animation
+  animation_hue: 0
+  animation_name: Follower_Emote3
+  frame_max: 24
+  frames:
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0000
+      - 0008 0006
+      - fff0 ffcf
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0000
+      - 0008 0006
+      - fff0 ffd2
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0000
+      - 0008 0006
+      - fff0 ffd5
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0000
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0001
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0001
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0001
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0001
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0000
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0000
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0000
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0000
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0001
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0001
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0001
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0001
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0000
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0000
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0000
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0000
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0001
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0001
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0001
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 2
+      y: 8
+      z: 1
+      data:
+      - ffff 0001
+      - 0008 0006
+      - fff0 ffd8
+      - 0064 0064
+      - 0000 0000
+      - 0000 0000
+      - 00ff 00ff
+      - 0000 0000
+    cell_max: 2
+  id: 17
+  name: Poison bubble
+  position: 2
+  timings:
+  - !ruby/object:RPG::Animation::Timing
+    condition: 0
+    flash_color: !ruby/object:Color {alpha: 255.0, blue: 255.0, green: 255.0, red: 255.0}
+    flash_duration: 5
+    flash_scope: 0
+    frame: 0
+    se: !ruby/object:RPG::AudioFile
+      name: Exclaim
+      pitch: 100
+      volume: 80
+- !ruby/object:RPG::Animation
+  animation_hue: 0
+  animation_name: ''
+  frame_max: 1
+  frames:
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 0
+      y: 8
+      z: 1
+      data: []
+    cell_max: 0
+  id: 18
+  name: ''
+  position: 1
+  timings: []
+- !ruby/object:RPG::Animation
+  animation_hue: 0
+  animation_name: ''
+  frame_max: 1
+  frames:
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 0
+      y: 8
+      z: 1
+      data: []
+    cell_max: 0
+  id: 19
+  name: ''
+  position: 1
+  timings: []
+- !ruby/object:RPG::Animation
+  animation_hue: 0
+  animation_name: ''
+  frame_max: 1
+  frames:
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 0
+      y: 8
+      z: 1
+      data: []
+    cell_max: 0
+  id: 20
+  name: ''
+  position: 1
+  timings: []
+- !ruby/object:RPG::Animation
+  animation_hue: 0
+  animation_name: ''
+  frame_max: 1
+  frames:
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 0
+      y: 8
+      z: 1
+      data: []
+    cell_max: 0
+  id: 21
+  name: ''
+  position: 1
+  timings: []
+- !ruby/object:RPG::Animation
+  animation_hue: 0
+  animation_name: ''
+  frame_max: 1
+  frames:
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 0
+      y: 8
+      z: 1
+      data: []
+    cell_max: 0
+  id: 22
+  name: ''
+  position: 1
+  timings: []
+- !ruby/object:RPG::Animation
+  animation_hue: 0
+  animation_name: ''
+  frame_max: 1
+  frames:
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 0
+      y: 8
+      z: 1
+      data: []
+    cell_max: 0
+  id: 23
+  name: ''
+  position: 1
+  timings: []
+- !ruby/object:RPG::Animation
+  animation_hue: 0
+  animation_name: ''
+  frame_max: 1
+  frames:
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 0
+      y: 8
+      z: 1
+      data: []
+    cell_max: 0
+  id: 24
+  name: ''
+  position: 1
+  timings: []
+- !ruby/object:RPG::Animation
+  animation_hue: 0
+  animation_name: ''
+  frame_max: 1
+  frames:
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 0
+      y: 8
+      z: 1
+      data: []
+    cell_max: 0
+  id: 25
+  name: ''
+  position: 1
+  timings: []
+- !ruby/object:RPG::Animation
+  animation_hue: 0
+  animation_name: ''
+  frame_max: 1
+  frames:
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 0
+      y: 8
+      z: 1
+      data: []
+    cell_max: 0
+  id: 26
+  name: ''
+  position: 1
+  timings: []
+- !ruby/object:RPG::Animation
+  animation_hue: 0
+  animation_name: ''
+  frame_max: 1
+  frames:
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 0
+      y: 8
+      z: 1
+      data: []
+    cell_max: 0
+  id: 27
+  name: ''
+  position: 1
+  timings: []
+- !ruby/object:RPG::Animation
+  animation_hue: 0
+  animation_name: ''
+  frame_max: 1
+  frames:
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 0
+      y: 8
+      z: 1
+      data: []
+    cell_max: 0
+  id: 28
+  name: ''
+  position: 1
+  timings: []
+- !ruby/object:RPG::Animation
+  animation_hue: 0
+  animation_name: Follower_ComeInOut
+  frame_max: 10
+  frames:
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 0
+      y: 8
+      z: 1
+      data: []
+    cell_max: 0
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0005 0000 0000 0064 0000 0000 00ff 0001
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0006 0000 0000 0064 0000 0000 00ff 0001
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0006 0000 0000 0064 0000 0000 00ff 0001
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0007 0000 0000 0064 0000 0000 00ff 0001
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0007 0000 0000 0064 0000 0000 00ff 0001
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0000 0000 0000 0064 0000 0000 00ff 0001
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0000 0000 0000 0064 0000 0000 00ff 0001
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0000 0000 0000 0064 0000 0000 00ff 0001
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0000 0000 0000 0064 0000 0000 00ff 0001
+    cell_max: 1
+  id: 29
+  name: Pokemon Ball In
+  position: 2
+  timings:
+  - !ruby/object:RPG::Animation::Timing
+    condition: 0
+    flash_color: !ruby/object:Color {alpha: 255.0, blue: 255.0, green: 255.0, red: 255.0}
+    flash_duration: 5
+    flash_scope: 0
+    frame: 0
+    se: !ruby/object:RPG::AudioFile
+      name: Battle jump to ball
+      pitch: 100
+      volume: 60
+- !ruby/object:RPG::Animation
+  animation_hue: 0
+  animation_name: Follower_ComeInOut
+  frame_max: 10
+  frames:
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 0
+      y: 8
+      z: 1
+      data: []
+    cell_max: 0
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0000 0000 0000 0064 0000 0000 00ff 0001
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0000 0000 0000 0064 0000 0000 00ff 0001
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0000 0000 0000 0064 0000 0000 00ff 0001
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0001 0000 0000 0064 0000 0000 00ff 0001
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0001 0000 0000 0064 0000 0000 00ff 0001
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0002 0000 0000 0064 0000 0000 00ff 0001
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0002 0000 0000 0064 0000 0000 00ff 0001
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0003 0000 0000 0064 0000 0000 00ff 0001
+    cell_max: 1
+  - !ruby/object:RPG::Animation::Frame
+    cell_data: !ruby/object:Table
+      dim: 2
+      x: 1
+      y: 8
+      z: 1
+      data:
+      - 0003 0000 0000 0064 0000 0000 00ff 0001
+    cell_max: 1
+  id: 30
+  name: Pokemon Ball Out
+  position: 2
+  timings:
+  - !ruby/object:RPG::Animation::Timing
+    condition: 0
+    flash_color: !ruby/object:Color {alpha: 255.0, blue: 255.0, green: 255.0, red: 255.0}
+    flash_duration: 5
+    flash_scope: 0
+    frame: 0
+    se: !ruby/object:RPG::AudioFile
+      name: Battle recall
+      pitch: 100
+      volume: 60
