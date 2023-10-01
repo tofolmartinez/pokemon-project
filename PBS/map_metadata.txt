@@ -204,12 +204,12 @@ BicycleAlways = true
 MapPosition = 0,11,7
 MapSize = 1,111
 #-------------------------------
-[042]   # Pueblo Cúber
-Name = Pueblo Cúber
+[042]   # Pueblo Carso
+Name = Pueblo Carso
 Outdoor = true
 ShowArea = true
 Bicycle = true
-HealingSpot = 42,17,43
+HealingSpot = 42,17,42
 Weather = Snow,100
 #-------------------------------
 [044]   # Route 6
@@ -403,3 +403,10 @@ Name = Tiall Region
 Outdoor = true
 MapPosition = 1,13,16
 BattleBack = city
+#-------------------------------
+[077]   # MAP077
+Name = Ruta 9
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Weather = Blizzard,100
