@@ -26,23 +26,25 @@
 21,East,0,23,West,1
 # Route 2 (21) - Route 7 (47)
 21,East,77,47,West,0
-# Pueblo Pastura (22) - Ruta1 (33)
-22,East,0,33,West,4
 # Route 3 (31) - Lerucean Town (23)
 31,South,32,23,North,0
 # Ingido Plateau outside (35) - Route 3 (31)
 35,East,10,31,West,0
-# Laboratorio Pokémon (48) - Ruta1 (33)
-48,South,0,33,North,7
 # Route 4 (39) - Ingido Plateau outside (35)
 39,East,0,35,West,11
 # Route 5 (41) - Route 4 Cycling Road (40)
 41,North,0,40,South,0
 # Route 5 (41) - Route 6 Cycling Road (45)
 41,South,6,45,North,0
+# Ruta 9 (77) - Pueblo Carso (42)
+77,North,0,42,South,0
 # Battle Frontier (52) - Route 7 (47)
 52,West,0,47,East,8
 # Route 8 (69) - Safari Zone outside (66)
 69,North,0,66,South,10
-# MAP077 (77) - Pueblo Carso (42)
-77,North,0,42,South,0
+# Ruta1 (33) - Pueblo Pastura (22)
+33,West,4,22,East,0
+# Laboratorio Pokémon (48) - Ruta1 (33)
+48,South,0,33,North,7
+# Pueblo Trobada (76) - Ruta1 (33)
+76,West,0,33,East,3
